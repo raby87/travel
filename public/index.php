@@ -1,6 +1,7 @@
 <?php 
 
-$a = '{
+$a = <<<EOT
+{
  "kind": "books#volumes",
  "totalItems": 576,
  "items": [
@@ -786,7 +787,8 @@ $a = '{
    }
   }
  ]
-}';
+}
+EOT;
 
 echo $a; 
 
