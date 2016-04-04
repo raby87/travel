@@ -1,0 +1,2323 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>台湾岛旅游网-台湾旅游攻略,交通,住宿,报价,全球华人的台湾自由行服务平台!</title>
+<meta content="台湾岛旅游网,台湾自由行,台湾旅游,旅游攻略" name="keywords" />
+<meta content="台湾岛旅游网为全球华人提供台湾自由行一站式服务,包括台湾旅游攻略,民宿、酒店预订；签证办理；台铁,高铁火车票预订,海峡号,中远之星,小三通船预订；包车,拼车,一日游,手机卡等赴台旅游服务！" name="description" />
+<base href="http://www.taiwandao.tw/">
+<link href="favicon.ico" rel="shortcut icon" />
+<link href="http://static.taiwandao.tw/css/global/public.css?20150720" rel="stylesheet" type="text/css">
+<link href="http://static.taiwandao.tw/css/global/public_our.css?20150720" rel="stylesheet">
+<link href="http://static.taiwandao.tw/css/global/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://static.taiwandao.tw/js/jquery/jquery.min.js"></script>
+<script>
+	jQuery.cookie = function(name, value, options) {
+    if (typeof value != 'undefined') { // name and value given, set cookie
+        options = options || {};
+        if (value === null) {
+            value = '';
+            options.expires = -1;
+        }
+        var expires = '';
+        if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+            var date;
+            if (typeof options.expires == 'number') {
+                date = new Date();
+                date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+            } else {
+                date = options.expires;
+            }
+            expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+        }
+        var path = options.path ? '; path=' + options.path : '';
+        var domain = options.domain ? '; domain=' + options.domain : '';
+        var secure = options.secure ? '; secure' : '';
+        document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+    } else { // only name given, get cookie
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+};
+
+ function isMobile() {
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (  bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                return true;
+            } else {
+               return false;
+            }
+        }
+
+	if($.cookie('indextype')!='web'){
+		if(isMobile()){
+			window.location.href="http://m.taiwandao.tw/";
+		}		 
+	}
+
+</script>
+</head>
+<body class="main-bg">
+<div style=" background:yellow; margin:0 auto; width:100%; font-size:24px; padding: 10px 0px; font-weight:bold; color:#ED4747;  line-height:26px;display: none;">
+<p style="text-align: center"></p>
+</div>
+<div class="public-head">
+<div class="w public-hw">
+<div class="public-logo"><h1><a class="logo-bd" href="http://www.taiwandao.tw/">台湾岛旅游网</a></h1></div>
+<div class="public-search">
+<form name="site_search" action="http://search.taiwandao.tw/index_search.html" target="_blank" method="get" style="position:relative;">
+<input type="text" name="keyword" size="48" class="sct search_keyword" value="" autocomplete="off"/>
+<input type="hidden" value="all" name="type">
+<input type="submit" class="scb" value="搜索">
+<div class="bdsug bdsugbg search_expanded" style="display:none;height: auto; top: 35px; width:330px;">
+<ul class="search_expanded_li">
+</ul>
+</div>
+</form>
+</div>
+<div class="public-phone">
+<p>客户咨询电话</p>
+<b>400-008-6959</b>
+<p class="gray">周一至周日 9:00-22:00</p>
+</div>
+<div class="public-eq"> </div>
+</div>
+<div class="public-nav">
+<div class="w cf">
+<ul>
+<li id="index"><a href="http://www.taiwandao.tw/" data-subid="index">首页</a></li>
+<li id="qianzheng"><a href="http://www.taiwandao.tw/yewu/visa/" class="menu" data-subid="qianzheng">签证</a></li>
+<li id="zhusu"><a href="http://minsu.taiwandao.tw/" class="menu" data-subid="zhusu">住宿</a></li>
+<li id="piaowu"><a href="http://mall.taiwandao.tw/index_jiaotong.html" class="menu" data-subid="piaowu">交通</a></li>
+<li id="mall"><a href="http://mall.taiwandao.tw/" class="menu"data-subid="mall">商城</a></li>
+<li id="gonglue"><a href="http://gonglue.taiwandao.tw/" class="menu"data-subid="gonglue">攻略</a></li>
+<li id="xingcheng"><a href="http://g.taiwandao.tw/make_index.html" class="menu"data-subid="xingcheng">行程定制</a></li>
+</ul>
+<div class="nav-usermode">
+<div class="nav-userroom show_center"><span id="userlogin"></span> </div>
+<div class="nav-usermode-menu" style="display:none;" id="nav-user-content">
+<div class="btn" id="userlogin_login" style="display:none;"><a href="http://user.taiwandao.tw/Public_login.html" class="nav-menulogin">登录</a></div>
+<div class="menu cf">
+<a href="http://user.taiwandao.tw/orderlist_gaotie.html" class=""><i class="gait"></i>高铁订单</a>
+<a href="http://user.taiwandao.tw/orderlist_taitie.html" class=""><i class="tait"></i>台铁订单</a>
+<a href="http://user.taiwandao.tw/orderlist_mall.html" class=""><i class="shop"></i>商城订单</a>
+<a href="http://user.taiwandao.tw/orderlist_haixiahao.html" class=""><i class="hxh"></i>海峡号<br />订单</a>
+<a href="http://user.taiwandao.tw/orderlist_zyzx.html" class=""><i class="zyzj"></i>中远之星<br />订单</a>
+<a href="http://payment.taiwandao.tw/search_index.html?type=xiaosantong" class=""><i class="xst"></i>小三通<br />订单</a>
+<a href="http://payment.taiwandao.tw/search_index.html?type=jipiao" class=""><i class="dnjp"></i>岛内机票<br />订单</a>
+<a href="http://app.taiwandao.tw" class=""><i class="hd"></i>APP下载</a>
+<a href="http://user.taiwandao.tw/" class=""><i class="grzj"></i>个人中心<br />首页</a>
+</div>
+<div class="btn-out" id="userlogin_logout" style="display:none;"> </div>
+</div>
+</div>
+</div>
+<div class="public-nav-list">
+<div class="w" id="index-sub" style="display:none;">
+<a href="http://www.taiwandao.tw/yewu/visa/" class="noline">入台证</a>
+<a href="http://minsu.taiwandao.tw/">台湾民宿</a>
+<a href="http://taitie.taiwandao.tw/">台铁订票
+<s class="icon-qiangpiao" style="top: -8px; right: 5px;"></s>
+</a>
+<a href="http://gaotie.taiwandao.tw/">高铁订票
+<s class="icon-qiangpiao" style="top: -8px; right: 5px;"></s>
+</a>
+<a href="http://xiaosantong.taiwandao.tw/">小三通</a>
+<a href="http://www.haixiahao.com/">海峡号</a>
+<a href="http://zyzx.taiwandao.tw/">中远之星</a>
+<a href="http://chuanpiao.taiwandao.tw">台东/绿岛/兰屿船票</a>
+<a href="http://mall.taiwandao.tw/ar_detail_id_411.html">台湾电话卡/上网卡</a>
+<a href="http://app.taiwandao.tw/" style="color:red;">APP下载</a>
+</div>
+<div class="w" id="qianzheng-sub" style="display:none;">
+<a href="http://www.taiwandao.tw/yewu/visa/" class="noline">入台证</a>
+<a href="http://www.taiwandao.tw/yewu/jiankangtijian/">健检签证</a>
+<a href="http://www.taiwandao.tw/yewu/shangwuqianzheng/">商务签证</a>
+<a href="http://www.taiwandao.tw/yewu/wenhuajiaoliuqianzheng/">文化签证</a>
+<a href="http://taibaozheng.taiwandao.tw/">台胞证续签</a>
+<a href="http://taibaozheng.taiwandao.tw/">台湾护照更换</a>
+</div>
+<div class="w" id="zhusu-sub" style="display:none;">
+<a href="http://minsu.taiwandao.tw/" target="_blank" class="noline">台湾民宿</a>
+<a href="http://hotel.taiwandao.tw" target="_blank">台湾酒店</a>
+<a href="http://www.booking.com/country/tw.html?aid=366033&lang=zh" target="_blank" rel="nofollow">Booking台湾酒店折扣</a>
+<a href="http://www.agoda.com/zh-cn/country/taiwan.html?cid=1621527" target="_blank" rel="nofollow">Agoda台湾酒店优惠</a>
+</div>
+<div class="w" id="piaowu-sub" style="display:none;">
+<a href="http://taitie.taiwandao.tw/" class="noline">台铁订票<s class="icon-qiangpiao" style="top: -8px; right: 5px;"></s></a>
+<a href="http://gaotie.taiwandao.tw/">高铁订票<s class="icon-qiangpiao" style="top: -8px; right: 5px;"></s></a>
+<a href="http://xiaosantong.taiwandao.tw/">小三通套票</a>
+<a href="http://www.haixiahao.com/">海峡号船票</a>
+<a href="http://jipiao.taiwandao.tw/">机票</a>
+<a href="http://zyzx.taiwandao.tw/">中远之星</a>
+<a href="http://chuanpiao.taiwandao.tw">台东/绿岛/兰屿船票</a>
+<a href="http://mall.taiwandao.tw/goods_lists2_city_0_area_0_type_1.html">拼车/一日游</a>
+<a href="http://mall.taiwandao.tw/goods_lists2_city_0_area_0_type_2.html">包车</a>
+<a href="http://mall.taiwandao.tw/ar_detail_na_taoyuanjieji.html">接送机</a>
+</div>
+<div class="w" id="mall-sub" style="display:none;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_340.html" class="noline">台北⇌花莲</a>
+<a href="http://mall.taiwandao.tw/ar_detail_id_542.html" style="color:#EE4848">花莲⇌垦丁</a>
+<a href="http://mall.taiwandao.tw/ar_detail_id_458.html">花莲⇌清境</a>
+<a href="http://mall.taiwandao.tw/ar_detail_id_473.html">清境⇌日月潭</a>
+<a href="http://mall.taiwandao.tw/ar_detail_id_490.html">嘉义⇌阿里山</a>
+<a href="http://mall.taiwandao.tw/ar_detail_id_641.html" style="color:#EE4848">日月潭⇌阿里山</a>
+<a href="http://mall.taiwandao.tw/ar_detail_na_shangjing.html">花莲赏鲸</a>
+<a href="http://mall.taiwandao.tw/ar_detail_na_zhang.html">垦丁潜水</a>
+<a href="http://taiwandao.besttrav.com/" rel="nofollow" target="_blank">旅游保险</a>
+</div>
+<div class="w" id="gonglue-sub" style="display:none;">
+<a href="http://tianqi.taiwandao.tw/" class="noline">台湾天气</a>
+<a href="http://www.taiwandao.tw/ask/">台湾问答</a>
+<a href="http://www.taiwandao.tw/wiki/">台湾百科</a>
+<a href="http://gonglue.taiwandao.tw/MeiShi/">台湾小吃与美食 </a>
+<a href="http://z.taiwandao.tw/keding/">垦丁</a>
+<a href="http://z.taiwandao.tw/lanyu/">兰屿</a>
+<a href="http://z.taiwandao.tw/lvdao/">绿岛</a>
+<a href="http://z.taiwandao.tw/qingjingnongchang/">清境农场</a>
+</div>
+<div class="w" id="xingcheng-sub" style="display:none;">
+<div class="w cust-travel" id="cust-travel" style="display:block;">定制自由行程 2分钟快速收集您的出行需求 48小时量身定制您的出行方案 <a href="http://g.taiwandao.tw/make_index.html">马上定制</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="shopp-cars cf" id="left_cart" style="display:none;left:-190px;top:428px;">
+<div class="shopp-cars-nav shopp-cars-nav-cur">
+<a href="javascript:void(0);" class="gocar"><i class="iepng"></i>购物车<em class="cart-count"></em></a>
+<a href="#" class="gotop" style="display:none;"><i class="iepng"></i></a>
+</div>
+<div style="display:block" id="" class="cart-dropdown-menu">
+<div class="cart-dropdown-list" id="cart-content" style="height:100%">
+</div>
+</div>
+</div>
+<script type="text/javascript" src="http://www.taiwandao.tw/global/header.js"></script>
+<style>
+.home-banner .slider a.active{background: #0778CC;} 
+ </style>
+<div class="home-banner">
+<div class="inner">
+<ul id="jdAdSlide">
+<li><a href="http://mall.taiwandao.tw/ar_detail_id_765.html" target="_blank"><img id="adImage0" src="http://static.taiwandao.tw/images/index/banner26.jpg" style="display:none;" alt="花莲-台东-垦丁一日游（花东纵谷山线 . 双向拼车）" /></a></li>
+<li><a href="http://bjsshyly.tmall.com/category-1035301601.htm?spm=a220o.1000855.w5002-9963636344.4.sLatbv&search=y&catName=%CC%A8%CD%E5%B4%F3%B8%E7%B4%F3%CA%D6%BB%FA%BF%A8" rel="nofollow" target="_blank"><img id="adImage0" src="http://static.taiwandao.tw/images/index/banner2.jpg" style="display:none;" /></a></li>
+<li><a href="http://mall.taiwandao.tw/ar_detail_na_rutaizhengpeie.html" target="_blank"><img id="adImage0" src="http://static.taiwandao.tw/images/index/banner19.jpg" style="display:none;" alt="台湾入台证配额购买，入台证加急办理！"/></a></li>
+</ul>
+</div>
+<div id="jdAdBtn" class="slider  jd_ad_btn">
+<span><a hidefocus="true">1</a></span>
+<span><a hidefocus="true">2</a></span>
+<span><a hidefocus="true">3</a></span>
+<span><a hidefocus="true">4</a></span>
+</div>
+</div>
+<div class="quick-nav">
+<ul class="quick-nav-list">
+<li class="select"><span onclick="quickCutover(this,'quick-con01');">民宿预订</span></li>
+<li><span onclick="quickCutover(this,'quick-con02');">台湾酒店</span></li>
+<li><span onclick="quickCutover(this,'quick-con03');">台铁订票</span></li>
+<li><span onclick="quickCutover(this,'quick-con04');">高铁订票</span></li>
+<li><span onclick="quickCutover(this,'quick-con05');">赴台船票</span></li>
+<li><span onclick="quickCutover(this,'quick-con06');">台湾机票</span></li>
+<li><span onclick="quickCutover(this,'quick-con07');">包车/拼车</span></li>
+</ul>
+<div class="quickcon-box">
+<div class="quick-con01 quick-con quick-con-show">
+<form class="quick-form" target="_blank" method="get" name="searchForm" action="http://minsu.taiwandao.tw/list/s.asp">
+<ul>
+<li>
+<span>入住城市</span><label><input type="text" name="city" placeholder="不限" class="com-input" /></label>
+</li>
+<li>
+<span>入住日期</span><label><input name="fromDate" type="text" name="fromDate" value="2016-03-28" class="com-input select_date" style="width:95px;" /></label>
+<span>退房日期</span><label><input name="toDate" id="toDateout" value="2016-03-29" type="text" name="toDate" class="com-input" style="width:95px;" /></label>
+</li>
+<li>
+<span>关键字</span><label><input type="text" name="keyword" placeholder="城市、道路或民宿名称" class="com-input" /></label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="搜索" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+<dl class="quick-hot">
+<dt>热点民宿：</dt>
+<dd>
+<a href="http://minsu.taiwandao.tw/landprd/?lid-6.html" target="_blank">阿里山民宿</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%BF%D1%B6%A1" target="_blank">垦丁民宿</a>
+<a href="http://minsu.taiwandao.tw/landprd/?lid-5.html" target="_blank">日月潭民宿</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%C7%E5%BE%B3" target="_blank">清境民宿</a>
+<a href="http://z.taiwandao.tw/hualianminsu" target="_blank">花莲民宿</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%BE%C5%B7%DD" target="_blank">九份民宿</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%CC%A8%B1%B1" target="_blank">台北民宿</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%B8%DF%D0%DB" target="_blank">高雄民宿</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%CC%A8%D6%D0" target="_blank">台中民宿</a>
+<a rel="nofollow" href="http://www.booking.com/country/tw.html?aid=366033&amp;lang=zh" target="_blank" class="hot">台湾酒店预订</a>
+</dd>
+<ul class="quick-help">
+<li><a href="http://www.taiwandao.tw/faq/9476.html" target="_blank">民宿退换房须知</a></li>
+<li><a href="http://www.taiwandao.tw/faq/6683.html" target="_blank">民宿预订流程</a></li>
+<li> <a href="http://www.taiwandao.tw/faq/5034.html" target="_blank">常见问题</a></li>
+</ul>
+</dl>
+</div>
+<div class="quick-con02 quick-con">
+<form class="quick-form" target="_blank" action="http://zhanhui.taiwandao.tw/make_gobooking.html" method="get">
+<ul>
+<li>
+<span>入往城市</span><label><select name="ss" id="hotelcity" class="com-select">
+<option value="">不限</option><option value="台北市">台北</option><option value="新北">新北</option><option value="高雄">高雄</option><option value="台中">台中</option><option value="花莲">花莲</option><option value="宜兰">宜兰</option><option value="南投">南投</option><option value="嘉义">嘉义</option><option value="台东">台东</option><option value="台南">台南</option><option value="屏东">屏东</option><option value="彰化">彰化</option><option value="新竹">新竹</option><option value="基隆">基隆</option><option value="桃园">桃园</option><option value="云林">云林</option><option value="澎湖">澎湖</option><option value="金门">金门</option>
+</select></label>
+</li>
+<li>
+<span>入住日期</span><label><input name="fromDate" type="text" value="2016-03-28" class="com-input select_date" style="width:95px;" /></label><span>退房日期</span><label><input name="toDate" type="text" value="2016-03-29" class="com-input select_date" style="width:95px;" /></label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="搜索" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+<dl class="quick-hot">
+<dt>热点酒店：</dt>
+<dd>
+<a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=-2637882;inac=1">台北</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=-2632378;inac=1">高雄</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=-2631690;inac=1">花莲</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=-2632489;inac=1">垦丁</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=-2637824;inac=1">台中</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=-2637868;inac=1">台南</a> <a href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=900050717;inac=1">阿里山</a><a rel="nofollow" target="_blank" href=""></a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=900048295;inac=1">宜兰</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=900039918;inac=1">桃园</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;city=-2637928;inac=1">台东</a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;iata=tpe;inac=1">桃园机场 </a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;iata=khh;inac=1">高雄机场 </a> <a rel="nofollow" target="_blank" href="http://www.booking.com/searchresults.zh-cn.html?aid=366033;sid=27b57e5870bacde75a8cd5961cc254ef;dcid=1;iata=tsa;inac=1">台北松山机场</a>
+</dd>
+</dl>
+</div>
+<div class="quick-con03 quick-con">
+<form class="quick-form" action="http://taitie.taiwandao.tw/index/search/" method="get" target="_blank">
+<ul>
+<li>
+<span>出发站</span><label>
+<select class="com-select taitie_area" data-out="taitie_start" style="width:125px; margin-right:6px;">
+<option>--请选择县市--</option>
+<option value="1">台北地区</option><option value="2">桃园地区</option><option value="3">新竹地区</option><option value="4">苗栗地区</option><option value="5">台中地区</option><option value="6">彰化地区</option><option value="7">南投地区</option><option value="8">雲林地区</option><option value="9">嘉义地区</option><option value="10">台南地区</option><option value="11">高雄地区</option><option value="12">屏东地区</option><option value="13">台东地区</option><option value="14">花莲地区</option><option value="15">宜兰地区</option><option value="16">平溪线</option><option value="17">内湾/六家线</option><option value="18">集集线</option><option value="19">沙仑线</option> </select> </label><label>
+<select name="" id="taitie_start" class="com-select" style="width:125px;">
+<option value="">--请选择--</option>
+</select>
+</label>
+</li>
+<li>
+<span>出发站</span><label><input type="text" value="" name="startStation" id="taitie_startstation" placeholder="" class="com-input" /></label>
+</li>
+<li>
+<span>到达站</span><label>
+<select class="com-select taitie_area" data-out="taitie_stop" style="width:125px; margin-right:6px;"></label><label>
+<option>--请选择县市--</option>
+<option value="1">台北地区</option><option value="2">桃园地区</option><option value="3">新竹地区</option><option value="4">苗栗地区</option><option value="5">台中地区</option><option value="6">彰化地区</option><option value="7">南投地区</option><option value="8">雲林地区</option><option value="9">嘉义地区</option><option value="10">台南地区</option><option value="11">高雄地区</option><option value="12">屏东地区</option><option value="13">台东地区</option><option value="14">花莲地区</option><option value="15">宜兰地区</option><option value="16">平溪线</option><option value="17">内湾/六家线</option><option value="18">集集线</option><option value="19">沙仑线</option> </select>
+</label><label> <select name="" id="taitie_stop" class="com-select" style="width:125px;">
+<option value="">--请选择--</option>
+</select>
+</label>
+</li>
+<li>
+<label><span>到达站</span><input type="text" value="" id="taitie_stopstation" name="stopStation" placeholder="" class="com-input" /></label>
+</li>
+<li>
+<span>时 间</span><label><input name="searchDate" id="fromDate" type="text" value="2016-03-29" class="com-input" style="width:95px;" placeholder="请选择日期" />
+</label><label>
+<select class="com-select" name="searchTime" id="SearchFormForZhanzhan_searchTime" class="com-select" style="width:75px; margin-right:5px;">
+<option value="6:00">6:00</option>
+<option value="6:30">6:30</option>
+<option value="7:00">7:00</option>
+<option value="7:30">7:30</option>
+<option value="8:00">8:00</option>
+<option value="8:30">8:30</option>
+<option value="9:00">9:00</option>
+<option value="9:30">9:30</option>
+<option value="10:00">10:00</option>
+<option value="10:30">10:30</option>
+<option value="11:00">11:00</option>
+<option value="11:30">11:30</option>
+<option value="12:00">12:00</option>
+<option value="12:30">12:30</option>
+<option value="13:00">13:00</option>
+<option value="13:30">13:30</option>
+<option value="14:00">14:00</option>
+<option value="14:30">14:30</option>
+<option value="15:00">15:00</option>
+<option value="15:30">15:30</option>
+<option value="16:00">16:00</option>
+<option value="16:30">16:30</option>
+<option value="17:00">17:00</option>
+<option value="17:30">17:30</option>
+<option value="18:00">18:00</option>
+<option value="18:30">18:30</option>
+<option value="19:00">19:00</option>
+<option value="19:30">19:30</option>
+<option value="20:00">20:00</option>
+<option value="20:30">20:30</option>
+<option value="21:00">21:00</option>
+<option value="21:30">21:30</option>
+<option value="22:00">22:00</option>
+<option value="22:30">22:30</option>
+<option value="23:00">23:00</option>
+<option value="23:30">23:30</option>
+</select></label><label>
+<select name="fromAndDesc" class="com-select" style="width:75px;">
+<option value="from">出发</option>
+<option value="dest">抵达</option>
+</select>
+</label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="搜索" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+<dl class="quick-hot">
+<dt> </dt>
+<dd>
+<a href="http://app.taiwandao.tw/taitie" target="_blank"><img alt="台铁app" src="http://www.taiwandao.tw/images/index/home_ttapp.png"></a>
+</dd>
+</dl>
+</div>
+<div class="quick-con04 quick-con">
+<form class="quick-form" action="http://gaotie.taiwandao.tw/index_searchtrain.html" method="get" target="_blank">
+<input type="hidden" value="S" name="train_type">
+<ul>
+<li style="padding-left:20px;"><span></span>今日可订购至 <b id="gaotie_buydate"></b> 早鸟优惠票</li>
+<li>
+<span>车票类型</span>
+<span class="f" style=" margin-right:15px;"><label><input name="train_type" type="radio" class="com-checkbox" value="S" checked="checked"> 单程</label></span>
+<span class="f"><label><input name="train_type" type="radio" value="R" class="com-checkbox"> 往返</label></span>
+</li>
+<li>
+<span>出发车站</span><label><select name="fromStation" class="com-select" style="width:125px; margin-right:6px;">
+<option value="0">请选择</option>
+<option value="1">台北</option>
+<option value="2">板桥</option>
+<option value="3">桃园</option>
+<option value="4">新竹</option>
+<option value="5">苗栗</option>
+<option value="6">台中</option>
+<option value="7">彰化</option>
+<option value="8">云林</option>
+<option value="9">嘉义</option>
+<option value="10">台南</option>
+<option value="11">左营(高雄)</option>
+</select>
+</label>
+</li>
+<li>
+<span>到达车站</span><label>
+<select class="com-select" style="width:125px;" name="toStation">
+<option value="0">请选择</option>
+<option value="1">台北</option>
+<option value="2">板桥</option>
+<option value="3">桃园</option>
+<option value="4">新竹</option>
+<option value="5">苗栗</option>
+<option value="6">台中</option>
+<option value="7">彰化</option>
+<option value="8">云林</option>
+<option value="9">嘉义</option>
+<option value="10">台南</option>
+<option value="11">左营(高雄)</option>
+</select>
+</label>
+</li>
+<li>
+<span>出发日期</span><label><input name="toDate" id="fromDate" type="text" value="" class="com-input" style="margin-right:6px;width:95px;" placeholder="请选择日期" />
+</label>
+<label><select name="toTime" class="com-select" style="width:90px; width:75px; margin-right:5px;">
+<option value="00:00">00:00</option>
+<option value="6:00" selected="selected">6:00</option>
+<option value="6:30">6:30</option>
+<option value="7:00">7:00</option>
+<option value="7:30">7:30</option>
+<option value="8:00">8:00</option>
+<option value="8:30">8:30</option>
+<option value="9:00">9:00</option>
+<option value="9:30">9:30</option>
+<option value="10:00">10:00</option>
+<option value="10:30">10:30</option>
+<option value="11:00">11:00</option>
+<option value="11:30">11:30</option>
+<option value="12:00">12:00</option>
+<option value="12:30">12:30</option>
+<option value="13:00">13:00</option>
+<option value="13:30">13:30</option>
+<option value="14:00">14:00</option>
+<option value="14:30">14:30</option>
+<option value="15:00">15:00</option>
+<option value="15:30">15:30</option>
+<option value="16:00">16:00</option>
+<option value="16:30">16:30</option>
+<option value="17:00">17:00</option>
+<option value="17:30">17:30</option>
+<option value="18:00">18:00</option>
+<option value="18:30">18:30</option>
+<option value="19:00">19:00</option>
+<option value="19:30">19:30</option>
+<option value="20:00">20:00</option>
+<option value="20:30">20:30</option>
+<option value="21:00">21:00</option>
+<option value="21:30">21:30</option>
+<option value="22:00">22:00</option>
+<option value="22:30">22:30</option>
+<option value="23:00">23:00</option>
+<option value="23:30">23:30</option>
+</select>
+</label>
+</li>
+<li id="back_date" style="display:none;">
+<span>返回日期</span><label><input name="backDate" id="backDate" type="text" value="" class="com-input" style="margin-right:6px;width:95px;" placeholder="请选择日期" />
+</label>
+<label><select name="backTime" class="com-select" style="width:75px; margin-right:5px;">
+<option value="00:00">00:00</option>
+<option value="6:00" selected="selected">6:00</option>
+<option value="6:30">6:30</option>
+<option value="7:00">7:00</option>
+<option value="7:30">7:30</option>
+<option value="8:00">8:00</option>
+<option value="8:30">8:30</option>
+<option value="9:00">9:00</option>
+<option value="9:30">9:30</option>
+<option value="10:00">10:00</option>
+<option value="10:30">10:30</option>
+<option value="11:00">11:00</option>
+<option value="11:30">11:30</option>
+<option value="12:00">12:00</option>
+<option value="12:30">12:30</option>
+<option value="13:00">13:00</option>
+<option value="13:30">13:30</option>
+<option value="14:00">14:00</option>
+<option value="14:30">14:30</option>
+<option value="15:00">15:00</option>
+<option value="15:30">15:30</option>
+<option value="16:00">16:00</option>
+<option value="16:30">16:30</option>
+<option value="17:00">17:00</option>
+<option value="17:30">17:30</option>
+<option value="18:00">18:00</option>
+<option value="18:30">18:30</option>
+<option value="19:00">19:00</option>
+<option value="19:30">19:30</option>
+<option value="20:00">20:00</option>
+<option value="20:30">20:30</option>
+<option value="21:00">21:00</option>
+<option value="21:30">21:30</option>
+<option value="22:00">22:00</option>
+<option value="22:30">22:30</option>
+<option value="23:00">23:00</option>
+<option value="23:30">23:30</option>
+</select>
+</label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="搜索" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+<dl class="quick-hot">
+<dt></dt>
+<dd>
+<a href="http://app.taiwandao.tw/gaotie" target="_blank"><img alt="高铁app" src="http://www.taiwandao.tw/images/index/home_gtapp.png"></a>
+</dd>
+</dl>
+</div>
+<div class="quick-con05 quick-con">
+<div class="quick-ship">
+<div class="nav cf">
+<span class="current" onmouseover="floorCutover(this,'floor-con01');"><i></i>小三通</span>
+<span class="" onmouseover="floorCutover(this,'floor-con02');"><i></i>海峡号</span>
+<span class="" onmouseover="floorCutover(this,'floor-con03');"><i></i>中远之星</span>
+</div>
+<div class="quick-floorcont">
+<div class="floor-con01 quick-ship-cont floor-con-show">
+<form class="quick-form" action="http://xiaosantong.taiwandao.tw/index_order.html" method="post" target="_blank">
+<ul class="sxt">
+<li>
+<span>&nbsp;</span><label style=" margin-right:15px;"><input name="type" type="radio" class="xst_type com-checkbox" value="D" /> 单程</label><label><input name="type" type="radio" value="S" class="xst_type com-checkbox" checked="checked" /> 往返</label>
+</li>
+<li>
+<span>人数：</span><label>成人
+<select name="man" class="com-select" style="width:90px; margin-right:6px;">
+<option selected="selected" value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</label>
+<label>儿童
+<select name="children" class="com-select" style="width:50px;">
+<option selected="selected" value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select> <font style="font-size:12px;">(2-12岁)</font>
+</label>
+</li>
+<li>
+<span>去程：</span><label>出发
+<select class="xst_area com-select" style="width:90px; margin-right:6px;" name="xingchenga[area]" city=".city-a-chufa" nextselect=".area-a-daoda" nextcity=".city-a-daoda" xingchengtype="qu">
+<option value="">请选择</option>
+<option value="dalu">大陆</option>
+<option value="taiwan">台湾</option>
+</select>
+</label>
+<label>
+<select class="city-a-chufa com-select" style="width:100px;" name="xingchenga[chufa]">
+<option> </option>
+</select>
+</label>
+</li>
+<li>
+<span>&nbsp;</span><label>抵达
+<select class="xst_area area-a-daoda com-select" style="width:90px; margin-right:6px;" city=".city-a-daoda" name="xingchenga[daoda]">
+<option value="">请选择</option>
+<option value="dalu">大陆</option>
+<option value="taiwan">台湾</option>
+</select>
+</label>
+<label>
+<select class="xst_area city-a-daoda com-select" style="width:100px;" name="xingchenga[daoda]">
+<option> </option>
+</select>
+</label>
+</li>
+<li class="xst_huicheng">
+<span>回程：</span><label>出发
+<select style="width:90px; margin-right:6px;" class="com-select xst_area" nextcity=".city-b-daoda" nextselect=".area-b-daoda" city=".city-b-chufa" name="xingchengb[area]">
+<option value="">请选择</option>
+<option value="dalu">大陆</option>
+<option value="taiwan">台湾</option>
+</select>
+</label>
+<label>
+<select class="city-b-chufa com-select" style="width:100px;" name="xingchengb[chufa]">
+<option></option>
+</select>
+</label>
+</li>
+<li class="xst_huicheng">
+<span>&nbsp;</span><label>抵达
+<select style="width:90px; margin-right:6px;" class="com-select xst_area area-b-daoda" city=".city-b-daoda">
+<option value="">请选择</option>
+<option value="dalu">大陆</option>
+<option value="taiwan">台湾</option>
+</select>
+</label>
+<label>
+<select class="city-b-daoda com-select" style="width:100px;" name="xingchengb[daoda]">
+<option></option>
+</select>
+</label>
+</li>
+<li>
+<span>时间：</span><label>出发 <input name="xingchenga[time]" type="text" value="" class="com-input select_date" style="width:90px; margin-right:6px;" /></label>
+<label class="xst_huicheng">返程 <input name="xingchengb[time]" id="xst_xingchengb_time" type="text" value="" class="com-input select_date" style="width:96px;" /></label>
+</li>
+<li class="xst_huicheng" style="text-align:right;"><label style="padding-right:15px;"><input type="checkbox" id="xst_xingchengb_time_zero" class="com-checkbox"> 不确定返程时间</label></li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="立即订票" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+</div>
+<div class="floor-con02 quick-ship-cont">
+<form class="quick-form" action="http://www.haixiahao.com/Index_search.html" method="post" target="_blank">
+<ul class="hxh">
+<li>
+<span>&nbsp;</span><label style=" margin-right:15px;">
+<input type="radio" class="hxh_select com-checkbox" value="S" name="type" checked="checked"/> 单程</label>
+<label>
+<input type="radio" class="hxh_select com-checkbox" value="D" name="type" /> 往返</label> </li>
+<li>
+<span>去程：</span><label>出发
+<select name="gofromport" class="com-select" style="width:90px; margin-right:6px;">
+<option value="0" selected="selected">请选择</option>
+<option value="3">平潭</option>
+<option value="1">台北</option>
+<option value="2">台中</option>
+</select>
+</label>
+<label>抵达
+<select class="com-select" style="width:100px;" name="gotoport">
+<option value="0" selected="selected">请选择</option>
+<option value="1">台北</option>
+<option value="2">台中</option>
+<option value="3">平潭</option>
+</select>
+</label>
+</li>
+<li>
+<span>&nbsp;</span><label>舱位
+<select name="cang" class="com-select" style="width:90px; margin-right:6px;">
+<option value="1">标准舱</option>
+<option value="2">贵宾舱</option>
+</select>
+</label>
+</li>
+<li>
+<span>人数：</span><label>成人
+<select name="adult" class="com-select" style="width:90px; margin-right:6px;">
+<option value="0">0</option>
+<option selected="selected" value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</label>
+<label>儿童
+<select name="children" class="com-select" style="width:50px;">
+<option value="0" selected="selected">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select> <font style="font-size:12px;">(2-12岁)</font>
+</label>
+</li>
+<li>
+<span>&nbsp;</span><label>学生
+<select name="student" class="com-select" style="width:90px; margin-right:6px;">
+<option value="0" selected="selected">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</label>
+<label>婴儿
+<select name="baby" class="com-select" style="width:50px;">
+<option value="0" selected="selected">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select> <font style="font-size:12px;">(0-2岁)</font>
+</label>
+</li>
+<li>
+<span>时间：</span><label>出发 <input name="go_start_date" type="text" value="2016-03-28" class="select_date com-input" style="width:90px; margin-right:6px;" /></label>
+<label id="hxh_b_time">返程 <input name="back_start_date" type="text" value="2016-03-29" class="com-input select_date" style="width:96px;" /></label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="立即订票" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+</div>
+<div class="floor-con03 quick-ship-cont">
+<form class="quick-form" action="http://zyzx.taiwandao.tw/Index_search.html" method="post" target="_blank">
+<ul class="zyzx">
+<li>
+<span>&nbsp;</span><label style=" margin-right:15px;"><input name="type" type="radio" value="S" class="zyzx_select com-checkbox" /> 单程</label><label><input name="type" type="radio" value="D" class="zyzx_select com-checkbox" checked="checked" /> 往返 (订成人往返票9折优惠)</label>
+</li>
+<li>
+<span>去程</span><label>
+<select name="gofromport" id="zyzx_gofromport" class="com-select" style="width:115px;">
+<option selected="selected" value="0">请选择</option>
+</select>
+</select>
+</label>
+<span class="zyzx_huicheng">回程</span>
+<label class="zyzx_huicheng">
+<select name="backfromport" id="zyzx_backfromport" class="com-select" style="width:100px;"> <option></option>
+</select>
+</label>
+</li>
+<li>
+<span>成人</span><label>
+<select name="adult" class="com-select" style="width:115px;">
+<option value="0">0</option>
+<option value="1" selected="selected">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+</select>
+</label>
+<span>儿童</span>
+<label>
+<select name="children" class="com-select" style="width:40px;">
+<option selected="selected" value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select> <font style="font-size:12px;">2-12(含12)周岁</font>
+</label>
+</li>
+<li>
+<span>学生老人残障</span>
+<label>
+<select name="student" class="com-select" style="width:59px;">
+<option selected="selected" value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</label>
+<span>幼儿</span>
+<label>
+<select name="" class="com-select" style="width:40px;">
+<option selected="selected" value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select> <font style="font-size:12px;">0-2(含2)免票</font>
+</label>
+</li>
+<li>
+<span>时间</span><label>去程 <input name="go_start_date" type="text" value="" class="com-input select_date" style="width:85px; margin-right:6px;" /></label>
+<label class="zyzx_huicheng">返程&nbsp;&nbsp;<input name="back_start_date" type="text" class="com-input select_date" style="width:96px;" /></label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="立即订票" class="combtn-search" /></label>
+</li>
+<li>
+说明：老人票需年龄65周岁以上；<br />学生票需提供学生证件的扫描件并发送至邮箱zyzx@taiwandao.tw；<br />如还未购买返程船（机）票者，请一定同时购买返程票！
+</li>
+</ul>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="quick-con06 quick-con">
+<div class="quick-plane">
+<div class="nav cf">
+<span class="current" onmouseover="floorCutover(this,'floor-con01');"><i></i>赴台机票</span>
+<span class="" onmouseover="floorCutover(this,'floor-con02');"><i></i>台湾岛内机票</span>
+</div>
+<div class="quick-floorcont">
+<div class="floor-con01 quick-plane-cont floor-con-show">
+<form class="quick-form" action="http://jipiao.taiwandao.tw/Index_gsearch.html" method="post" target="_blank">
+<input type="hidden" name="source" value="17u" />
+<ul>
+<li>
+<span>&nbsp;</span><label style=" margin-right:15px;">
+<input type="radio" class="com-checkbox radio_style futai_type" value="S" name="gtype"> 单程</label><label>
+<input type="radio" checked="checked" class="com-checkbox radio_style futai_type" value="D" name="gtype"> 往返</label>
+</li>
+<li>
+<span>出发城市</span><label><input type="text" value="" name="fromcity" placeholder="出发城市" class="com-input" /></label>
+</li>
+<li>
+<span>到达城市</span><label><input type="text" name="tocity" value="" placeholder="到达城市" class="com-input" /></label>
+</li>
+<li>
+<span>去程日期</span><label><input name="ggo_date" type="text" value="" class="com-input select_date" style="width:95px;" /></label>
+<span class="futai_back">返程日期</span><label class="futai_back"><input name="gback_date" type="text" value="" class="select_date com-input" style="width:95px;" /></label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="搜索" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+<dl class="quick-hot">
+<dt>特价机票：</dt>
+<dd>
+</dd>
+</dl>
+</div>
+<div class="floor-con02 quick-plane-cont">
+<form class="quick-form" method="post" action="http://jipiao.taiwandao.tw/Index_search.html" target="_blank">
+<ul class="dnjp">
+<li>
+<span>&nbsp;</span><label style=" margin-right:15px;"><input name="type" type="radio" value="S" class="daonei_type com-checkbox radio_style"> 单程</label><label><input name="type" type="radio" value="D" class="daonei_type com-checkbox radio_style" checked="checked"> 往返</label>
+</li>
+<li>
+<span>人数：</span><label>成人
+<select name="adult" class="com-select" style="width:90px; margin-right:6px;">
+<option value="0">0 </option>
+<option value="1" selected="selected">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</label>
+<label>儿童
+<select name="children" class="com-select" style="width:100px;">
+<option selected="selected" value="0">0 </option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</label>
+</li>
+<li>
+<span>去程：</span><label>出发
+<select name="gofromport" id="daonei_gofromport" class="com-select" style="width:90px; margin-right:6px;" data-type="go">
+<option value="1">澎湖马公(MZG)</option><option value="2">台北松山(TSA)</option><option value="4">花莲(HUN)</option><option value="5">金门(KNH)</option><option value="6">台中(RMQ)</option><option value="7">台南(TNN)</option><option value="8">嘉义(CYI)</option><option value="9">高雄(KHH)</option><option value="12">台东(TTT)</option><option value="14">绿岛(LYD)</option><option value="15">兰屿(lany)</option><option value="44">恒春(HCN)</option><option value="45">北竿(MFK)</option><option value="46">南竿(LZN)</option><option value="47">七美(Qimei)</option><option value="48">望安(Wangan)</option> </select>
+</label>
+<label>抵达
+<select name="gotoport" id="daonei_gotoport" class="com-select" style="width:100px;">
+<option>台北松山</option>
+</select>
+</label>
+</li>
+<li class="daonei_back">
+<span>回程：</span><label>出发
+<select name="backfromport" id="daonei_backfromport" class="com-select" style="width:90px; margin-right:6px;" data-type="back">
+<option value="1">澎湖马公(MZG)</option><option value="2">台北松山(TSA)</option><option value="4">花莲(HUN)</option><option value="5">金门(KNH)</option><option value="6">台中(RMQ)</option><option value="7">台南(TNN)</option><option value="8">嘉义(CYI)</option><option value="9">高雄(KHH)</option><option value="12">台东(TTT)</option><option value="14">绿岛(LYD)</option><option value="15">兰屿(lany)</option><option value="44">恒春(HCN)</option><option value="45">北竿(MFK)</option><option value="46">南竿(LZN)</option><option value="47">七美(Qimei)</option><option value="48">望安(Wangan)</option> </select>
+</label>
+<label>抵达
+<select name="backtoport" id="daonei_backtoport" class="com-select" style="width:100px;">
+<option>金门</option>
+</select>
+</label>
+</li>
+<li>
+<span>时间：</span><label>出发 <input name="go_date" type="text" value="" class="select_date com-input" style="width:90px; margin-right:6px;"></label>
+<label class="daonei_back">返程 <input name="back_date" type="text" value="" class="select_date com-input" style="width:96px;"></label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="搜索" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+<dl class="quick-hot">
+<dt>热门线路：</dt>
+<dd><a href="http://jipiao.taiwandao.tw/Index_search.html?gofromport=14&gotoport=12&go_date=2016-03-29&type=S" target="_blank">绿岛-台东</a>
+<a href="http://jipiao.taiwandao.tw/Index_search.html?gofromport=1&gotoport=9&go_date=2016-03-29&type=S" target="_blank">澎湖马公-高雄</a>
+<a href="http://jipiao.taiwandao.tw/Index_search.html?gofromport=1&gotoport=2&go_date=2016-03-29&type=S" target="_blank">澎湖马公-台北松山</a>
+<a href="http://jipiao.taiwandao.tw/Index_search.html?gofromport=15&gotoport=12&go_date=2016-03-29&type=S" target="_blank">兰屿-台东</a>
+<a href="http://jipiao.taiwandao.tw/Index_search.html?gofromport=1&gotoport=47&go_date=2016-03-29&type=S" target="_blank">澎湖马公-七美</a>
+<a href="http://jipiao.taiwandao.tw/Index_search.html?gofromport=1&gotoport=7&go_date=2016-03-29&type=S" target="_blank">澎湖马公-台南</a>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="quick-con07 quick-con">
+<div class="quick-meet">
+<div class="nav cf">
+<span class="current" onmouseover="floorCutover(this,'floor-con01');"><i></i>台湾环岛包车</span>
+<span class="" onmouseover="floorCutover(this,'floor-con02');"><i></i>台湾拼车</span>
+<span class="" onmouseover="floorCutover(this,'floor-con03');"><i></i>机场接送机</span>
+</div>
+<div class="quick-floorcont">
+<div class="floor-con01 quick-meet-cont floor-con-show">
+<form class="quick-form" method="post" action="http://hd.taiwandao.tw/index_baoche.html" target="_blank">
+<ul>
+<li>请您填写台湾包车意向表单</li>
+<li>
+<span>姓　　名</span><label><input type="text" value="" placeholder="姓名" class="com-input" style=" width:95px;" name="name" /></label><span>QQ 号</span><label><input type="text" value="" name="qq" placeholder="QQ号" class="com-input" style=" width:95px;" /></label>
+</li>
+<li>
+<span>手　　机</span><label><input type="text" value="" placeholder="手机号" class="com-input" style=" width:95px;" name="mobile" /></label><span>电子邮箱</span><label><input type="text" value="" name="email" placeholder="email" class="com-input" style=" width:95px;" /></label>
+</li>
+<li>
+<span>去程日期</span><label><input type="text" value="" name="begin_date" class="com-input select_date" style="width:95px;" /></label><span>返程日期</span><label><input name="end_date" type="text" value="" class="com-input select_date" style="width:95px;" /></label>
+</li>
+<li>
+<span>成　　人</span><label>
+<select name="adult_num" class="com-select" style="width:97px;">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+</select>
+</label><span>儿　　童</span><label>
+<select name="children_num" class="com-select" style="width:97px;">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+</select>
+</label>
+</li>
+<li>
+<span>&nbsp;</span><label><input type="submit" value="提交信息" class="combtn-search" /></label>
+</li>
+</ul>
+</form>
+<dl class="quick-hot">
+<dd class="tips">因路况，距离的不同，包车价格可能会有较大差异。您提交表单后，我们包车专员会在1-2工作日内联系您。</dd>
+</dl>
+</div>
+<div class="floor-con02 quick-meet-cont">
+<ul class="pcar">
+<li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_490.html" target="_blank">嘉义至阿里山双向拼车 天天发车<span><font>￥42</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_458.html" target="_blank">花莲至清境/清境至花莲半日游拼车/包车(两人成行天天发车)<span><font>￥42</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_465.html" target="_blank">台中高铁站直达清境农场拼车（订金支付）<span><font>￥21</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_615.html" target="_blank">花莲一日游：清水断崖、太鲁阁、七星潭等（拼车）<span><font>￥42</font>元人民币</span></a>
+</li> <li class="more"><a href="http://mall.taiwandao.tw/ar_lists_category_baoche.html" target="_blank">更多拼车路线</a></li>
+</ul>
+</div>
+<div class="floor-con03 quick-meet-cont">
+<ul class="pcar">
+<li><a href="http://mall.taiwandao.tw/ar_detail_na_taoyuanjieji.html" target="_blank">台北桃园机场＼松山机场＼高雄小港机场＼台中清泉岗机场 <span><font>￥288</font>元人民币</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg"></div>
+</div>
+<div class="wrap960">
+<style>
+ 
+	</style>
+<div class="cont-fm-hots cf">
+<div class="hotsbox">
+<div class="cont-frame hots-first">
+<div class=" slider-warp" id="caroBox" style="height:180px;width:615px;overflow: hidden;position: relative;margin-left: auto;margin-right: auto;">
+<ul class="caro_container" style="position:absolute;width:6150px; height:190px;">
+<li class="caroSwitch1" style="float:left;width:615px;margin-right:15px;height:190px;">
+<div class="pic"><a href="http://mall.taiwandao.tw/ar_detail_id_615.html" target="_blank"><img src="http://mall.taiwandao.tw//Uploads/Picture/2015-04-02/551d22d2b2c5e.jpg" width="270" height="180" alt="花莲一日游：清水断崖、太鲁阁、七星潭等（拼车）" /></a></div>
+<div class="info">
+<h2><a href="http://mall.taiwandao.tw/ar_detail_id_615.html" target="_blank">花莲一日游：清水断崖、太鲁阁、七星潭等（拼车）</a></h2>
+<p>花莲一日游、清水断崖、太鲁阁、七星潭……一次玩透透！</p>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>42<em>人民币起</em></span>
+<a href="http://mall.taiwandao.tw/ar_detail_id_615.html" target="_blank" class="combtn-buy">立即预订</a>
+</div>
+</li><li class="caroSwitch1" style="float:left;width:615px;margin-right:15px;height:190px;">
+<div class="pic"><a href="http://mall.taiwandao.tw/ar_detail_id_473.html" target="_blank"><img src="http://mall.taiwandao.tw//Uploads/Picture/2015-05-15/555559003a067.jpg" width="270" height="180" alt="清境至日月潭/日月潭至清境（天天发车，拼车直达）（订金支付）" /></a></div>
+<div class="info">
+<h2><a href="http://mall.taiwandao.tw/ar_detail_id_473.html" target="_blank">清境至日月潭/日月潭至清境（天天发车，拼车直达）（订金支付）</a></h2>
+<p>清境农场直达日月潭，帮您解决景点转乘的苦恼，再也不用担心等车的问题！享受碧水蓝天！</p>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>21<em>人民币起</em></span>
+<a href="http://mall.taiwandao.tw/ar_detail_id_473.html" target="_blank" class="combtn-buy">立即预订</a>
+</div>
+</li><li class="caroSwitch1" style="float:left;width:615px;margin-right:15px;height:190px;">
+<div class="pic"><a href="http://mall.taiwandao.tw/ar_detail_id_624.html" target="_blank"><img src="http://mall.taiwandao.tw//Uploads/Picture/2014-09-17/541925e7d0db7.jpg" width="270" height="180" alt="【代订】森林铁路『瑞里峰情．圆潭水影』邮轮式列车" /></a></div>
+<div class="info">
+<h2><a href="http://mall.taiwandao.tw/ar_detail_id_624.html" target="_blank">【代订】森林铁路『瑞里峰情．圆潭水影』邮轮式列车</a></h2>
+<p>阿里山森林铁路邮轮式列车新的行程，将带领游客至阿里山国家风景区西北廊道的仁寿、瑞里、瑞峰地区来趟丰富的生态之旅。
+</p>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>159<em>人民币起</em></span>
+<a href="http://mall.taiwandao.tw/ar_detail_id_624.html" target="_blank" class="combtn-buy">立即预订</a>
+</div>
+</li><li class="caroSwitch1" style="float:left;width:615px;margin-right:15px;height:190px;">
+<div class="pic"><a href="http://mall.taiwandao.tw/ar_detail_na_shangjing.html" target="_blank"><img src="http://mall.taiwandao.tw//Uploads/Picture/2015-04-02/551d0bbf0d021.jpg" width="270" height="180" alt="台湾花莲赏鲸鱼,赏海豚,出海鲸豚寻获率高达95%!" /></a></div>
+<div class="info">
+<h2><a href="http://mall.taiwandao.tw/ar_detail_na_shangjing.html" target="_blank">台湾花莲赏鲸鱼,赏海豚,出海鲸豚寻获率高达95%!</a></h2>
+<p>每年春分以后，鲸、豚开始在台湾东海岸活动和寻找食物，成群结伴的鲸、豚在碧海蓝天下接连不断地一跳一跃戏水，姿态之优美令人赞叹不已！</p>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>73<em>人民币起</em></span>
+<a href="http://mall.taiwandao.tw/ar_detail_na_shangjing.html" target="_blank" class="combtn-buy">立即预订</a>
+</div>
+</li><li class="caroSwitch1" style="float:left;width:615px;margin-right:15px;height:190px;">
+<div class="pic"><a href="http://mall.taiwandao.tw/ar_detail_id_760.html" target="_blank"><img src="http://mall.taiwandao.tw//Uploads/Picture/2016-02-19/56c679fa4d7fc.jpg" width="270" height="180" alt="花莲飞行伞/滑翔伞 专车接送，700米高空俯瞰太平洋！" /></a></div>
+<div class="info">
+<h2><a href="http://mall.taiwandao.tw/ar_detail_id_760.html" target="_blank">花莲飞行伞/滑翔伞 专车接送，700米高空俯瞰太平洋！</a></h2>
+<p>花莲飞行伞/滑翔伞 专车接送，700米高空俯瞰太平洋！</p>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>100<em>人民币起</em></span>
+<a href="http://mall.taiwandao.tw/ar_detail_id_760.html" target="_blank" class="combtn-buy">立即预订</a>
+</div>
+</li> </ul>
+</div>
+<div class="slider-pn" id="caroTriggerOut" style="position: relative;width:635px;height:10px;top:-100px;">
+<span class="slider-prev iepng slider-pnhover" style="left:0px;" data-rel="caroSwitch1"></span>
+<span class="slider-next iepng slider-pnhover" style="right:0px;" data-rel="caroSwitch1"></span>
+</div>
+</div>
+<div class="cont-frame hots-top12">
+<div class="title"><span>热销TOP12</span></div>
+<div id="caroBox2" class="hots-topwarp" style="overflow: hidden;position: relative;height: 150px;width:590px; margin-left: auto;margin-right: auto;margin-left:20px;">
+<ul style=" height: 100%; width:2000px;position: absolute;left:0;top:0; ">
+<li class="caroSwitch2" style="float:left;width:580px;height: 150px; margin-right:15px;">
+<ul>
+<li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_490.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-05-21/555df20c234dc.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-05-21/555df20c234dc.jpg" width="90" height="60" alt="嘉义至阿里山双向拼车 天天发车" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>嘉义至阿里山双向拼车 天天发车</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>42 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_465.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-06-05/557077a6995e7.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-06-05/557077a6995e7.jpg" width="90" height="60" alt="台中高铁站直达清境农场拼车（订金支付）" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>台中高铁站直达清境农场拼车（订金支付）</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>21 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_417.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-03-30/55190664db9a0.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-03-30/55190664db9a0.jpg" width="90" height="60" alt="台北-日月潭-清境 拼车1日游（每日发车  4人成行 ）订金支付" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>台北-日月潭-清境 拼车1日游（每日发车 4人成行 ）订金支付</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>45 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_415.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-04-02/551d1b288ab27.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-04-02/551d1b288ab27.jpg" width="90" height="60" alt="垦丁-高雄-日月潭-清境 1日游（拼车游 双向发车 4人成行）订金支付" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>垦丁-高雄-日月潭-清境 1日游（拼车游 双向发车 4人成行）订金支付</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>45 <em>元人民币起</em></span>
+</div>
+</a>
+</li> </ul>
+</li>
+<li class="caroSwitch2" style="float:left;width:580px;height: 100%;margin-right:15px; ">
+<ul>
+<li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_460.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-08-02/55bdc2752f83a.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-08-02/55bdc2752f83a.jpg" width="90" height="60" alt="台北⇌清境观光巴士半日游(双向拼车不限人数天天发车)" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>台北⇌清境观光巴士半日游(双向拼车不限人数天天发车)</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>42 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_455.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2016-03-18/56ebb4a6a6bf1.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2016-03-18/56ebb4a6a6bf1.jpg" width="90" height="60" alt="中华电信4G手机卡，上网套餐办理，不限流量" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>中华电信4G手机卡，上网套餐办理，不限流量</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>76 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_396.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2016-03-16/56e906f8e9615.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2016-03-16/56e906f8e9615.jpg" width="90" height="60" alt="台北到九份、野柳、十分、猫村拼车一日游" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>台北到九份、野柳、十分、猫村拼车一日游</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>50 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_641.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-07-15/55a60b0adfad2.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-07-15/55a60b0adfad2.jpg" width="90" height="60" alt="日月潭至阿里山/阿里山至日月潭（天天发车，拼车直达，四人成行）" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>日月潭至阿里山/阿里山至日月潭（天天发车，拼车直达，四人成行）</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>45 <em>元人民币起</em></span>
+</div>
+</a>
+</li> </ul>
+</li>
+<li class="caroSwitch2" style="float:left;width:580px;height: 100%;margin-right:15px; ">
+<ul>
+<li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_na_kentingpinche.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-08-19/55d48943efb50.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-08-19/55d48943efb50.jpg" width="90" height="60" alt="垦丁拼车一日游（订金支付）" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>垦丁拼车一日游（订金支付）</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>50 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_340.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-08-19/55d4815bba768.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-08-19/55d4815bba768.jpg" width="90" height="60" alt="台北-花莲一日游（拼车/包车 海线）订金支付" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>台北-花莲一日游（拼车/包车 海线）订金支付</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>45 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_350.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2015-03-30/55191363e3566.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2015-03-30/55191363e3566.jpg" width="90" height="60" alt="花莲-台东-垦丁一日游（花东纵谷山线 . 双向拼车）" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>花莲-台东-垦丁一日游（花东纵谷山线 . 双向拼车）</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>42 <em>元人民币起</em></span>
+</div>
+</a>
+</li><li style="width:280px;height:65px;float:left;">
+<a href="http://mall.taiwandao.tw/ar_detail_id_741.html" class="hots-toplist">
+<div class="pic"><img data-src="http://mall.taiwandao.tw//Uploads/Picture/2016-01-11/569332573bced.jpg" src="http://mall.taiwandao.tw//Uploads/Picture/2016-01-11/569332573bced.jpg" width="90" height="60" alt="购轻松台湾美食卡，出行台湾最IN选择！" /></div>
+<div class="info" style="height:28px;margin-bottom:5px;">
+<h3>购轻松台湾美食卡，出行台湾最IN选择！</h3>
+</div>
+<div class="edit">
+<span class="price"><font>&yen;</font>29 <em>元人民币起</em></span>
+</div>
+</a>
+</li> </ul>
+</li>
+</ul>
+</div>
+<div class="slider-hots" id="caroTriggerOut2">
+<span class="slider-prev iepng" data-rel="caroSwitch2"></span>
+<span class="slider-next iepng" data-rel="caroSwitch2"></span>
+</div>
+</div>
+</div>
+<div class="side">
+<a href="http://hd.taiwandao.tw/index_rtz_fr_ems.html" target="_blank"><img src="http://static.taiwandao.tw/images/index/home_side_pic1.jpg" width="315" height="80" /></a>
+<a href="http://bjsshyly.tmall.com/category-1035301601.htm?spm=a220o.1000855.w5002-9963636344.4.sLatbv&search=y&catName=%CC%A8%CD%E5%B4%F3%B8%E7%B4%F3%CA%D6%BB%FA%BF%A8" rel="nofollow" target="_blank"><img src="http://static.taiwandao.tw/images/index/home_side_pic2.jpg" width="315" height="80" /></a>
+<a href="http://mall.taiwandao.tw/goods_lists2_city_0_area_0_type_1.html" target="_blank"><img src="http://static.taiwandao.tw/images/index/home_side_pic3.jpg" width="315" height="80" /></a>
+<a href="http://mall.taiwandao.tw/goods_lists2_city_0_area_0_type_9.html" target="_blank"><img src="http://static.taiwandao.tw/images/index/home_side_pic4.jpg" width="315" height="80" /></a>
+<a href="http://www.taiwandao.tw/alipay/index.php" target="_blank"><img src="http://static.taiwandao.tw/images/index/home_side_pic5.jpg" width="315" height="80" /></a>
+</div>
+</div>
+<div class="cont-frame cf cate-twd">
+<div class="frame-left">
+<div class="title"><span>台湾精选</span><em></em></div>
+<ul class="cate-twd-list">
+<li><a href="http://mall.taiwandao.tw/ar_detail_id_763.html">阿里山至高雄拼车半日游（ 一人成行）</a></li><li><a href="http://mall.taiwandao.tw/ar_detail_id_762.html">入马证办理-马祖自由行</a></li><li><a href="http://mall.taiwandao.tw/ar_detail_id_760.html">花莲飞行伞/滑翔伞 专车接送，700米高空俯瞰太平洋！</a></li><li><a href="http://mall.taiwandao.tw/ar_detail_id_759.html">台北至日月潭拼车一日游 一人即可成行</a></li> </ul>
+</div>
+<div class="frame-side">
+<div class="nav">
+<span class="current" onmouseover="floorCutover(this,'floor-con01');"><i></i>特色</span>
+<span class="" onmouseover="floorCutover(this,'floor-con02');"><i></i>特卖</span>
+<span class="" onmouseover="floorCutover(this,'floor-con03');"><i></i>票券</span>
+<div class="more"><a class="floor-more" href="http://mall.taiwandao.tw/" target="_blank">更多&nbsp;&gt;&gt;</a></div>
+</div>
+<div class="floor-content">
+<div class="floor-con01 cate-twd-cont floor-con-show">
+<div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_id_568.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2015-09-15/55f6efbc41ba8.jpg" width="225" height="150" alt="【代订】阿里山小火车交通：嘉义-奋起湖（单程/往返）">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_id_568.html" target="_blank" title="">【代订】阿里山小火车交通：嘉义-奋起湖（单程/往返）</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>55 <em>元人民币起</em></span>
+</div>
+</div><div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_na_zhang.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2015-09-15/55f6f51e05d6c.jpg" width="225" height="150" alt="垦丁体验潜水  无需潜水经验  即刻进入梦幻海底世界（附送海底摄影相片，不限数量）">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_na_zhang.html" target="_blank" title="">垦丁体验潜水 无需潜水经验 即刻进入梦幻海底世界（附送海底摄影相片，不限数量）</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>449 <em>元人民币起</em></span>
+</div>
+</div><div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_na_qingjingnongchang.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2015-09-21/55ffb6f392030.jpg" width="225" height="150" alt="台中出发  清境农场蓝天白云包车一日游">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_na_qingjingnongchang.html" target="_blank" title="">台中出发 清境农场蓝天白云包车一日游</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>1200 <em>元人民币起</em></span>
+</div>
+</div>
+</div>
+<div class="floor-con02 cate-twd-cont">
+<div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_id_551.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2015-10-19/5623cd3fd3f05.jpg" width="225" height="150" alt="零押金台湾自由行4G随身WIFI只需15一天！方便快捷！流量吃到饱">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_id_551.html" target="_blank" title="">零押金台湾自由行4G随身WIFI只需15一天！方便快捷！流量吃到饱</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>15 <em>元人民币起</em></span>
+</div>
+</div><div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_id_500.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2015-02-04/54d1ba5147313.jpg" width="225" height="150" alt="台湾大哥大7天吃到饱电话卡（7天不限流量办理简单快捷）">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_id_500.html" target="_blank" title="">台湾大哥大7天吃到饱电话卡（7天不限流量办理简单快捷）</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>138 <em>元人民币起</em></span>
+</div>
+</div> </div>
+<div class="floor-con03 cate-twd-cont">
+<div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_id_390.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2014-07-31/53da14de55289.jpg" width="225" height="150" alt="日月潭197元超值水陆空套票 （代订）（含台中-日月潭往返交通+游船+缆车+游湖巴士+景点接驳）">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_id_390.html" target="_blank" title="">日月潭197元超值水陆空套票 （代订）（含台中-日月潭往返交通+游船+缆车+游湖巴士+景点接驳）</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>197 <em>元人民币起</em></span>
+</div>
+</div><div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_na_kentingkuaixian.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2015-09-15/55f6f9b265bcf.jpg" width="225" height="150" alt="台湾好行垦丁快线往返套票+垦丁街车2日券（高雄左营往返垦丁）">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_na_kentingkuaixian.html" target="_blank" title="">台湾好行垦丁快线往返套票+垦丁街车2日券（高雄左营往返垦丁）</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>209 <em>元人民币起</em></span>
+</div>
+</div><div class="cate-twd-goods">
+<a class="img" href="http://mall.taiwandao.tw/ar_detail_na_lvdaochuanpiao.html" target="_blank">
+<img src="http://mall.taiwandao.tw//Uploads/Picture/2014-07-23/53cf8c93da916.jpg" width="225" height="150" alt="台东（富岗码头）-绿岛往返船票">
+</a>
+<h3>
+<a class="name" href="http://mall.taiwandao.tw/ar_detail_na_lvdaochuanpiao.html" target="_blank" title="">台东（富岗码头）-绿岛往返船票</a>
+</h3>
+<div class="info">
+<span class="price"><font>&yen;</font>89 <em>元人民币起</em></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cont-frame cf cate-dnei">
+<div class="frame-left">
+<div class="title"><span>岛内交通</span><em></em></div>
+<div class="fl-content">
+<div class="floor-con01 floor-con-show">
+<div class="floor-tips">付款成功后，客服将在开售期1个工作日内反馈订票结果！</div>
+<ul class="cate-dnei-list">
+<li><a href="http://www.taiwandao.tw/gaotie/7858.html" target="_blank">台铁取票教程</a></li>
+<li><a href="http://www.taiwandao.tw/taitie/8428.html" target="_blank">台铁购票技巧</a></li>
+</ul>
+</div>
+<div class="floor-con02">
+<div class="floor-tips">付款成功后，客服将在开售期1个工作日内反馈订票结果！</div>
+<ul class="cate-dnei-list">
+<li><a href="http://www.taiwandao.tw/gaotie/7858.html" target="_blank">高铁取票教程</a></li>
+<li><a href="http://www.taiwandao.tw/faq/8432.html" target="_blank">高铁代购协议</a></li>
+</ul>
+</div>
+<div class="floor-con03">
+<div>台湾岛内拼车，是在台自由行最经济实惠的出行方式。</div>
+<ul class="cate-dnei-list">
+<li><a href="http://mall.taiwandao.tw/ar_lists_category_baoche.html" target="_blank">更多拼车线路</a></li>
+</ul>
+</div>
+<div class="floor-con04">
+<div class="floor-tips">包车相关说明</div>
+<ul class="cate-dnei-list">
+<li><a href="http://mall.taiwandao.tw/ar_lists_category_baoche.html" target="_blank">更多包车线路</a></li>
+</ul>
+</div>
+<div class="floor-con05">
+<div class="floor-tips">接送机相关说明</div>
+<ul class="cate-dnei-list">
+<li><a href="http://mall.taiwandao.tw/ar_lists_category_baoche.html" target="_blank">更多接送机线路</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="frame-side">
+<div class="nav">
+<span class="current" onmouseover="floorCutover(this,'floor-con01','floor-con01');"><i></i>台铁</span>
+<span class="" onmouseover="floorCutover(this,'floor-con02','floor-con02');"><i></i>高铁</span>
+<span class="" onmouseover="floorCutover(this,'floor-con03','floor-con03');"><i></i>拼车</span>
+<span class="" onmouseover="floorCutover(this,'floor-con04','floor-con04');"><i></i>包车</span> <a class="" href="http://mall.taiwandao.tw/ar_detail_na_taoyuanjieji.html" target="_blank"><i></i>接送机</a>
+</div>
+<div class="floor-content">
+<div class="floor-con01 cate-dnei-cont floor-con-show">
+<div class="cate-dnei-goods">
+<ul class="cf">
+<li>
+<a href="http://taitie.taiwandao.tw/index/z/f/176/s/138/" target="_blank">
+<span class="name">花莲 → 枋寮 </span>
+<span class="price"><font>&yen;</font>115<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/20/s/176/" target="_blank">
+<span class="name">台北 → 花莲 </span>
+<span class="price"><font>&yen;</font>89<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/138/s/176/" target="_blank">
+<span class="name">枋寮 → 花莲 </span>
+<span class="price"><font>&yen;</font>115<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/176/s/20/" target="_blank">
+<span class="name">花莲 → 台北 </span>
+<span class="price"><font>&yen;</font>89<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/7/s/176/" target="_blank">
+<span class="name">瑞芳 → 花莲 </span>
+<span class="price"><font>&yen;</font>74<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/20/s/7/" target="_blank">
+<span class="name">台北 → 瑞芳 </span>
+<span class="price"><font>&yen;</font>16<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/176/s/7/" target="_blank">
+<span class="name">花莲 → 瑞芳 </span>
+<span class="price"><font>&yen;</font>74<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/20/s/68/" target="_blank">
+<span class="name">台北 → 台中 </span>
+<span class="price"><font>&yen;</font>76<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/121/s/176/" target="_blank">
+<span class="name">高雄 → 花莲 </span>
+<span class="price"><font>&yen;</font>143<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/7/s/20/" target="_blank">
+<span class="name">瑞芳 → 台北 </span>
+<span class="price"><font>&yen;</font>16<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/176/s/121/" target="_blank">
+<span class="name">花莲 → 高雄 </span>
+<span class="price"><font>&yen;</font>143<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/20/s/121/" target="_blank">
+<span class="name">台北 → 高雄 </span>
+<span class="price"><font>&yen;</font>171<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/68/s/20/" target="_blank">
+<span class="name">台中 → 台北 </span>
+<span class="price"><font>&yen;</font>76<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/68/s/176/" target="_blank">
+<span class="name">台中 → 花莲 </span>
+<span class="price"><font>&yen;</font>165<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://taitie.taiwandao.tw/index/z/f/138/s/20/" target="_blank">
+<span class="name">枋寮 → 台北 </span>
+<span class="price"><font>&yen;</font>204<em>元起</em></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="floor-con02 cate-dnei-cont">
+<div class="cate-dnei-goods">
+<ul class="cf">
+<li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/1/s/6/" target="_blank">
+<span class="name">台北 → 台中 </span>
+<span class="price"><font>&yen;</font>106<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/6/s/1/" target="_blank">
+<span class="name">台中 → 台北 </span>
+<span class="price"><font>&yen;</font>106<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/1/s/2/" target="_blank">
+<span class="name">台北 → 板桥 </span>
+<span class="price"><font>&yen;</font>7<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/1/s/3/" target="_blank">
+<span class="name">台北 → 桃园 </span>
+<span class="price"><font>&yen;</font>25<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/3/s/6/" target="_blank">
+<span class="name">桃园 → 台中 </span>
+<span class="price"><font>&yen;</font>82<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/3/s/1/" target="_blank">
+<span class="name">桃园 → 台北 </span>
+<span class="price"><font>&yen;</font>25<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/1/s/4/" target="_blank">
+<span class="name">台北 → 新竹 </span>
+<span class="price"><font>&yen;</font>44<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/6/s/3/" target="_blank">
+<span class="name">台中 → 桃园 </span>
+<span class="price"><font>&yen;</font>82<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/3/s/2/" target="_blank">
+<span class="name">桃园 → 板桥 </span>
+<span class="price"><font>&yen;</font>20<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/4/s/1/" target="_blank">
+<span class="name">新竹 → 台北 </span>
+<span class="price"><font>&yen;</font>44<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/2/s/6/" target="_blank">
+<span class="name">板桥 → 台中 </span>
+<span class="price"><font>&yen;</font>101<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/2/s/4/" target="_blank">
+<span class="name">板桥 → 新竹 </span>
+<span class="price"><font>&yen;</font>39<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/3/s/4/" target="_blank">
+<span class="name">桃园 → 新竹 </span>
+<span class="price"><font>&yen;</font>20<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/1/s/5/" target="_blank">
+<span class="name">台北 → 苗栗 </span>
+<span class="price"><font>&yen;</font>0<em>元起</em></span>
+</a>
+</li><li>
+<a href="http://gaotie.taiwandao.tw/index/z/f/4/s/3/" target="_blank">
+<span class="name">新竹 → 桃园 </span>
+<span class="price"><font>&yen;</font>20<em>元起</em></span>
+</a>
+</li> </ul>
+</div>
+</div>
+<div class="floor-con03 cate-dnei-cont">
+<div class="cate-dnei-pcar">
+<ul class="cf">
+<li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_490.html" target="_blank">嘉义至阿里山双向拼车 天天发车<span><font>￥42</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_458.html" target="_blank">花莲至清境/清境至花莲半日游拼车/包车(两人成行天天发车)<span><font>￥42</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_465.html" target="_blank">台中高铁站直达清境农场拼车（订金支付）<span><font>￥21</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_615.html" target="_blank">花莲一日游：清水断崖、太鲁阁、七星潭等（拼车）<span><font>￥42</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_473.html" target="_blank">清境至日月潭/日月潭至清境（天天发车，拼车直达）（订金支付）<span><font>￥21</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_461.html" target="_blank">台北⇆武陵观光巴士半日游(双向拼车不限人数天天发车)<span><font>￥168</font>元人民币</span></a>
+</li>
+</ul>
+</div>
+</div>
+<div class="floor-con04 cate-dnei-cont">
+<div class="cate-dnei-pcar">
+<ul class="cf">
+<li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_458.html" target="_blank">花莲至清境/清境至花莲半日游拼车/包车(两人成行天天发车)<span><font>￥42</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_340.html" target="_blank">台北-花莲一日游（拼车/包车 海线）订金支付<span><font>￥45</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_716.html" target="_blank">花莲包车一日游，定制行程，时间自由，订金支付<span><font>￥160</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_752.html" target="_blank">高雄机场至高雄市区， 高雄机场至台南市区接机​ 包车 订金支付<span><font>￥80</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_750.html" target="_blank">高雄至垦丁包车一日游 订金支付<span><font>￥280</font>元人民币</span></a>
+</li><li>
+<a href="http://mall.taiwandao.tw/ar_detail_id_738.html" target="_blank">【台中日月潭风情一日游】（包车）订金支付<span><font>￥280</font>元人民币</span></a>
+</li> </ul>
+</div>
+</div>
+<div class="floor-con05 cate-dnei-cont">
+<div class="cate-dnei-pcar">
+<ul class="cf">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cont-frame cf cate-fdjt">
+<div class="frame-left">
+<div class="title"><span>赴台交通</span><em></em></div>
+<div class="fl-content">
+<div class="floor-con01 floor-con-show">
+<div class="floor-tips">台湾金厦小三通套票包含：（机票+船票+接送）<br />单程￥780元起<br />往返：1420元起</div>
+<ul class="cate-dnei-list">
+<li><a href="http://xiaosantong.taiwandao.tw/Index_take.html">小三通取票说明</a></li>
+<li><a href="http://xiaosantong.taiwandao.tw/Index_returnticket.html">小三通退票说明</a></li>
+<li><a href="http://xiaosantong.taiwandao.tw/Index_synopsis.html">小三通介绍</a></li>
+<li><a href="http://xiaosantong.taiwandao.tw/Index_note.html">小三通订票注意事项</a></li>
+</ul>
+</div>
+<div class="floor-con02">
+<ul class="cate-dnei-list">
+<li><a href="http://zyzx.taiwandao.tw/index_xuzhi.html">乘船须知</a></li>
+<li><a href="http://zyzx.taiwandao.tw/index_banli.html">行李托运及手续办理</a></li>
+<li><a href="http://zyzx.taiwandao.tw/index_tuikuan.html">退款条件</a></li>
+<li><a href="http://zyzx.taiwandao.tw/index_jiaotong.html">交通指南</a></li>
+</ul>
+<div class="floor-tips">中远之星改签说明（只允许改签一次，改签费30元人民币/张）<br />网上订票和线下取票或快递的流程</div>
+</div>
+<div class="floor-con03">
+<ul class="cate-dnei-list">
+<li><a href="http://www.taiwandao.tw/faq/10086.html">海峡号网上订票与线下换票的流程</a></li>
+<li><a href="http://www.haixiahao.com/Index_passengers.html">海峡号购票须知</a></li>
+<li><a href="http://www.haixiahao.com/Index_returnticket.html">如何办理退票和变更？</a></li>
+<li><a href="http://www.haixiahao.com/Index_paperwork.html">乘船应准备证件</a></li>
+<li><a href="http://www.haixiahao.com/Index_customs.html">海峡号通关程序及注意事项？</a></li>
+</ul>
+</div>
+<div class="floor-con04">
+<ul class="cate-dnei-list">
+<li><a href="http://jipiao.taiwandao.tw/Index_gsearch.html?source=17u" target="_blank">大陆赴台湾特价机票实时查询</a></li>
+<li><a href="http://jipiao.taiwandao.tw/" target="_blank">台湾岛内机票预订</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="frame-side">
+<div class="nav">
+<span class="current" onmouseover="floorCutover(this,'floor-con01','floor-con01');"><i></i>小三通</span>
+<span class="" onmouseover="floorCutover(this,'floor-con02','floor-con02');"><i></i>中远之星</span>
+<span class="" onmouseover="floorCutover(this,'floor-con03','floor-con03');"><i></i>海峡号</span>
+</div>
+<div class="floor-content">
+<div class="floor-con01 cate-fdjt-cont floor-con-show">
+<div class="cate-fdjt-goods cf">
+<a href="http://xiaosantong.taiwandao.tw" target="_blank" class="img"><img src="http://www.taiwandao.tw/global/pics/home_floor_pic4.jpg" width="182" height="126" /></a>
+<ul>
+<li>
+<span class="name">厦门五通 → 高雄 / 台北松山 / 台中 / 台南 / 嘉义</span>
+<span class="price"><font>&yen;</font>780<em>元起</em></span>
+</li>
+<li>
+<span class="name">高雄 / 台北松山 / 台中 / 台南 / 嘉义 → 厦门五通 </span>
+<span class="price"><font>&yen;</font>780<em>元起</em></span>
+</li>
+<li> <span class="name">泉州石井 → 高雄 / 台北松山 / 台中 / 台南 / 嘉义</span>
+<span class="price"><font>&yen;</font>1540<em>元起</em></span>
+</li>
+<li>
+<a href="http://xiaosantong.taiwandao.tw" class="combtn-search" style="width:260px;text-align: center;line-height:35px;color:#fff;" target="_blank">立即预订</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="floor-con02 cate-fdjt-cont">
+<div class="cate-fdjt-goods cf">
+<a href="http://zyzx.taiwandao.tw/" target="_blank" class="img"><img src="http://www.taiwandao.tw/global/pics/img-zyzx.jpg" width="182" height="126" /></a>
+<ul style="padding-top:0px;">
+<li style="padding-bottom: 5px">
+<span class="name">厦门-台中 (周二) 出发时间：19:00 到达时间：次日8:30</span>
+<span class="price"><font>&yen;</font>500<em>元起</em></span>
+</li>
+<li style="padding-bottom: 5px">
+<span class="name">台中-厦门 (周三) 出发时间：21:00 到达时间：次日8:30</span>
+<span class="price"><font>&yen;</font>500<em>元起</em></span>
+</li>
+<li style="padding-bottom: 5px">
+<span class="name">厦门-基隆 (周四) 出发时间：18:00 到达时间：次日8:30</span>
+<span class="price"><font>&yen;</font>500<em>元起</em></span>
+</li>
+<li style="padding-bottom: 5px">
+<span class="name">基隆-大麦屿（周五） 出发时间：19:00 到达时间：次日8:30</span>
+<span class="price"><font>&yen;</font>590<em>元起</em></span>
+</li>
+<li style="padding-bottom: 5px">
+<span class="name">大麦屿-基隆（周六） 出发时间：18:00 到达时间：次日8:30</span>
+<span class="price"><font>&yen;</font>590<em>元起</em></span>
+</li>
+<li style="padding-bottom: 5px">
+<span class="name">基隆-厦门 (周日) 出发时间：19:00 到达时间：次日8:30</span>
+<span class="price"><font>&yen;</font>500<em>元起</em></span>
+</li>
+</ul>
+</div>
+</div>
+<div class="floor-con03 cate-fdjt-cont">
+<div class="cate-fdjt-goods cf">
+<a href="http://www.haixiahao.com" target="_blank" class="img"><img src="http://www.taiwandao.tw/global/pics/img-hxh.jpg" width="182" height="126" /></a>
+<ul>
+<li>
+<a href="http://www.haixiahao.com" target="_blank">
+<span class="name">平潭<->台北</span>票价 <span class="price"><font>&yen;</font>560<em>元起</em></span>
+</a>
+<p>周一、周六为海峡号（平潭出发时间09:00，台北出发时间14:00）</p>
+<p>周二、周三为丽娜轮（平潭出发时间14:00，台北出发时间09:00）</p>
+<a style="margin-top:15px;" target="_blank" href="http://www.haixiahao.com">
+<span class="name">平潭<->台中</span>票价 <span class="price"><font>&yen;</font>560<em>元起</em></span> </a>
+<span>每周二、四、五执航平潭至台中航线，每航班平潭港口上午09:00开航，台中港下午14:00开航。</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="floor-con04 cate-fdjt-cont cate-fdjt-plane">
+<div class="cate-plane-goods">
+<ul class="cf">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cont-frame cf cate-tdzs">
+<div class="frame-left">
+<div class="title"><span>台湾住宿</span><em></em></div>
+<div class="tdzs-tips">收录全台湾24个县市，3000余家民宿</div>
+<dl class="cate-tdzs-list">
+<dt>台湾县市</dt>
+<dd>
+<a href="http://minsu.taiwandao.tw/city/?gaoxiongshi.html" target="_blank">高雄</a>
+<a href="http://minsu.taiwandao.tw/landprd/?lid-6.html" target="_blank">阿里山</a>
+<a href="http://minsu.taiwandao.tw/landprd/?lid-5.html" target="_blank">日月潭</a>
+<a href="http://minsu.taiwandao.tw/landprd/?lid-7.html" target="_blank">太鲁阁</a>
+<a href="http://minsu.taiwandao.tw/city/?jiayishi.html" target="_blank">嘉义</a>
+<a href="http://minsu.taiwandao.tw/city/?nantouxian.html" target="_blank">南投</a>
+<a href="http://minsu.taiwandao.tw/city/?taizhongxian.html" target="_blank">台中</a>
+<a href="http://minsu.taiwandao.tw/city/?miaolixian.html" target="_blank">苗栗</a>
+<a href="http://minsu.taiwandao.tw/city/?yilanxian.html" target="_blank">宜兰</a>
+<a href="http://minsu.taiwandao.tw/city/?tainanshi.html" target="_blank">台南</a>
+<a href="http://minsu.taiwandao.tw/city/?taidongxian.html" target="_blank">台东</a>
+<a href="http://minsu.taiwandao.tw/city/?pingdongxian.html" target="_blank">屏东</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%C2%CC%B5%BA" target="_blank">绿岛</a>
+<a href="http://minsu.taiwandao.tw/list/s.asp?keyword=%C0%BC%D3%EC" target="_blank">兰屿</a>
+<a href="http://minsu.taiwandao.tw/city/?penghuxian.html" target="_blank">澎湖</a>
+<a href="http://minsu.taiwandao.tw/city/?taoyuanxian.html" target="_blank">桃园</a>
+<a href="http://minsu.taiwandao.tw/city/?xinbeishi.html" target="_blank">新北</a>
+<a href="http://minsu.taiwandao.tw/city/?zhanghuaxian.html" target="_blank">彰化</a>
+<a href="http://minsu.taiwandao.tw/city/?jinmenxian.html" target="_blank">金门</a>
+<a href="http://minsu.taiwandao.tw/city/?lianjianxian.html" target="_blank">马祖</a>
+<a href="http://minsu.taiwandao.tw/city/?yunlinxian.html" target="_blank">云林</a>
+<a href="http://minsu.taiwandao.tw/city/?xinzhuxian.html" target="_blank">新竹</a>
+</dd>
+</dl>
+</div>
+<div class="frame-side">
+<div class="nav">
+<span class="current" onmouseover="floorCutover(this,'floor-con01');"><i></i>民宿预订</span>
+<a class="" href="http://www.booking.com/country/tw.html?aid=366033&amp;lang=zh" target="_blank"><i></i>酒店预订</a>
+</div>
+<div class="floor-content">
+<div class="floor-con01 cate-tdzs-cont floor-con-show">
+<div class="cate-tdzs-goods">
+<ul>
+<li><a href="http://minsu.taiwandao.tw/city/?taipei.html"><span><font>台北民宿</font></span><img src="http://static.taiwandao.tw/images/index/home_tdzs_pic1.jpg" width="387" height="140" /></a></li>
+<li><a href="http://minsu.taiwandao.tw/city/?hualianxian.html"><span><font>花莲民宿</font></span><img src="http://static.taiwandao.tw/images/index/home_tdzs_pic2.jpg" width="304" height="140" /></a></li>
+<li><a href="http://minsu.taiwandao.tw/city/?pingdongxian_hengchunzhen.html"><span><font>垦丁民宿</font></span><img src="http://static.taiwandao.tw/images/index/home_tdzs_pic3.jpg" width="387" height="140" /></a></li>
+<li><a href="http://minsu.taiwandao.tw/city/?xinbeishi_ruifangzhen.html"><span><font>九份民宿</font></span><img src="http://static.taiwandao.tw/images/index/home_tdzs_pic4.jpg" width="304" height="140" /></a></li>
+</ul>
+</div>
+</div>
+<div class="floor-con02 cate-tdzs-cont">
+2酒店预订
+</div>
+</div>
+</div>
+</div>
+<div class="cont-frame cf cate-gldy">
+<dl class="gl">
+<dt><span>台湾旅游攻略<i></i></span></dt>
+<dd class="list">
+<a href="http://gonglue.taiwandao.tw/MeiShi_16302.html" target="_blank">台中北屯铜板美食，老闆来份肉羹配上一碗半熟蛋鲁 </a><a href="http://gonglue.taiwandao.tw/taibei_16301.html" target="_blank">台北阳明山竹子湖海芋季登场 可持续到6月 </a><a href="http://gonglue.taiwandao.tw/hualian_16300.html" target="_blank">2016鲤鱼潭萤蝶生态之旅，3/28起开放报名 </a><a href="http://gonglue.taiwandao.tw/miaoli_16299.html" target="_blank">与萤火虫有个约会 苗栗四大赏萤游程推荐 </a><a href="http://gonglue.taiwandao.tw/tainan_16298.html" target="_blank">台南 —— 二日怀旧、寻宝之旅 </a><a href="http://gonglue.taiwandao.tw/miaoli_16297.html" target="_blank">苗栗——来苗栗可以顺游来这里走走喔 </a>
+</dd>
+<dd class="more">
+<a href="http://gonglue.taiwandao.tw/" target="_blank">查看更多&nbsp;&gt;&gt;</a>
+</dd>
+</dl>
+<dl>
+<dt><span>台湾问答<i></i></span></dt>
+<dd class="list">
+<a href="http://www.taiwandao.tw/ask/show-15425.html" target="_blank">兰屿最佳潜水季节是什么时候？ </a><a href="http://www.taiwandao.tw/ask/show-15424.html" target="_blank">兰屿岛环岛大约多久？ </a><a href="http://www.taiwandao.tw/ask/show-15423.html" target="_blank">我预约了总统府的内部参观，但是想换时间，有什么 </a><a href="http://www.taiwandao.tw/ask/show-15422.html" target="_blank">请问张大千纪念馆预约什么时候能知道成不成功？ </a><a href="http://www.taiwandao.tw/ask/show-15421.html" target="_blank">垦丁龙坑及南仁山几时休园关闭？ </a><a href="http://www.taiwandao.tw/ask/show-15420.html" target="_blank">去垦丁龙坑及南仁山来回要花多少时间？ </a>
+</dd>
+<dd class="more">
+<a href="http://www.taiwandao.tw/ask/" target="_blank">查看更多&nbsp;&gt;&gt;</a>
+</dd>
+</dl>
+<dl>
+<dt><span> 旅游资讯<i></i></span></dt>
+<dd class="list">
+<a href="http://www.taiwandao.tw/news/16287.html" target="_blank">强烈寒流来袭　太平山机动管制</a><a href="http://www.taiwandao.tw/news/16278.html" target="_blank">白河林初埤木棉花季 系列活动开跑</a><a href="http://www.taiwandao.tw/zhengce/16273.html" target="_blank">4月后入台证办理不再需要提供紧急联络人的关系证</a><a href="http://www.taiwandao.tw/news/16272.html" target="_blank">低温来袭 玉山飘雪了</a><a href="http://www.taiwandao.tw/news/16257.html" target="_blank">4月1日后入台证保险费用将上涨</a><a href="http://www.taiwandao.tw/news/16229.html" target="_blank">台中人的早餐在哪？　林佳龙不藏私公开美食地图</a>
+</dd>
+<dd class="more">
+<a href="http://www.taiwandao.tw/news/" target="_blank">查看更多&nbsp;&gt;&gt;</a>
+</dd>
+</dl>
+</div>
+<div class="cont-frame cf cate-retr">
+<div class="cate-retr-goods cate-retr-first">
+<dl>
+<dt>内容推荐：</dt>
+<dd>
+<a href="http://gonglue.taiwandao.tw" title="旅游攻略"  target="_blank">旅游攻略</a>
+<a href="http://tianqi.taiwandao.tw" title="台湾天气"  target="_blank">台湾天气</a>
+<a href="http://www.taiwandao.tw/wiki" title="台湾百科"  target="_blank">台湾百科</a>
+<a href="http://www.taiwandao.tw/ask/" title="台湾问答"  target="_blank">台湾问答</a>
+<a href="http://www.taiwandao.tw/jiaotong/haoxing/" title="台湾好行"  target="_blank">台湾好行</a>
+<a href="http://www.taiwandao.tw/peie.php" title="入台证配额查询" target="_blank">入台证配额查询</a>
+<a href="http://gonglue.taiwandao.tw/MeiShi/" title="台湾小吃与美食"  target="_blank">台湾小吃与美食</a>
+<a href="http://www.taiwandao.tw/huodong/" title="台湾活动" target="_blank">台湾活动</a>
+<a href="http://z.taiwandao.tw/keding/" title="垦丁" target="_blank">垦丁</a>
+<a href="http://z.taiwandao.tw/lanyu/" title="兰屿"  target="_blank">兰屿</a>
+<a href="http://z.taiwandao.tw/lvdao/" title="绿岛"  target="_blank">绿岛</a>
+<a href="http://z.taiwandao.tw/qingjingnongchang/" title="清境农场"  target="_blank">清境农场</a>
+<a href="http://www.taiwandao.tw/book/presidential/"  title="台北总统府免费预约"  target="_blank">台北总统府免费预约</a>
+<a href="http://www.taiwandao.tw/book/dragon_pit.html" title="垦丁龙坑生态保护区免费预约"  target="_blank">垦丁龙坑生态保护区免费预约</a>
+<a href="http://baoxian.taiwandao.tw" title="台湾旅游保险"  target="_blank">台湾旅游保险</a>
+</dd>
+</dl>
+</div>
+<style>
+				.cate-retr-goods span{ margin: 0 29px 6px 0;  display:inline-block;color: #999; }
+	 </style>
+<div class="cate-retr-goods">
+<dl>
+<dt>入台证：</dt>
+<dd>
+<a href="http://www.taiwandao.tw/yewu/BeiJingRuTaiZheng/" target="_blank">北京</a>
+<a href="http://www.taiwandao.tw/yewu/GuangZhouRuTaiZheng/"  target="_blank">广州</a>
+<a href="http://www.taiwandao.tw/yewu/ShenZhenRuTaiZheng/" target="_blank">深圳</a>
+<a href="http://www.taiwandao.tw/yewu/ShangHaiRuTaiZheng/" target="_blank">上海</a>
+<a href="http://www.taiwandao.tw/yewu/HangZhouRuTaiZheng/"  target="_blank">杭州</a>
+<a href="http://www.taiwandao.tw/yewu/ChengDuRuTaiZheng/"  target="_blank">成都</a>
+<a href="http://www.taiwandao.tw/yewu/changchunrutaizheng/" target="_blank"  >长春</a>
+<a href="http://www.taiwandao.tw/yewu/XiaMenRuTaiZheng/" target="_blank">厦门</a>
+<a href="http://www.taiwandao.tw/yewu/FuZhouRuTaiZheng/"  target="_blank">福州</a>
+<a href="http://www.taiwandao.tw/yewu/NanJinRuTaiZheng/"  target="_blank">南京</a>
+<a href="http://www.taiwandao.tw/yewu/TianJinRuTaiZheng/" target="_blank" >天津</a>
+<a href="http://www.taiwandao.tw/yewu/JiNanRuTaiZheng/"  target="_blank">济南</a>
+<a href="http://www.taiwandao.tw/yewu/ningborutaizheng/" target="_blank">宁波</a>
+<a href="http://www.taiwandao.tw/yewu/hefeirutaizheng/" target="_blank" >合肥</a>
+<a href="http://www.taiwandao.tw/yewu/ChongQingRuTaiZheng/"  target="_blank">重庆</a>
+<a href="http://www.taiwandao.tw/yewu/XiAnRuTaiZheng/"  target="_blank">西安</a>
+<a href="http://www.taiwandao.tw/yewu/wuhanrutaizheng/" target="_blank" >武汉</a>
+<a href="http://www.taiwandao.tw/yewu/shenyangrutaizheng/" target="_blank"  >沈阳</a>
+<a href="http://www.taiwandao.tw/yewu/suzhourutaizheng/" target="_blank" >苏州</a>
+<a href="http://www.taiwandao.tw/yewu/qingdaorutaizheng/" target="_blank"   >青岛</a>
+<a href="http://www.taiwandao.tw/yewu/zhengzhourutaizheng/" target="_blank" >郑州</a>
+<a href="http://www.taiwandao.tw/yewu/dalianrtz/" target="_blank"  >大连</a>
+<a href="http://www.taiwandao.tw/yewu/shijiazhuangrutaizheng/" style="margin-right:10px;" target="_blank"   >石家庄</a>
+<span>长沙</span><span>昆明</span><span>南宁</span><span>合肥</span><span>泉州</span><span>大连</span><span>哈尔滨</span><span>太原</span><span>南昌</span><span>贵阳</span><span>无锡</span><span>烟台</span><span>温州</span><span>漳州</span><span>中山</span><span>海口</span><span>呼和浩特</span><span>兰州</span><span>银川</span><span>威海</span><span>徐州</span><span>常州</span><span>舟山</span><span>惠州</span><span>桂林</span><span>龙岩</span>
+</dd>
+</dl>
+</div>
+<div class="cate-retr-goods">
+<dl>
+<dt>台湾县市：</dt>
+<dd>
+<a href="http://www.taiwandao.tw/special/city/taipei.html" target="_blank">台北</a> <a href="http://www.taiwandao.tw/special/city/taidong.html" target="_blank">台东</a> <a href="http://www.taiwandao.tw/special/city/hualian.html" target="_blank">花莲</a> <a href="http://www.taiwandao.tw/special/city/jilong.html" target="_blank">基隆</a>
+<a href="http://www.taiwandao.tw/special/city/taizhong.html" target="_blank">台中</a> <a href="http://www.taiwandao.tw/special/city/yilan.html" target="_blank">宜兰</a> <a href="http://www.taiwandao.tw/special/city/jiayi.html" target="_blank">嘉义</a> <a href="http://www.taiwandao.tw/special/city/xinzhu.html" target="_blank">新竹</a>
+<a href="http://www.taiwandao.tw/special/city/tainan.html" target="_blank">台南</a> <a href="http://www.taiwandao.tw/special/city/taoyuan.html" target="_blank">桃园</a> <a href="http://www.taiwandao.tw/special/city/pingdong.html" target="_blank">屏东</a> <a href="http://www.taiwandao.tw/special/city/yunlin.html" target="_blank">云林</a>
+<a href="http://www.taiwandao.tw/special/city/xinbei.html" target="_blank">新北</a> <a href="http://www.taiwandao.tw/special/city/gaoxiong.html" target="_blank">高雄</a> <a href="http://www.taiwandao.tw/special/city/zhanghua.html" target="_blank">彰化</a> <a href="http://www.taiwandao.tw/special/city/miaoli.html" target="_blank">苗栗</a>
+<a href="http://www.taiwandao.tw/special/city/nantou.html" target="_blank">南投</a> <a href="http://www.taiwandao.tw/special/city/penghu.html" target="_blank">澎湖</a> <a href="http://www.taiwandao.tw/special/city/jinmen.html" target="_blank">金门</a> <a href="http://www.taiwandao.tw/special/city/mazu.html" target="_blank">马祖</a>
+</dd>
+</dl>
+</div>
+<div class="cate-retr-goods">
+<dl>
+<dt>小三通城市：</dt>
+<dd>
+<a href="http://www.taiwandao.tw/yewu/WenZhouRuTaiZheng/">温州</a> <a href="http://www.taiwandao.tw/yewu/LiShuiRuTaiZheng/">丽水</a> <a href="http://www.taiwandao.tw/yewu/QuZhouRuTaiZheng/">衢州</a> <a href="http://www.taiwandao.tw/yewu/ShangRaoRuTaiZheng/">上饶</a> <a href="http://www.taiwandao.tw/yewu/YingTanRuTaiZheng/">鹰潭</a> <a href="http://www.taiwandao.tw/yewu/FuZhou2RuTaiZheng/">抚州</a> <a href="http://www.taiwandao.tw/yewu/GanZhouRuTaiZheng/">赣州</a> <a href="http://www.taiwandao.tw/yewu/MeiZhouRuTaiZheng/">梅州</a> <a href="http://www.taiwandao.tw/yewu/ChaoZhouRuTaiZheng/">潮州</a> <a href="http://www.taiwandao.tw/yewu/ShanTouRuTaiZheng/">汕头</a> <a href="http://www.taiwandao.tw/yewu/JieYangRuTaiZheng/">揭阳</a> <a href="http://www.taiwandao.tw/yewu/XiaoSanTongPiao/" target="_blank">台湾小三通套票</a>
+</dd>
+</dl>
+</div>
+<div class="cate-retr-goods">
+<dl>
+<dt>台湾自由行开放城市：</dt>
+<dd>
+<a target="_blank" href="http://www.taiwandao.tw/yewu/BeiJingRuTaiZheng/">北京</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/GuangZhouRuTaiZheng/">广州</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/ShenZhenRuTaiZheng/">深圳</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/ShangHaiRuTaiZheng/">上海</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/HangZhouRuTaiZheng/">杭州</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/ChengDuRuTaiZheng/">成都</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/XiaMenRuTaiZheng/">厦门</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/FuZhouRuTaiZheng/">福州</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/NanJinRuTaiZheng/">南京</a> <a href="http://www.taiwandao.tw/yewu/TianJinRuTaiZheng/" target="_blank">天津</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/JiNanRuTaiZheng/">济南</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/ChongQingRuTaiZheng/">重庆</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/XiAnRuTaiZheng/">西安</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/suzhourutaizheng/">苏州</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/wuhanrutaizheng/">武汉</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/ningborutaizheng/">宁波</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/qingdaorutaizheng/">青岛</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/zhengzhourutaizheng/">郑州</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/shenyangrutaizheng/">沈阳</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/changchunrutaizheng/">长春</a><a target="_blank" href="http://www.taiwandao.tw/yewu/hefeirutaizheng/">合肥</a> <a href="http://www.taiwandao.tw/yewu/dalianrtz/">大连</a><a target="_blank" href="http://www.taiwandao.tw/yewu/shijiazhuangrutaizheng/">石家庄</a>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="w footer-nav cf">
+<dl class="about">
+<dt><a href="http://www.taiwandao.tw/about/team.html" target="_blank">关于台湾岛</a></dt>
+<dd>
+<a href="http://www.taiwandao.tw/about/team.html">关于我们</a><a href="http://www.taiwandao.tw/about/team.html">团队介绍</a><a href="http://www.taiwandao.tw/about/contact.html">联系方式</a><a href="http://www.taiwandao.tw/about/ad.html">广告服务</a><a href="http://www.taiwandao.tw/index/latestnews.html">最近更新</a> <a href="http://www.taiwandao.tw/sitemap.html">网站地图</a><a href="http://m.taiwandao.tw/">手机台湾旅游网</a>
+</dd>
+</dl>
+<dl class="serve">
+<dt> 其他服务 </dt>
+<dd>
+<a target="_blank" href="http://zhanhui.taiwandao.tw/">展会</a><a target="_blank" href="http://yanchanghui.taiwandao.tw/">演唱会</a> <a target="_blank" href="http://zuche.taiwandao.tw/">台湾租车</a> <a target="_blank" href="http://tour.taiwandao.tw/hotel/">台湾酒店</a> <a target="_blank" href="http://www.taiwandao.tw/down/">文档攻略</a> <a target="_blank" href="http://www.taiwandao.tw/jiaotong/haoxing/">台湾好行</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/taiwanbaoche/">台湾包车</a> <a target="_blank" href="http://www.taiwandao.tw/yewu/taiwanjuliuzheng/">台湾居留证</a> <a target="_blank" href="http://hotel.taiwandao.tw/Index_search.html?area=taipei">酒店</a> <a target="_blank" href="http://taibaozheng.taiwandao.tw">台胞证加签</a> <a target="_blank" href="http://z.taiwandao.tw" target="_blank">台湾旅游专题</a>
+</li></dd>
+</dl>
+<dl class="help">
+<dt> 帮助中心 </dt>
+<dd>
+<a href="http://www.taiwandao.tw/category/402.html" target="_blank">常见问题</a>
+<a href="http://www.taiwandao.tw/alipay/index.php" target="_blank">付款通道</a>
+<a href="http://www.taiwandao.tw/alipay/alipay.php" target="_blank">担保付款</a>
+<a href="http://www.taiwandao.tw/faq/2960.html" target="_blank">银行账号</a>
+<a href="http://user.taiwandao.tw/Public_suggest.html" target="_blank">投诉建议</a>
+</dd>
+</dl>
+<dl class="gzwm">
+<dt>关注我们</dt>
+<dd class="cf">
+<span><img src="http://static.taiwandao.tw/images/global/footer/foot_codes.jpg" width="196" height="105" /></span>
+<span style="margin-top:-29px">
+<p>客户咨询电话</p>
+<p class="font">400-008-6959</p>
+<p>签证咨询转 1 高台铁转 2<br />民宿转 3 包车拼车转 4<br />赴台船票转 5 <br />手机卡与WiFi转 6</p>
+</span>
+</dd>
+</dl>
+</div>
+<div class="w footer-event">
+<a href="https://detail.alitrip.com/item.htm?spm=a1z10.5-b.w4011-9963636370.47.9jNPth&id=43724012010&rn=496008de4936ea03cbd8b96a101523bf&abbucket=4" rel="nofollow" target="_blank"><img src="http://static.taiwandao.tw/images/global/footer/footer_pic04.jpg" alt="台湾大哥大,4g上网套餐"></a><a href="http://mall.taiwandao.tw/ar_detail_na_hualian2kenting.html" target="_blank" style="margin:0 15px"><img src="http://static.taiwandao.tw/images/global/footer/footer_pic02.jpg" alt="垦丁台东花莲一日游拼车"></a><a href="http://xiaosantong.taiwandao.tw/" target="_blank"><img src="http://static.taiwandao.tw/images/global/footer/footer_pic03.jpg" alt="台湾小三通往返仅需1400元"></a>
+</div>
+<div class="w footer-nav">
+<div class="navlist clearfix">
+<a target="_blank" href="http://www.taiwandao.tw/about/team.html">关于我们</a><b>|</b><a target="_blank" href="http://www.taiwandao.tw/about/contact.html">联系方式</a><b>|</b><a target="_blank" href="http://www.taiwandao.tw/about/mtbd.html">媒体报导</a><b>|</b><a target="_blank" href="http://www.taiwandao.tw/about/ad.html">广告服务</a><b>|</b><a target="_blank" href="http://www.taiwandao.tw/about/team.html">团队介绍</a><b>|</b><a target="_blank" href="http://www.taiwandao.tw/renew.php">最近更新</a><b>|</b><a target="_blank" href="http://www.weibo.com/taiwan114">官方微博</a><b>|</b><a target="_blank" href="http://m.taiwandao.tw/">手机台湾旅游网</a><b>|</b><a target="_blank" href="http://www.taiwandao.tw/alipay/index.php">付款通道</a><b>|</b><a target="_blank" href="http://www.taiwandao.tw/alipay/alipay.php">担保交易付款</a>
+</div>
+<div class="copy">
+<p>©2011-2015 TaiWanDao.tw &nbsp;&nbsp;&nbsp;京公网安备110105018351 冀ICP备11011109号-7 &nbsp;&nbsp;&nbsp; #你去或不去，台湾就在那里，等你...</p>
+<p>台湾自由行交流QQ群253799974&nbsp;&nbsp; &nbsp; 台湾包车/拼车QQ群302217075&nbsp;&nbsp; &nbsp; 北京盛世环游科技有限公司运营及技术支持
+</p>
+</div>
+<div class="footer-ext" style="width:600px"><img src="http://static.taiwandao.tw/images/global/footer/footer-img.png" width="602" height="45" usemap="#Map" border="0">
+<map name="Map" id="Map">
+<area shape="rect" coords="-6,-3,117,43" href="http://www.taiwandao.tw/alipay/index.php" target="_blank">
+</map>
+</div>
+</div>
+<div class="w footer-links cf">
+<dl>
+<dt>友情连接：</dt>
+<dd>
+<a target="_blank" href="http://www.01hr.com">数字英才网</a> <a target="_blank" href="http://www.meizang.net">去西藏</a> <a target="_blank" href="http://bbs.lvye.cn">户外论坛</a> <a target="_blank" href="http://www.wlkst.com">重庆旅游</a> <a target="_blank" href="http://www.khly.net">河南旅游</a> <a target="_blank" href="http://www.pingtandao.com">平潭岛</a> <a target="_blank" href="http://www.roadqu.com">旅游微博</a> <a target="_blank" href="http://www.bashang.net">坝上草原旅游网</a>
+<a href="http://www.aotrip.net" target="_blank">美国旅游</a>
+<a target="_blank" href="http://gaotie.tieyou.com">高铁</a> <a target="_blank" href="http://www.phuketrip.com">普吉岛旅游</a> <a target="_blank" href="http://www.szooo.com">深圳旅行社</a> <a target="_blank" href="http://www.52udl.com">大连旅行社</a> <a target="_blank" href="http://travel.taiwan.cn/">两岸旅游</a> <a target="_blank" href="http://taiwan.cncn.com">台湾旅游景点</a> <a target="_blank" href="http://www.youtx.com">短租房</a> <a target="_blank" href="http://www.uutrip.net">大连旅游</a> <a href="http://www.guangtaiguo.com">泰国旅游</a> <a target="_blank" href="http://place.qyer.com">出境游</a> <a target="_blank" href="http://www.wuyuan168.com/">婺源旅游网</a> <a target="_blank" href="http://duanzu.zhuna.cn/">酒店式公寓</a> <a target="_blank" href="http://www.yododo.cn">多多驿站</a> <a href="http://i.lotour.com">旅游攻略</a> <a target="_blank" href="http://www.21pw.com/">品味旅游网</a> <a target="_blank" href="http://www.fengjing.com">风景网</a> <a target="_blank" href="http://travel.poco.cn/">POCO旅游</a> <a target="_blank" href="http://www.fhlyou.com">凤凰古城</a> <a target="_blank" href="http://www.uu1.com">常州旅行社</a> <a target="_blank" href="http://www.tripc.net">旅游度假</a> <a target="_blank" href="http://www.hanyouwang.com">韩国旅游</a> <a target="_blank" href="http://www.iqiyi.com/lvyou/">爱奇艺旅游</a> <a target="_blank" href="http://www.xtx6.com">行天下旅行网</a> <a target="_blank" href="http://www.mayi.com">短租房</a> <a target="_blank" href="http://www.51yougo.com">游够旅行</a> <a target="_blank" href="http://z.mafengwo.cn/">旅游指南</a> <a target="_blank" href="http://www.muniao.com">短租公寓</a> <a target="_blank" href="http://www.cdyou.net">长岛旅游</a> <a target="_blank" href="http://www.0411hd.com">大连旅游</a> <a target="_blank" href="http://www.idting.com">农家乐旅游</a> <a target="_blank" href="http://www.517huwai.com">517旅行</a> <a target="_blank" href="http://www.itrip.com">澳洲自助游</a> <a target="_blank" href="http://www.bjlyjszx.com">北京旅游集散中心</a> <a target="_blank" href="http://www.maldiveschina.com">马尔代夫</a> <a target="_blank" href="http://www.tibetcn.com">西藏旅游</a> <a target="_blank" href="http://www.ec517.com">马尔代夫</a> <a target="_blank" href="http://www.xwlxw.com">北京青年旅行社</a><a target="_blank" href="http://dujia.lvmama.com">度假旅游线路</a></dd>
+</dl>
+</div>
+</div>
+<script language="JavaScript" src="http://static.taiwandao.tw/lib/jquery/jquery-powerSwitch.js"></script>
+<script>
+	//quick_nav切换
+	function quickCutover(b,name) {
+		$(b).parent().addClass("select").siblings().removeClass("select");
+		$(b).parent().parent().next().find("." + name).addClass("quick-con-show").siblings().removeClass("quick-con-show");
+	}
+	//楼层floor切换
+	function floorCutover(b,name,more) {
+		$(b).addClass("current").siblings().removeClass("current");
+		$(b).parent().next().find("." + name).addClass("floor-con-show").siblings().removeClass("floor-con-show");
+		$(b).parent().parent().prev().find("." + more).addClass("floor-con-show").siblings().removeClass("floor-con-show");
+	}
+	$(function(){
+		/*台铁处理 start */
+		$(".taitie_area").change(function(){
+			var areaid=$(this).val();
+			var station=$(this).attr("data-out");
+			$.ajax({
+				type : "get",
+				async:false,
+				url :"http://taitie.taiwandao.tw/index/GetStationListbyjsonp/",
+				data:'areaid='+areaid,
+				dataType : "jsonp",
+				jsonp: "callbackparam",
+				jsonpCallback:"taitie_jsonpCallback",
+				success : function(msg){
+					$("#"+station).html('');
+					$("#"+station).append('<option value="">--请选择--</option>' );
+					var len=msg.length;
+					for(var i=0;i<len;i++){
+						if(msg[i].stationName=='枋寮'){
+							$("#"+station).append('<option value="'+msg[i].stationName+'">'+msg[i].stationName+'（垦丁）</option>' );
+						}else{
+							$("#"+station).append('<option value="'+msg[i].stationName+'">'+msg[i].stationName+'</option>' );
+						}
+					}
+				},
+				error:function(){
+
+				}
+			});
+		});
+
+		$("#taitie_start").change(function(){
+			$("#taitie_startstation").val($(this).val());
+		});
+		$("#taitie_stop").change(function(){
+			$("#taitie_stopstation").val($(this).val());
+		});
+		/*台铁处理 end*/
+
+
+		/*小三通 start*/
+		var clear='<option value="" >请选择 </option>';
+		var dalu='<option value="" >请选择 </option><option   value="dalu">大陆</option>';
+		var taiwan='<option value="" >请选择 </option><option  value="taiwan">台湾</option>';
+		var daluoption=' <option value="" >请选择 </option> <option  value="WXM">厦门五通</option><option  value="QZ">泉州石井</option>';
+		var taiwanoption='<option value="">请选择 </option><option value="KHH">高雄</option><option value="TSA">台北松山</option><option value="TZ">台中</option><option value="TN">台南</option><option value="JY">嘉义</option>';
+
+		$(".xst_type").change(function(){
+			if($(this).val()=='D'){
+				$(".xst_huicheng").hide();
+			}else if($(this).val()=='S'){
+				$(".xst_huicheng").show();
+			}
+		});
+
+		$("#xst_xingchengb_time_zero").click(function(){
+			$("#xst_xingchengb_time").val('');
+		});
+		$(".xst_area").change(function(){
+			var cityselect=$(this).attr("city");
+			var nextselect=$(this).attr("nextselect");
+			var nextcity=$(this).attr("nextcity");
+			var xingchengtype=$(this).attr("xingchengtype");
+			$(nextcity).html(clear);
+			if($(this).val()=="dalu"){
+				$(cityselect).html(daluoption);
+				$(nextselect).html(taiwan);
+				if(xingchengtype=='qu'){
+					$("#hui").html(taiwan);
+				}
+			}else if($(this).val()=="taiwan"){
+				$(cityselect).html(taiwanoption);
+				$(nextselect).html(dalu);
+				if(xingchengtype=='qu'){
+					$("#hui").html(dalu);
+				}
+			}
+		});
+		/*小三通 end*/
+
+		/*海峡号 start*/
+		$(".hxh_select").change(function(){
+			if($(this).val()=='S'){
+				$("#hxh_b_time").hide();
+			}else if($(this).val()=='D'){
+				$("#hxh_b_time").show();
+			}
+		});
+		/*海峡号 end*/
+
+		/*中远之星 start*/
+
+		$("#zyzx_gofromport").change(function(){
+			var sailingid=$(this).val();
+			$.ajax({
+				type : "get",
+				async:false,
+				url :"http://zyzx.taiwandao.tw/Index_getbackportbyjsonp.html",
+				data:'sailingid='+sailingid,
+				dataType : "jsonp",
+				jsonp: "callbackparam",
+				jsonpCallback:"zyzx_jsonpCallback",
+				success : function(data){
+					if(data.status=='error'){
+						alert(data.info);
+					}else if(data.status=='success'){
+						var len=data.info.length;
+						var  back=$("#zyzx_backfromport");
+						back.html('');
+						back.append('<option selected="selected" value="0">请选择</option>');
+						for(var i=0;i<len;i++){
+							back.append('<option   value="'+data.info[i].sailingid+'" week="'+data.info[i].week+'">'+data.info[i].fromportname+'到'+data.info[i].toportname+'（'+data.info[i].weekzw+'）</option>');
+						}
+					}
+				},
+				error:function(){
+
+				}
+			});
+		});
+
+		$(".zyzx_select").click(function(){
+			if($(this).val()=='S'){
+				$(".zyzx_huicheng").hide();
+			}else if($(this).val()=='D'){
+				$(".zyzx_huicheng").show();
+			}
+		})
+		/*中远之星 end*/
+		/*岛内机票* start*/
+
+		$('#daonei_gofromport,#daonei_backfromport').change(function(){
+			var id=$(this).val();
+			var type=$(this).attr("data-type");
+			$.get("http://zhanhui.taiwandao.tw/make_getdnjpport.html",{"id":id},function(data){
+				if(data.status=='error'){
+					alert(data.info);
+				}else if(data.status=='success'){
+					var len=data.info.length;
+					if(type=='go'){
+						var dida_id=$("#daonei_gotoport");
+					}else{
+						var dida_id=$("#daonei_backtoport");
+					}
+					dida_id.html('');
+					dida_id.append('<option selected="selected" value="0">请选择</option>');
+					for(var i=0;i<len;i++){
+						dida_id.append('<option   value="'+data.info[i].id+'"  >'+data.info[i].name+'</option>');
+					}
+				}
+
+			},"json");
+		});
+
+		$(".futai_type").change(function(){
+			if($(this).val()=='S'){
+				$(".futai_back").hide();
+			}else if($(this).val()=='D'){
+				$(".futai_back").show();
+			}
+		});
+
+		$(".daonei_type").change(function(){
+			if($(this).val()=='S'){
+				$(".daonei_back").hide();
+			}else if($(this).val()=='D'){
+				$(".daonei_back").show();
+			}
+		});
+
+		/*岛内机票 end*/
+
+	});
+</script>
+<script>
+// 大的图片广告
+// 根据图片创建id,按钮元素等，实际开发建议使用JSON数据类似
+var htmlAdBtn = '';
+$("#jdAdSlide img").each(function(index, image) {
+	var id = "adImage" + index;
+	htmlAdBtn = htmlAdBtn + '<span ><a href="javascript:" class="jd_ad_btn_a" data-rel="'+ id +'">'+ (index + 1) +'</a></span>';
+	image.id = id;
+});
+$("#jdAdBtn").html(htmlAdBtn).find("a").powerSwitch({
+	eventType: "hover",
+	classAdd: "active",
+	animation: "fade",
+	autoTime: 5000,
+	onSwitch: function(image) {
+		if (!image.attr("src")) {
+			image.attr("src", image.attr("data-src"));	
+		}
+	}
+}).eq(0).trigger("mouseover");
+
+  </script>
+<script>
+	//banner宽度
+	$(document).ready(function(){
+		hdCenter();$(window).resize(function(){hdCenter();});
+	});
+	function hdCenter(){
+		//if($(".hdmc-wrap").width() <= 990) return;
+		var winW = $(window).width();
+		var left = ($(".home-banner .inner").width() - 1920)/2;
+		$(".home-banner .inner ul").css('margin-left',left);
+		if (jQuery.browser.msie && jQuery.browser.version == "6.0") {
+			var cwinW = $(window).width();
+			var left =( cwinW- 1920)/2;
+			$(".home-banner .inner ul").css('margin-left',left);
+		}
+	};
+	</script>
+<script>
+$("#caroTriggerOut span").powerSwitch({
+	container: $("#caroBox"),
+	onSwitch: function(target) {
+		target.each(function() {
+			var img = $(this).find("img").get(0);
+			if (img && !img.src) {
+				img.src = img.getAttribute("data-src");	
+			}
+		});
+	}
+});
+ </script>
+<script>
+		$("#caroTriggerOut2 span").powerSwitch({ 
+		container: $("#caroBox2"), 
+		number: 1, 
+		onSwitch: function(target) 
+		{ target.each(function() { var img = $(this).find("img").get(0); if (img && !img.src) { img.src = img.getAttribute("data-src"); } 
+		}); }
+	 }); 
+ </script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?5b600eec50b82edc74112238592b6398";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script language="javascript" src="http://static.taiwandao.tw/lib/My97DatePicker/WdatePicker.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+    $(function(){
+     	$("#fromDate,#backDate,.select_date,#toDateout,#SearchFormForZhanzhan_searchDate").click(function(){
+            WdatePicker({dateFmt:'yyyy-MM-dd'});
+        });
+        
+        $.getJSON("http://gaotie.taiwandao.tw/appapi/getbuydate.html").success(function(data){ 
+		           if(data.status.code=='success'){
+			          	       $("#gaotie_buydate").html(data.status.msg);
+		          	    }else{
+			          	        var dd = new Date();
+							    dd.setDate(dd.getDate()+27);//获取AddDayCount天后的日期
+							    var y = dd.getFullYear();
+							    var m = dd.getMonth()+1;//获取当前月份的日期
+							    if(m<10) m='0'+m;
+							    var d = dd.getDate();
+							    if(d<10) d='0'+d;
+							    $("#gaotie_buydate").html(y+"-"+m+"-"+d);
+			            }
+		  });
+		$("input[name='train_type']").click(function(){
+			var type=$(this).val();
+			if(type=='S'){
+				$("#back_date").hide();
+			}else{
+				$("#back_date").show();
+			}
+		});
+    });
+ 
+</script>
+<script type="text/javascript" src="http://cs.ecqun.com/?id=187269" charset="utf-8"></script>
+</body>
+</html>

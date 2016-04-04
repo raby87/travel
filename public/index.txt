@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta property="wb:webmaster" content="e208c2e6c8d786a1"/>
+<title>欢旅网 - 欢旅换房旅行，全世界都有我的家</title>
+<meta name="description" content="欢旅换房旅行_全世界都有我的家,提供交换旅游(互助旅行),国内旅游,免费住宿,专业服务,九大出游保障,人身及财产安全保障,社交评价体系">
+<meta name="keywords" content="旅游,住宿,免费酒店,借宿,欢乐旅行,自助游,换房,芝麻信用,保险,日租房,短租房,短租,短租公寓,酒店式公寓,青年旅舍,日租,欢旅短租"/>
+<script type="text/javascript">
+        function request(paras) {
+            var url = location.href;
+            var paraString = url.substring(url.indexOf("?") + 1, url.length).split("&");
+            var paraObj = {};
+            for (i = 0; j = paraString[i]; i++) {
+                paraObj[j.substring(0, j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=") + 1, j.length);
+            }
+            var returnValue = paraObj[paras.toLowerCase()];
+
+            if (typeof (returnValue) == "undefined") {
+                return "";
+            } else {
+                return returnValue;
+            }
+
+        }
+        var fromh5=request("fromh5");
+        //平台、设备和操作系统
+        var system = {
+            win: false,
+            mac: false,
+            xll: false
+        };
+
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+
+        //跳转语句
+        if (system.win || system.mac || system.xll) {
+
+        } else {
+
+            if(fromh5!=1){
+
+                var aHref=window.location.href;
+
+                if(window.location.host=="www.ihuanlv.com"){
+                    aHref=aHref.replace("www.ihuanlv","m.ihuanlv")
+                }else{
+                    aHref=aHref.replace("119.254.97.109:8090","dev.ihuanlv.com")
+                }
+                window.location.href=aHref;
+            }
+        }
+    </script>
+<link rel="shortcut icon" href="html/images/favicon.ico"/>
+<link href="html/css/main.css" rel="stylesheet"/>
+<link href="html/css/index.css" rel="stylesheet"/>
+ 
+<script type="text/javascript" src="html/js/inc/jquery-1.8.3.min.js"></script>
+<script src="http://app.cloopen.com/im50/ytx-web-im.min.js"></script>
+<script type="text/javascript" src="html/js/inc/kuCity.js"></script>
+<script type="text/javascript" src="html/layer/layer.js"></script>
+<script type="text/javascript" src="html/js/inc/jquery.tinyscrollbar.js"></script>
+<script type="text/javascript" src="html/js/inc/jquery.SuperSlide.2.1.1.js"></script>
+ 
+<script type="text/javascript" src="html/js/app/main.js"></script>
+<script type="text/javascript" src="html/js/app/index.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="html/js/app/header_index.js"></script>
+<script type="text/javascript" src="html/js/app/message.js"></script>
+<div style="display: none">
+<script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F981455f422a5b76f66ff4007b5031720' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</div>
+<div class="content" style="margin-top:0">
+ 
+<div class="banner">
+<div id="slideBox" class="slideBox">
+<div class="bd">
+<ul>
+<li style="background-image: url('html/images/banner1.jpg')"></li>
+<li style="background-image: url('html/images/banner2.jpg')"></li>
+<li style="background-image: url('html/images/banner3.jpg')"></li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+            jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,effect:"fold",delayTime:3000,interTime:5000,mouseOverStop:false});
+        </script>
+<div class="search_dd">
+<div class="search_main">
+<div class="search_area">
+<input type="text" id="searchCity" value="您想去哪儿？"/>
+<div class="noResult">请选择城市或目的地</div>
+</div>
+<button class="search_btn" onclick="headSearchRoom()">搜 索</button>
+</div>
+</div>
+</div>
+<div class="indexMap">
+<div class="container map1">
+<img src="html/images/map1.png" alt=""/>
+<h2>换房旅行</h2>
+<p>两个不同地方的人分别到对方的城市去旅行，免费住宿到对方家中，深度体验当地人的生活，是一种免费有趣时尚的旅行方式。</p>
+</div>
+<div class="container map2">
+<img src="html/images/map2.png" alt=""/>
+<h2>蜗牛接待</h2>
+<p>蜗牛接待是欢旅推出的一种更加便捷高效的换房旅行方式。这种方式是由一方免费接待另一方获得相应天数的蜗牛币，接待者凭借蜗牛币可选择自己想去旅行的城市免费居住相应的天数。</p>
+</div>
+</div>
+ 
+<div class="container">
+<h4 class="indexH4">如同自己的家一样温馨</h4>
+<p class="indexP"> </p>
+<ul class="hotList">
+</ul>
+</div>
+ 
+<div class="container">
+<h4 class="indexH4">交换故事</h4>
+<p class="indexP">各地的朋友欢迎你的到来，期待与你交换旅行</p>
+<ul class="storyList">
+<li>
+<img src="html/images/person1.png" alt=""/>
+<h4>徐浩钧</h4>
+<p>北京</p>
+<p class="storyCon">我的房子就在双井地铁站旁，去天安门只要30分钟。而且周边生活设施很齐全，超市、饭馆一应俱全，家乐福就在距小区门口几百米的位置。如果你怀念家乡的味道，也可以在厨房煮上几个小菜，倒一杯小酒，慢慢斟酌。大城市，慢生活，希望遇到志同道合的朋友一起来品味。</p>
+</li>
+<li style="margin: 0 100px">
+<img src="html/images/person2.png" alt=""/>
+<h4>Judy</h4>
+<p>海南 三亚</p>
+<p class="storyCon">我在三亚，房子位于南山寺、大小洞天附近，去高铁也很近！是一楼的两室一厅，有100平左右，有自己的车位，屋子里设备很齐全。欢迎大家来我家，欢迎回家！</p>
+</li>
+<li>
+<img src="html/images/person3.png" alt=""/>
+<h4>石门晓白</h4>
+<p>广西 北海</p>
+<p class="storyCon">我自幼的梦想是背着画夹子到处旅游画画，由于工作繁忙一直停留在梦想阶段，终于已经退休了，可以有时间实现梦想了。我在广西北海、三亚、山东蓬莱等地都有用房子交换旅游的经历，10年来已经接待了全国有兴趣换房旅游的朋友上百人次。如果您有兴趣可以联系我。</p>
+</li>
+<p class="both"></p>
+</ul>
+</div>
+ 
+<div class="safety">
+<div class="container">
+<h4 class="indexH4">每一次旅行都是回家</h4>
+<ul class="safetyList">
+<li>
+<img src="html/images/indexRz1.png" alt=""/>
+<h2>实名身份认证</h2>
+<p>每个人都通过实名认证展示真实的自己</p>
+</li>
+<li>
+<img src="html/images/indexRz2.png" alt=""/>
+<h2>换房爱好者聚集地</h2>
+<p>也许是全中国最大的换房爱好者群体</p>
+</li>
+<li>
+<img src="html/images/indexRz3.png" alt=""/>
+<h2>愈发完善的保障制度</h2>
+<p>保证金、芝麻信用、出行保险、房屋财产保险...</p>
+</li>
+<li>
+<img src="html/images/indexRz4.png" alt=""/>
+<h2>评价体系</h2>
+<p>社交评价让真实的交换体验传递在你我之间</p>
+</li>
+<li>
+<img src="html/images/indexRz5.png" alt=""/>
+<h2>灵活的换房方式</h2>
+<p>可以直接交换，或者选择更灵活的蜗牛接待 </p>
+</li>
+<li>
+<img src="html/images/indexRz6.png" alt=""/>
+<h2>永久免费使用</h2>
+<p>免费发布、免费展示、免费交换</p>
+</li>
+<p style="clear: both"></p>
+</ul>
+</div>
+</div>
+<div class="footer">
+<div class="container" style="border-bottom: 1px solid #636363">
+<ul class="footer_address">
+<li class="footTit">联系</li>
+<li>客服：400-008 9678</li>
+<li>电话：010-57213015</li>
+<li>邮箱：<a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="bdd4d3dbd2fdd4d5c8dcd3d1cb93ded2d0">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></li>
+</ul>
+<ul class="footer_address" style="text-align: center;margin-left: 250px">
+<li class="footTit">了解，加入我们</li>
+<li onclick="window.location.href='html/about.html'" style="cursor: pointer">关于我们</li>
+<li onclick="window.location.href='html/joinUs.html'" style="cursor: pointer">加入我们</li>
+</ul>
+
+<div class="attention">
+<h4 class="footTit">关注</h4>
+<ul>
+<li>
+<img src="html/images/wechat.png" alt=""/>微信公众号
+<div class="inv_show"><img src="html/images/wechat0.jpg" alt=""/></div>
+</li>
+<li><a href="http://weibo.com/u/5703599984" target="_blank"><img src="html/images/sina_weibo.png" alt=""/>新浪微博</a></li>
+<li>
+<img src="html/images/qq.png" alt=""/>QQ群
+<div class="inv_show"><img src="html/images/QQ0.png" alt=""/></div>
+</li>
+</ul>
+</div>
+<p style="clear: both"></p>
+</div>
+<p style="padding: 20px 0;text-align: center">Copyright &copy;2015 欢旅牵程国际信息技术（北京）有限公司 京ICP备15050276号</p>
+</div>
+</div>
+</body>
+</html>
