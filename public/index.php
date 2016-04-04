@@ -790,7 +790,7 @@ $a = <<<EOT
 }
 EOT;
 
-echo $a; 
+echo 'aaaaaa'.$a;
 
 
 ?>
