@@ -14,21 +14,11 @@ $a = <<<EOT
           "title": "raby",
           "subtitle": "A Leonid McGill Mystery",
           "authors": [
-           "Walter Mosley"
+           "刚刚"
           ],
           "publisher": "Penguin",
           "publishedDate": "2011-03-08",
           "description": "Leonid McGill can't say no to the beautiful woman who walks into his office with a stack of cash and a story. She's married to a rich art collector. Now she fears for her life. Leonid knows better than to believe her, but he can't afford to turn her away, even if he knows this woman's tale will bring him straight to death's door.",
-          "industryIdentifiers": [
-             {
-              "type": "ISBN_10",
-              "identifier": "1101503017"
-             },
-             {
-              "type": "ISBN_13",
-              "identifier": "9781101503010"
-             }
-          ],
       }
   }]
 }
