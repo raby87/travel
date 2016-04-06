@@ -1,5 +1,5 @@
 <?php 
-
+/*
 $a = <<<EOT
 {
  "items": [
@@ -17,8 +17,16 @@ $a = <<<EOT
   }]
 }
 EOT;
+*/
 
-echo $a;
+$a = array();
+$volumeInfo['volumeInfo']['title'] = "raby";
+$volumeInfo['volumeInfo']['authors'] = "raby";
+$volumeInfo['volumeInfo']['description'] = "raby";
+$volumeInfo['volumeInfo']['imageLinks'] = "raby";
+
+array_push($a,$volumeInfo);
+echo json_encode($a);
 
 
 ?>
