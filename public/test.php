@@ -1,4 +1,5 @@
 <?php
+var_dump(phpinfo());
 
  echo "hi";
 $iipp=$_SERVER["REMOTE_ADDR"];
