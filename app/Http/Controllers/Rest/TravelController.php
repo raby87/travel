@@ -12,11 +12,12 @@ class TravelController extends Controller
 
     public function index()
     {
-        $travel = Travel::with('user')->with('image')->orderBy('init_time', 'desc')->take(10)->get();
+        $travel = Travel::with('user','image')->orderBy('init_time', 'desc')->take(10)->get();
 
 
 
         return response()->json([
+            'tid'=>$travel->tid,
             'uid'=>$travel->uid,
             'icon'=>$travel->user->icon,
             'name'=>$travel->user->name,
@@ -29,8 +30,7 @@ class TravelController extends Controller
             'join_stat'=>$travel->join_stat,
             'like_stat'=>$travel->like_stat,
 
-            'small'=>$travel->image->small,
-            'big'=>$travel->image->big,
+            'image_list'=>$travel->image->toJson(),
         ]);
     }
 }
