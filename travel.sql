@@ -41,8 +41,8 @@ CREATE TABLE `comment` (
   `from` int(11) DEFAULT '0' COMMENT '评论者',
   `to` int(11) DEFAULT '0' COMMENT '回复者UID：0表示，无（即针针对主活动）',
   `dml_flag` tinyint(1) NOT NULL DEFAULT '1' COMMENT '数据操作标识: 1-新增;2-修改;3-删除',
-  `init_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
-  `dml_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
+  `init_time` timestamp NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+  `dml_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
   PRIMARY KEY (`cid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -88,8 +88,8 @@ CREATE TABLE `tag` (
   `tagid` int(11) NOT NULL AUTO_INCREMENT COMMENT '标签ID',
   `name` varchar(255) NOT NULL DEFAULT '' COMMENT '标签名',
   `dml_flag` tinyint(1) NOT NULL DEFAULT '1' COMMENT '数据操作标识: 1-新增;2-修改;3-删除',
-  `init_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
-  `dml_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
+  `init_time` timestamp NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+  `dml_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
   PRIMARY KEY (`tagid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -112,8 +112,8 @@ CREATE TABLE `travel` (
   `partner_condition` varchar(11) NOT NULL DEFAULT '' COMMENT '结伴要求',
   `content` varchar(255) NOT NULL DEFAULT '',
   `dml_flag` tinyint(1) NOT NULL DEFAULT '1' COMMENT '数据操作标识: 1-新增;2-修改;3-删除',
-  `init_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
-  `dml_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
+  `init_time` timestamp NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+  `dml_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
   PRIMARY KEY (`tid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -130,8 +130,8 @@ CREATE TABLE `travel_join` (
   `tid` int(11) NOT NULL,
   `uid` int(11) NOT NULL,
   `dml_flag` tinyint(1) NOT NULL DEFAULT '1' COMMENT '数据操作标识: 1-新增;2-修改;3-删除',
-  `init_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
-  `dml_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
+  `init_time` timestamp NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+  `dml_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
   PRIMARY KEY (`auto_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='加入游行表';
 
@@ -153,10 +153,10 @@ CREATE TABLE `user` (
   `now_address` varchar(255) DEFAULT NULL,
   `profession` varchar(255) DEFAULT '' COMMENT '职业',
   `like` varchar(255) DEFAULT '' COMMENT '兴趣爱好',
-  `last_logined` datetime DEFAULT NULL,
+  `last_logined` timestamp DEFAULT 0,
   `dml_flag` tinyint(1) NOT NULL DEFAULT '1' COMMENT '数据操作标识: 1-新增;2-修改;3-删除',
-  `init_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
-  `dml_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
+  `init_time` timestamp NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+  `dml_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -173,8 +173,8 @@ CREATE TABLE `user_tag` (
   `uid` int(11) NOT NULL,
   `tagid` int(11) NOT NULL,
   `dml_flag` tinyint(1) NOT NULL DEFAULT '1' COMMENT '数据操作标识: 1-新增;2-修改;3-删除',
-  `init_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '数据创建时间',
-  `dml_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
+  `init_time` timestamp NOT NULL DEFAULT 0 COMMENT '数据创建时间',
+  `dml_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据最后修改时间',
   PRIMARY KEY (`auto_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户标签';
 

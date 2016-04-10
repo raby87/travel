@@ -1,32 +1,58 @@
-<?php 
+<?php
+
+/**
+ * Laravel - A PHP Framework For Web Artisans
+ *
+ * @package  Laravel
+ * @author   Taylor Otwell <taylorotwell@gmail.com>
+ */
+
 /*
-$a = <<<EOT
-{
- "items": [
-  {
-     "volumeInfo": {
-          "title": "raby",
-          "authors": [
-           "刚刚"
-          ],
-          "description": "Leonid McGill can't say no to the beautiful woman who walks into his office with a stack of cash and a story. ",
-          "imageLinks": {
-             "thumbnail": "http://books.google.co.th/books/content?id=mKBOehKRx1kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-          },
-      },
-  }]
-}
-EOT;
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| our application. We just need to utilize it! We'll simply require it
+| into the script here so that we don't have to worry about manual
+| loading any of our classes later on. It feels nice to relax.
+|
 */
 
-$a = array();
-$volumeInfo['volumeInfo']['title'] = "raby";
-$volumeInfo['volumeInfo']['authors'] = "authors";
-$volumeInfo['volumeInfo']['description'] = "Leonid McGill can't say no to the beautiful woman";
-$volumeInfo['volumeInfo']['imageLinks']['thumbnail'] = "http://books.google.co.th/books/content?id=mKBOehKRx1kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api";
+require __DIR__.'/../bootstrap/autoload.php';
 
-array_push($a,$volumeInfo);
-echo json_encode($a);
+/*
+|--------------------------------------------------------------------------
+| Turn On The Lights
+|--------------------------------------------------------------------------
+|
+| We need to illuminate PHP development, so let us turn on the lights.
+| This bootstraps the framework and gets it ready for use, then it
+| will load up this application so that we can run it and send
+| the responses back to the browser and delight our users.
+|
+*/
 
+$app = require_once __DIR__.'/../bootstrap/app.php';
 
-?>
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request
+| through the kernel, and send the associated response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have prepared for them.
+|
+*/
+
+$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+
+$response = $kernel->handle(
+    $request = Illuminate\Http\Request::capture()
+);
+
+$response->send();
+
+$kernel->terminate($request, $response);
