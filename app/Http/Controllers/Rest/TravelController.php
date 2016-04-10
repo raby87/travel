@@ -11,6 +11,8 @@ class TravelController extends Controller
 
     public function index()
     {
-        return "aaa";
+        $user = User::find(1);
+        dd($user);
+        return $user;
     }
 }
