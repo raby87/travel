@@ -40,7 +40,7 @@ class TravelController extends Controller
             array_push($result,$tmp);
         }
 
-        return response()->json($travels);
+        return response()->json($result);
     }
 
     /**

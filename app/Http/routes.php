@@ -24,6 +24,18 @@ Route::get('/rest/login', [
     'as' => 'user.login', 'uses' => 'Rest\UserController@login'
 ]);
 
+Route::get('/rest/my', [
+    'as' => 'user.index', 'uses' => 'Rest\UserController@index'
+]);
+
+
+
+//define("aa","travel");
+//define("aa","location");
+//define("aa","user");
+//define("aa","message");
+
+
 Route::get('/rest/home', [
     'as' => 'travel.index', 'uses' => 'Rest\TravelController@index'
 ]);
@@ -36,8 +48,12 @@ Route::get('/rest/publish', [
     'as' => 'travel.pulish', 'uses' => 'Rest\TravelController@publish'
 ]);
 
-Route::get('/rest/my', [
-    'as' => 'user.index', 'uses' => 'Rest\UserController@index'
+Route::get('/rest/location', [
+    'as' => 'location.index', 'uses' => 'Rest\LocationController@index'
+]);
+
+Route::get('/rest/message', [
+    'as' => 'message.index', 'uses' => 'Rest\MessageController@index'
 ]);
 
 
