@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/rest/test', function () {
+    return "test";
+});
+
 Route::get('/rest/login', [
     'as' => 'user.login', 'uses' => 'Rest\UserController@login'
 ]);
