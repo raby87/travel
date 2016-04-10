@@ -12,7 +12,7 @@ class TravelController extends Controller
 
     public function index()
     {
-        $travel = Travel::with('user','image')->orderBy('init_time', 'desc')->take(10)->get();
+        $travel = Travel::with('user')->with('image')->orderBy('init_time', 'desc')->take(10)->get();
 
 
 
