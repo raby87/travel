@@ -10,7 +10,7 @@ class Travel extends Model
 
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User','tid','uid');
     }
     public function image()
     {
