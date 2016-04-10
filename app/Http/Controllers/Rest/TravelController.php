@@ -12,8 +12,25 @@ class TravelController extends Controller
 
     public function index()
     {
-        $user = Travel::with('user')->orderBy('init_time', 'desc')->take(10)->get();
+        $travel = Travel::with('user')->with('image')->orderBy('init_time', 'desc')->take(10)->get();
 
-        return $user->toJson();
+
+
+        return response()->json([
+            'uid'=>$travel->uid,
+            'icon'=>$travel->user->icon,
+            'name'=>$travel->user->name,
+            'sex'=>$travel->user->sex,
+            'age'=>$travel->user->age,
+
+            'init_time'=>$travel->init_time,
+            'content'=>$travel->content,
+            'comment_stat'=>$travel->comment_stat,
+            'join_stat'=>$travel->join_stat,
+            'like_stat'=>$travel->like_stat,
+
+            'small'=>$travel->image->small,
+            'big'=>$travel->image->big,
+        ]);
     }
 }

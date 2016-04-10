@@ -12,4 +12,8 @@ class Travel extends Model
     {
         return $this->belongsTo('App\User');
     }
+    public function image()
+    {
+        return $this->belongsTo('App\TravelImage');
+    }
 }
