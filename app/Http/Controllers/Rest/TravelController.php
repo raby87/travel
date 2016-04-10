@@ -12,7 +12,7 @@ class TravelController extends Controller
 
     public function index()
     {
-        $user = Travel::find()->orderBy('init_time', 'desc')->with('user')->take(10)->get();
+        $user = Travel::with('user')->orderBy('init_time', 'desc')->take(10)->get();
 
         return $user->toJson();
     }
