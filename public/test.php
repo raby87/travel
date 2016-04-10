@@ -1,5 +1,5 @@
 <?php
-echo json_encode(['a'=>1,'b'=>['ba'=>1]]);
+echo json_encode(['a'=>1,'b'=>['ba'=>1,'c'=>['ca'=>'2']]]);
 
 var_dump(phpinfo());
 
