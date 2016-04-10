@@ -22,6 +22,11 @@ class UserController extends Controller
 
         return response()->json($user);
     }
+    public function login()
+    {
+
+        return true;
+    }
     public function detail()
     {
 

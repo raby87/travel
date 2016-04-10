@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Rest;
 use App\Comment;
 use App\User;
 use App\Travel;
+use Illuminate\Http\Request;
 use Validator;
 use App\Http\Controllers\Controller;
 
@@ -57,5 +58,18 @@ class TravelController extends Controller
         $result['comment'] = $comments;
 
         return response()->json($result);
+    }
+
+    public function publish()
+    {
+        $uid = 1;
+        $input = Request::all();
+        $rs = Travel::create([
+            'uid'=>$uid,
+            'content'=>$input['content'],
+        ]);
+
+
+        return response()->json($rs);
     }
 }
