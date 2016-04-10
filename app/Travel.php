@@ -10,10 +10,10 @@ class Travel extends Model
 
     public function user()
     {
-        return $this->belongsTo('App\User','tid','uid');
+        return $this->belongsTo('App\User','uid','uid');
     }
     public function image()
     {
-        return $this->hasMany('App\TravelImage','tid','img_id');
+        return $this->hasMany('App\TravelImage','tid','tid');
     }
 }
