@@ -16,6 +16,7 @@ class TravelController extends Controller
         $travels = Travel::with('user')->with('image')->orderBy('init_time', 'desc')->take(10)->get();
 
         $result = [];
+        $result['test'] = $travels->toArray();
         foreach($travels as $k=>$travel){
             $tmp = [
                 'tid'=>$travel->tid,
@@ -31,7 +32,7 @@ class TravelController extends Controller
                 'join_stat'=>$travel->join_stat,
                 'like_stat'=>$travel->like_stat,
 
-                'image_list'=>$travel->image->toJson(),
+                'image_list'=>$travel->image->toArray(),
             ];
             array_push($result,$tmp);
         }
