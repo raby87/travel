@@ -14,6 +14,6 @@ class Travel extends Model
     }
     public function image()
     {
-        return $this->hasMany('App\TravelImage');
+        return $this->hasMany('App\TravelImage','img_id','tid');
     }
 }
