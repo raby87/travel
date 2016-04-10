@@ -16,23 +16,23 @@ Route::get('/', function () {
 });
 
 Route::get('/rest/login', [
-    'as' => 'user.login', 'uses' => 'UserController@login'
+    'as' => 'user.login', 'uses' => 'Rest\UserController@login'
 ]);
 
 Route::get('/rest/home', [
-    'as' => 'travel.index', 'uses' => 'TravelController@index'
+    'as' => 'travel.index', 'uses' => 'Rest\TravelController@index'
 ]);
 
 Route::get('/rest/detail', [
-    'as' => 'travel.detail', 'uses' => 'TravelController@detail'
+    'as' => 'travel.detail', 'uses' => 'Rest\TravelController@detail'
 ]);
 
 Route::get('/rest/publish', [
-    'as' => 'travel.pulish', 'uses' => 'TravelController@publish'
+    'as' => 'travel.pulish', 'uses' => 'Rest\TravelController@publish'
 ]);
 
 Route::get('/rest/my', [
-    'as' => 'user.index', 'uses' => 'UserController@index'
+    'as' => 'user.index', 'uses' => 'Rest\UserController@index'
 ]);
 
 
