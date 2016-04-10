@@ -14,7 +14,7 @@ class TravelController extends Controller
     {
         $travel = Travel::with('user')->with('image')->orderBy('init_time', 'desc')->take(10)->get();
 
-
+dd($travel);
 
         return response()->json([
             'tid'=>$travel->tid,
