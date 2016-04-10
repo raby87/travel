@@ -15,6 +15,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/rest/login', [
+    'as' => 'user.login', 'uses' => 'UserController@login'
+]);
+
+Route::get('/rest/home', [
+    'as' => 'travel.index', 'uses' => 'TravelController@index'
+]);
+
+Route::get('/rest/detail', [
+    'as' => 'travel.detail', 'uses' => 'TravelController@detail'
+]);
+
+Route::get('/rest/publish', [
+    'as' => 'travel.pulish', 'uses' => 'TravelController@publish'
+]);
+
+Route::get('/rest/my', [
+    'as' => 'user.index', 'uses' => 'UserController@index'
+]);
+
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
