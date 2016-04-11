@@ -18,7 +18,7 @@ class UserController extends Controller
     public function index()
     {
         $uid = 1;
-        $user = User::find($uid)->orderBy('init_time', 'desc')->take(10)->get();
+        $user = User::find($uid)->first();
 
         return response()->json($user);
     }
