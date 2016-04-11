@@ -6,6 +6,7 @@ use App\Comment;
 use App\User;
 use App\Travel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Validator;
 use App\Http\Controllers\Controller;
 
@@ -62,12 +63,13 @@ class TravelController extends Controller
 
     public function publish()
     {
-        $uid = 1;
+        /*$uid = 1;
         $input = Request::all();
         $rs = Travel::create([
             'uid'=>$uid,
             'content'=>$input['content'],
-        ]);
+        ]);*/
+        $rs = Storage::disk('local')->put('file.txt', 'Contents');
 
 
         return response()->json($rs);
