@@ -69,9 +69,9 @@ class TravelController extends Controller
             'uid'=>$uid,
             'content'=>$input['content'],
         ]);*/
-        $rs = Storage::disk('local')->put('file.txt', 'Contents');
+        $rs = Storage::disk('local')->put('test.txt', 'Contents');
 
-
+        Storage::copy('1.jpg', '/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg');
         return response()->json($rs);
     }
 }
