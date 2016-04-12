@@ -29,7 +29,7 @@ Route::group(array('prefix' => 'admin'), function()
 });
 
 /*************************************************************************************/
-Route::group(array('prefix' => 'rest'), function()
+Route::group(array('prefix' => 'rest','namespace' => 'Rest'), function()
 {
 
     Route::get('test', function()
@@ -37,9 +37,8 @@ Route::group(array('prefix' => 'rest'), function()
         return view('admin.login');
     });
 
-
     Route::get('my', [
-        'as' => 'user.index', 'uses' => 'Rest\UserController@index'
+        'as' => 'user.index', 'uses' => 'UserController@index'
     ]);
 
 
