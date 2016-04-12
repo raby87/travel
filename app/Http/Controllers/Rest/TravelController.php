@@ -61,9 +61,10 @@ class TravelController extends Controller
         return response()->json($result);
     }
 
-    public function publish()
+    public function publish(Request $request)
     {
-        $uid = Request::input('uid');
+        $uid = Input::get('uid');
+        //$uid = Request::input('uid');
         echo $uid;
         /*$uid = 1;
         $input = Request::all();
