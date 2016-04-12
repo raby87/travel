@@ -26,19 +26,20 @@ Route::group(array('prefix' => 'rest'), function()
         return view('admin.login');
     });
 
-});
 
-//Route::get('/rest/test', function () {
-//    return view('admin.login');
-//});
+    Route::get('my', [
+        'as' => 'user.index', 'uses' => 'Rest\UserController@index'
+    ]);
+
+});
 
 Route::get('/rest/login', [
     'as' => 'user.login', 'uses' => 'Rest\UserController@login'
 ]);
 
-Route::get('/rest/my', [
-    'as' => 'user.index', 'uses' => 'Rest\UserController@index'
-]);
+//Route::get('/rest/my', [
+//    'as' => 'user.index', 'uses' => 'Rest\UserController@index'
+//]);
 
 
 
