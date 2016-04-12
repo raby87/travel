@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/rest/test', function () {
-    return view('welcome');
+    return view('admin.login');
 });
 
 Route::get('/rest/login', [
