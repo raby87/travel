@@ -63,6 +63,8 @@ class TravelController extends Controller
 
     public function publish()
     {
+        $uid = Request::input('uid');
+        echo $uid;
         /*$uid = 1;
         $input = Request::all();
         $rs = Travel::create([
