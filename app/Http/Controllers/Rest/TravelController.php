@@ -67,7 +67,7 @@ class TravelController extends Controller
         $uid = Input::get('uid');
         $content = Input::get('content');
         //$uid = Request::input('uid');
-        echo $uid;
+        echo $uid.$content;
         /*$uid = 1;
         $input = Request::all();
         $rs = Travel::create([
