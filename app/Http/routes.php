@@ -16,9 +16,21 @@ Route::get('/', function () {
 });
 
 
-Route::get('/rest/test', function () {
-    return view('admin.login');
+
+/*************************************************************************************/
+Route::group(array('prefix' => 'rest'), function()
+{
+
+    Route::get('test', function()
+    {
+        return view('admin.login');
+    });
+
 });
+
+//Route::get('/rest/test', function () {
+//    return view('admin.login');
+//});
 
 Route::get('/rest/login', [
     'as' => 'user.login', 'uses' => 'Rest\UserController@login'

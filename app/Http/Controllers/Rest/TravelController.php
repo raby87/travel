@@ -62,21 +62,21 @@ class TravelController extends Controller
         return response()->json($result);
     }
 
-    public function publish(Request $request)
+    public function publish()
     {
         $uid = Input::get('uid');
+        $tid = Input::get('tid');
         $content = Input::get('content');
-        //$uid = Request::input('uid');
-        echo $uid.$content;
-        /*$uid = 1;
-        $input = Request::all();
+
+        //Storage::disk('local')->put('test.txt', $content);
+
         $rs = Travel::create([
+            'tid'=>$tid,
             'uid'=>$uid,
-            'content'=>$input['content'],
-        ]);*/
-        $rs = Storage::disk('local')->put('test.txt', $content);
-        $file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
-        Storage::disk('local')->put('1.jpg', file_get_contents($file));
+            'content'=>$content,
+        ]);
+        //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
+        //Storage::disk('local')->put('1.jpg', file_get_contents($file));
         return response()->json($rs);
     }
 }
