@@ -8,15 +8,15 @@
 
 @section("content")
     <h1 class="page-header">登 录</h1>
-    <form action="" method="post" class="form-horizontal">
+    <form action="{{ URL::to('reset/publish') }}" method="post" class="form-horizontal">
         <div class="form-group">
             <div class="col-sm-5">
-                <input type="text" class="form-control"     placeholder="请输入用户名"/>
+                <input type="text" class="form-control" name="uid"     placeholder="请输入用户名"/>
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-5">
-                <input type="password" class="form-control" placeholder="请输入密码/email"/>
+                <input type="password" class="form-control" name="content" placeholder="请输入密码"/>
             </div>
         </div>
         <div class="form-group">
