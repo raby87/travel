@@ -44,7 +44,7 @@ Route::get('/rest/detail', [
     'as' => 'travel.detail', 'uses' => 'Rest\TravelController@detail'
 ]);
 
-Route::put('/rest/publish', [
+Route::post('/rest/publish', [
     'as' => 'travel.pulish', 'uses' => 'Rest\TravelController@publish'
 ]);
 

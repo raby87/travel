@@ -64,8 +64,8 @@ class TravelController extends Controller
 
     public function publish(Request $request)
     {
-        $uid = Input::put('uid');
-        $content = Input::put('content');
+        $uid = Input::get('uid');
+        $content = Input::get('content');
         //$uid = Request::input('uid');
         echo $uid;
         /*$uid = 1;
