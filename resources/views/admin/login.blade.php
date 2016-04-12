@@ -21,7 +21,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-5">
-                <button class="btn-primary">登 录</button>
+                <button class="btn-primary" type="submit">登 录</button>
             </div>
         </div>
     </form>
