@@ -15,7 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(array('prefix' => 'admin'), function()
+{
+    Route::get('/', function () {
+        return view('welcome');
+    });
 
+    Route::get('test', function()
+    {
+        return view('admin.login');
+    });
+
+});
 
 /*************************************************************************************/
 Route::group(array('prefix' => 'rest'), function()
@@ -31,43 +42,32 @@ Route::group(array('prefix' => 'rest'), function()
         'as' => 'user.index', 'uses' => 'Rest\UserController@index'
     ]);
 
+
+    Route::get('login', [
+        'as' => 'user.login', 'uses' => 'Rest\UserController@login'
+    ]);
+
+
+    Route::get('home', [
+        'as' => 'travel.index', 'uses' => 'Rest\TravelController@index'
+    ]);
+
+    Route::get('detail', [
+        'as' => 'travel.detail', 'uses' => 'Rest\TravelController@detail'
+    ]);
+
+    Route::post('publish', [
+        'as' => 'travel.pulish', 'uses' => 'Rest\TravelController@publish'
+    ]);
+
+    Route::get('location', [
+        'as' => 'location.index', 'uses' => 'Rest\LocationController@index'
+    ]);
+
+    Route::get('message', [
+        'as' => 'message.index', 'uses' => 'Rest\MessageController@index'
+    ]);
 });
-
-Route::get('/rest/login', [
-    'as' => 'user.login', 'uses' => 'Rest\UserController@login'
-]);
-
-//Route::get('/rest/my', [
-//    'as' => 'user.index', 'uses' => 'Rest\UserController@index'
-//]);
-
-
-
-//define("aa","travel");
-//define("aa","location");
-//define("aa","user");
-//define("aa","message");
-
-
-Route::get('/rest/home', [
-    'as' => 'travel.index', 'uses' => 'Rest\TravelController@index'
-]);
-
-Route::get('/rest/detail', [
-    'as' => 'travel.detail', 'uses' => 'Rest\TravelController@detail'
-]);
-
-Route::post('/rest/publish', [
-    'as' => 'travel.pulish', 'uses' => 'Rest\TravelController@publish'
-]);
-
-Route::get('/rest/location', [
-    'as' => 'location.index', 'uses' => 'Rest\LocationController@index'
-]);
-
-Route::get('/rest/message', [
-    'as' => 'message.index', 'uses' => 'Rest\MessageController@index'
-]);
 
 
 /*
