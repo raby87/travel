@@ -8,6 +8,7 @@ use App\Travel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Validator;
+use Input;
 use App\Http\Controllers\Controller;
 
 class TravelController extends Controller
