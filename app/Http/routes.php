@@ -43,28 +43,28 @@ Route::group(array('prefix' => 'rest','namespace' => 'Rest'), function()
 
 
     Route::get('login', [
-        'as' => 'user.login', 'uses' => 'Rest\UserController@login'
+        'as' => 'user.login', 'uses' => 'UserController@login'
     ]);
 
 
     Route::get('home', [
-        'as' => 'travel.index', 'uses' => 'Rest\TravelController@index'
+        'as' => 'travel.index', 'uses' => 'TravelController@index'
     ]);
 
     Route::get('detail', [
-        'as' => 'travel.detail', 'uses' => 'Rest\TravelController@detail'
+        'as' => 'travel.detail', 'uses' => 'TravelController@detail'
     ]);
 
     Route::post('publish', [
-        'as' => 'travel.pulish', 'uses' => 'Rest\TravelController@publish'
+        'as' => 'travel.pulish', 'uses' => 'TravelController@publish'
     ]);
 
     Route::get('location', [
-        'as' => 'location.index', 'uses' => 'Rest\LocationController@index'
+        'as' => 'location.index', 'uses' => 'LocationController@index'
     ]);
 
     Route::get('message', [
-        'as' => 'message.index', 'uses' => 'Rest\MessageController@index'
+        'as' => 'message.index', 'uses' => 'MessageController@index'
     ]);
 });
 
