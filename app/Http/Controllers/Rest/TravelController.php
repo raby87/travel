@@ -68,15 +68,15 @@ class TravelController extends Controller
         $tid = Input::get('tid');
         $content = Input::get('content');
 
-        //Storage::disk('local')->put('test.txt', $content);
+        /*Storage::disk('local')->put('test.txt', $content);
 
         $rs = Travel::create([
             'tid'=>$tid,
             'uid'=>$uid,
             'content'=>$content,
-        ]);
+        ]);*/
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
         //Storage::disk('local')->put('1.jpg', file_get_contents($file));
-        return response()->json($rs);
+        return response()->json("abc");
     }
 }

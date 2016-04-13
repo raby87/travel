@@ -26,12 +26,16 @@ Route::group(array('prefix' => 'admin','namespace' => 'Admin'), function()
         return view('admin.login');
     });
 
-    Route::get('login', [
-        'as' => 'admin.login', 'uses' => 'AdminController@login'
-    ]);
-    Route::post('doLogin', [
-        'as' => 'admin.login', 'uses' => 'AdminController@doLogin'
-    ]);
+    Route::group(['as' => 'admin.'], function() {
+
+        Route::get('login', [
+            'as' => 'login', 'uses' => 'AdminController@login'
+        ]);
+        Route::post('doLogin', [
+            'as' => 'doLogin', 'uses' => 'AdminController@doLogin'
+        ]);
+
+    });
 });
 
 /*************************************************************************************/
@@ -57,17 +61,22 @@ Route::group(array('prefix' => 'rest','namespace' => 'Rest'), function()
 
     });
 
-    Route::get('home', [
-        'as' => 'travel.index', 'uses' => 'TravelController@index'
-    ]);
 
-    Route::get('detail', [
-        'as' => 'travel.detail', 'uses' => 'TravelController@detail'
-    ]);
+    Route::group(['as' => 'travel.'], function() {
 
-    Route::post('publish', [
-        'as' => 'travel.pulish', 'uses' => 'TravelController@publish'
-    ]);
+        Route::get('home', [
+            'as' => 'index', 'uses' => 'TravelController@index'
+        ]);
+
+        Route::get('detail', [
+            'as' => 'detail', 'uses' => 'TravelController@detail'
+        ]);
+
+        Route::post('publish', [
+            'as' => 'pulish', 'uses' => 'TravelController@publish'
+        ]);
+
+    });
 
     Route::get('location', [
         'as' => 'location.index', 'uses' => 'LocationController@index'
