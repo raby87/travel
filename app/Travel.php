@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Travel extends Model
 {
     protected $primaryKey = 'tid';
+    public $timestamps = false;
 
     public function user()
     {
