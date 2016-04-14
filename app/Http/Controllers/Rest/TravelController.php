@@ -74,8 +74,8 @@ class TravelController extends Controller
             'content'=>"mymy",
         ]);*/
         $travel = new Travel();
-        $travel->uid = 1;
-        $travel->content = "mymy";
+        $travel->uid = $uid;
+        $travel->content = $content;
         $rs = $travel->save();
 
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
