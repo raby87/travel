@@ -9,7 +9,7 @@ class TravelTest extends TestCase {
     public function testPublish()
     {
         $response = $this->call("POST", "rest/publish", ['uid'=>1,'content'=>'test contnet']);
-        $this->assertTrue($response->getContent());
+        $this->assertEquals('true', $response->getContent());
     }
 
 }
