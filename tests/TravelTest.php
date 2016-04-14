@@ -8,7 +8,7 @@ class TravelTest extends TestCase {
 
     public function testPublish()
     {
-        $response = $this->call("POST", "rest/publish", ['uid'=>1,'tid'=>1,'content'=>'test contnet']);
+        $response = $this->call("POST", "rest/publish", ['uid'=>1,'content'=>'test contnet']);
         $this->assertEquals('Hello World', $response->getContent());
         //$this->assertTrue(true);
     }

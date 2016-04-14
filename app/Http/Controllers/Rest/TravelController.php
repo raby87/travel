@@ -65,13 +65,11 @@ class TravelController extends Controller
     public function publish()
     {
         $uid = Input::get('uid');
-        $tid = Input::get('tid');
         $content = Input::get('content');
 
         Storage::disk('local')->put('test.txt', $content);
 
         $rs = Travel::create([
-            'tid'=>1,
             'uid'=>1,
             'content'=>"mymy",
         ]);
