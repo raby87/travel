@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>爱趣游</title>
-
+        <meta property="wb:webmaster" content="235ab6d4337296e2" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
         <style>
