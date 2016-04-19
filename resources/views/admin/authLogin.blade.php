@@ -11,11 +11,13 @@
     <h1 class="page-header">登 录</h1>
     <wb:login-button type="3,2" ></wb:login-button>
 
-    <div id="wb_connect_btn1"></div>
+    <div id="wb_connect_btn1" onclick="login()"></div>
     <script type="application/javascript" >
-        WB2.login(function() {
-            //callback function
-            window.location.href="/";
-        });
+        function login(){
+            WB2.login(function() {
+                //callback function
+                window.location.href="/";
+            });
+        }
     </script>
 @stop
