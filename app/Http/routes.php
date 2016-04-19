@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/test', function () {
+    return view('admin/authLogin');
+});
 
 Route::group(array('prefix' => 'admin','namespace' => 'Admin'), function()
 {

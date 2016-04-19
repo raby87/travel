@@ -69,10 +69,6 @@ class TravelController extends Controller
 
         Storage::disk('local')->put('test.txt', $content);
 
-        /*$rs = Travel::create([
-            'uid'=>1,
-            'content'=>"mymy",
-        ]);*/
         $travel = new Travel();
         $travel->uid = $uid;
         $travel->content = $content;

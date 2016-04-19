@@ -1,6 +1,6 @@
 <!-- Stored in resources/views/layouts/master.blade.php -->
 
-<html>
+<html xmlns:wb="http://open.weibo.com/wb">
 <head>
     <title>旅游 - @yield('title')</title>
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">

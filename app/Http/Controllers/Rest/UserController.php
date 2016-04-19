@@ -22,6 +22,12 @@ class UserController extends Controller
 
         return response()->json($user);
     }
+    /*
+     App Key:
+1817611297
+App Secret:
+65a40f3a74b7859a07baad262aaed2d1
+     */
     public function login()
     {
 
