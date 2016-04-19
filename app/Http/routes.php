@@ -12,6 +12,41 @@
 */
 
 Route::get('/', function () {
+    $code = isset($_GET['code']) ? $_GET['code'] : "";
+    if(!$code)
+        return view('welcome');
+
+    $url = "https://api.weibo.com/oauth2/access_token";
+    $data = [
+        'client_id' => '1817611297',
+        'client_secret'=>'65a40f3a74b7859a07baad262aaed2d1',
+        'grant_type'=>'authorization_code',
+        'code'=>$code,
+        'redirect_uri'=>'http://run.51094.com/rest/my',
+    ];
+
+    $ch = curl_init();
+
+    curl_setopt($ch, CURLOPT_URL,$url);
+    curl_setopt($ch, CURLOPT_POST, 1);
+//    curl_setopt($ch, CURLOPT_POSTFIELDS,
+//        "postvar1=value1&postvar2=value2&postvar3=value3");
+
+// in real life you should use something like:
+ curl_setopt($ch, CURLOPT_POSTFIELDS,
+          http_build_query($data));
+
+// receive server response ...
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    $server_output = curl_exec ($ch);
+
+    curl_close ($ch);
+
+    echo $server_output;
+// further processing ....
+   // if ($server_output == "OK") {   } else {  }
+
     return view('welcome');
 });
 Route::get('/test', function () {

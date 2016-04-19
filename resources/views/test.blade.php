@@ -41,8 +41,5 @@
                 <div class="title">网站维护中...</div>
             </div>
         </div>
-        <script type="application/javascript">
-
-        </script>
     </body>
 </html>

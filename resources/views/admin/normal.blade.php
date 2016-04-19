@@ -11,11 +11,19 @@
     <h1 class="page-header">登 录</h1>
     <div id="wb_connect_btn1" onclick="login()">登录</div>
     <script type="application/javascript" >
-        //https://api.weibo.com/oauth2/authorize?client_id=1817611297&
-        // redirect_uri=http://run.51094.com&response_type=code
         function login(){
-
-           window.location.href="https://api.weibo.com/oauth2/authorize?client_id=1817611297&redirect_uri=http://run.51094.com&response_type=code";
+            WB2.login(function() {
+                //callback function
+                window.location.href="/";
+            });
         }
+        /*
+        WB2.logout(function() {
+            //callback function
+        });*/
+        /*
+         var status = WB2.checkLogin();
+         alert(status);
+        * */
     </script>
 @stop
