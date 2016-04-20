@@ -48,10 +48,8 @@ Route::get('/info', function () {
     $server_output = curl_exec ($ch);
 
     curl_close ($ch);
-    echo $server_output;
-    return ;
-// further processing ....
-    // if ($server_output == "OK") {   } else {  }
+    return $server_output;
+    
 });
 
 Route::get('/test', function () {
