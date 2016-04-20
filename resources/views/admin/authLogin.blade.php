@@ -14,7 +14,6 @@
         //https://api.weibo.com/oauth2/authorize?client_id=1817611297&
         // redirect_uri=http://run.51094.com&response_type=code
         function login(){
-
            window.location.href="https://api.weibo.com/oauth2/authorize?client_id=1817611297&redirect_uri=http://run.51094.com&response_type=code";
         }
     </script>
