@@ -79,7 +79,8 @@ Route::get('/info', function () {
     $server_output = curl_exec ($ch);
 
     curl_close ($ch);
-    return $server_output;
+    echo $server_output;
+    exit;
 
 });
 
