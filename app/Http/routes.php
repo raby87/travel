@@ -43,7 +43,7 @@ Route::get('/', function () {
 
     curl_close ($ch);
 
-    echo $server_output;
+    if($server_output){ echo $server_output;    return;}
 // further processing ....
    // if ($server_output == "OK") {   } else {  }
 
