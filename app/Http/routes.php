@@ -22,7 +22,7 @@ Route::get('/', function () {
         'client_secret'=>'65a40f3a74b7859a07baad262aaed2d1',
         'grant_type'=>'authorization_code',
         'code'=>$code,
-        'redirect_uri'=>'http://run.51094.com/info',
+        'redirect_uri'=>'http://run.51094.com',
     ];
 
     $ch = curl_init();
