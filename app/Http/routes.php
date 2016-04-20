@@ -43,7 +43,8 @@ Route::get('/', function () {
 
     curl_close ($ch);
     echo "".$server_output;
-    return view('welcome');
+    return "bb";
+    //return view('welcome');
 });
 
 
