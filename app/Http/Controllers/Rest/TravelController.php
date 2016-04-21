@@ -53,7 +53,7 @@ class TravelController extends Controller
     public function detail($id){
         $tid = $id;
         $result = [];
-        $travel = Travel::find($tid)->with('user')->with('image')->orderBy('init_time', 'desc')->first();
+        $travel = Travel::where('tid',$tid)->with('user')->with('image')->orderBy('init_time', 'desc')->first();
         $result['travel'] = $travel;
         dd($travel);
 
