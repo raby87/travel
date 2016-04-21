@@ -143,9 +143,9 @@ Route::group(array('prefix' => 'rest','namespace' => 'Rest'), function()
             'as' => 'index', 'uses' => 'TravelController@index'
         ]);
 
-        Route::get('detail', [
+        Route::get('detail/{id}', [
             'as' => 'detail', 'uses' => 'TravelController@detail'
-        ]);
+        ])->where('id', '[0-9]+');
 
         Route::post('publish', [
             'as' => 'pulish', 'uses' => 'TravelController@publish'

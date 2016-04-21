@@ -50,8 +50,8 @@ class TravelController extends Controller
      * todo 待优化，待增加追加的评论
      * @return \Illuminate\Http\JsonResponse
      */
-    public function detail(){
-        $tid = 1;
+    public function detail($id){
+        $tid = $id;
         $result = [];
         $travel = Travel::find($tid)->with('user')->with('image')->orderBy('init_time', 'desc')->first();
         $result['travel'] = $travel;
