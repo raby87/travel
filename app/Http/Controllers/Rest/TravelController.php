@@ -54,11 +54,9 @@ class TravelController extends Controller
         $tid = $id;
         $result = [];
         $travel = Travel::where('tid',$tid)->with('user')->with('image')->orderBy('init_time', 'desc')->first();
-        $travel = Travel::find($tid)->with('user')->with('image')->orderBy('init_time', 'desc')->first();
         $result['travel'] = $travel;
-        dd(Travel::find($tid));
 
-        $comments = Comment::find($tid)->with('user')->orderBy('init_time', 'desc')->take(10)->get();
+        $comments = Comment::where('tid',$tid)->with('user')->orderBy('init_time', 'desc')->take(10)->get();
         $result['comment'] = $comments;
 
         return response()->json($result);
