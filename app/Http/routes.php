@@ -96,9 +96,9 @@ Route::group(array('prefix' => 'admin','namespace' => 'Admin'), function()
         return view('welcome');
     });
 
-    Route::get('test', function()
+    Route::get('test/{$id}', function($id)
     {
-        $travel = \App\Travel::paginate(1);
+        $travel = \App\Travel::paginate($id);
         dd($travel);
 
         return view('admin.login');
