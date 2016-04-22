@@ -24,5 +24,6 @@
                 <button class="btn-primary" type="submit">登 录</button>
             </div>
         </div>
+        {!! $travel->render() !!}
     </form>
 @stop
