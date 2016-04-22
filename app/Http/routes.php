@@ -85,8 +85,22 @@ Route::get('/info', function () {
 });
 
 Route::get('/test', function () {
+
     return view('admin/authLogin');
 });
+
+Route::post('/upload', function () {
+        $name = \Illuminate\Support\Facades\Input::get("name");
+
+        $photo = \Illuminate\Support\Facades\Input::file("photo");
+        $size = Input::file('photo')->getSize();
+    Input::file('photo')->move(storage_path(),"11.jpg");
+    $path = Input::file('photo')->getRealPath();
+
+    dd([storage_path(),$path,$photo,$size]);
+        return view('admin/upload');
+});
+
 
 
 
