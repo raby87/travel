@@ -89,7 +89,7 @@ Route::get('/test', function () {
     return view('admin/authLogin');
 });
 
-Route::post('/upload', function () {
+Route::get('/upload', function () {
         return view('admin/upload');
 });
 
