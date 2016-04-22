@@ -67,9 +67,10 @@ class TravelController extends Controller
 
         $uid = Input::get('uid');
         $content = Input::get('content');
-        $images = Input::get('images');
+        $photo = Input::file('images');
 
-        Storage::disk('local')->put('test.txt', $images);
+        $photo->move(storage_path('app'),"11.jpg");
+        Storage::disk('local')->put('test.txt', $photo);
 
         $travel = new Travel();
         $travel->uid = $uid;
@@ -77,7 +78,7 @@ class TravelController extends Controller
         $tid = $travel->save();
 
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
-        Storage::disk('local')->put($tid."_$uid.jpg", $images);
+        Storage::disk('local')->put($tid."_$uid.jpg", $photo);
         return response()->json($tid);
     }
 }
