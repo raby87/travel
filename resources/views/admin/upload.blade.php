@@ -8,7 +8,7 @@
 
 @section("content")
     <h1 class="page-header">登 录</h1>
-    <form action="{{ URL::to('upload') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+    <form action="{{ URL::to('doUpload') }}" method="post" enctype="multipart/form-data" class="form-horizontal">
         <div class="form-group">
             <div class="col-sm-5">
                 <input type="text" class="form-control" name="name"     placeholder="请输入用户名"/>
