@@ -102,7 +102,7 @@ Route::group(array('prefix' => 'admin','namespace' => 'Admin'), function()
         $pageView = $travel->render();
         dd([$travel,$pageView]);
 
-        return view('admin.login');
+        return view('admin.login',['travel'=>$travel]);
     });
 
     Route::group(['as' => 'admin.'], function() {
