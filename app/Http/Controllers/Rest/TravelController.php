@@ -64,19 +64,20 @@ class TravelController extends Controller
 
     public function publish()
     {
+
         $uid = Input::get('uid');
         $content = Input::get('content');
         $images = Input::get('images');
 
-        Storage::disk('local')->put('test.txt', $images);
+        //Storage::disk('local')->put('test.txt', $images);
 
         $travel = new Travel();
         $travel->uid = $uid;
         $travel->content = $content;
-        $rs = $travel->save();
+        $tid = $travel->save();
 
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
-        //Storage::disk('local')->put('1.jpg', file_get_contents($file));
-        return response()->json($rs);
+        Storage::disk('local')->put($tid."_$uid.jpg", $images);
+        return response()->json($tid);
     }
 }
