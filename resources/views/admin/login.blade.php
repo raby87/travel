@@ -24,6 +24,6 @@
                 <button class="btn-primary" type="submit">登 录</button>
             </div>
         </div>
-        {!! $users->render() !!}
+        {!! $travel->render() !!}
     </form>
 @stop
