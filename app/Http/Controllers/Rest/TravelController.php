@@ -66,8 +66,9 @@ class TravelController extends Controller
     {
         $uid = Input::get('uid');
         $content = Input::get('content');
+        $images = Input::get('images');
 
-        Storage::disk('local')->put('test.txt', $content);
+        Storage::disk('local')->put('test.txt', $images);
 
         $travel = new Travel();
         $travel->uid = $uid;
