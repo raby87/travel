@@ -98,10 +98,10 @@ Route::post('/doUpload', function () {
 
     $photo = \Illuminate\Support\Facades\Input::file("photo");
     $size = $photo->getSize();
+    $path = $photo->getRealPath();
     $photo->move(storage_path('app'),"11.jpg");
-    $path = $photo->getRealPath('app');
 
-    dd([storage_path(),$path,$photo,$size]);
+    dd([storage_path('app'),$path,$photo,$size]);
 });
 
 
