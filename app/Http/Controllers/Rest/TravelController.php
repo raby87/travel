@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Rest;
 
 use App\Comment;
+use App\TravelImage;
 use App\User;
 use App\Travel;
 use Illuminate\Http\Request;
@@ -69,16 +70,28 @@ class TravelController extends Controller
         $content = Input::get('content');
         $photo = Input::file('images');
 
-        $photo->move(storage_path('app'),"11.jpg");
-        Storage::disk('local')->put('test.txt', $photo);
-
+//init_time
         $travel = new Travel();
         $travel->uid = $uid;
         $travel->content = $content;
+        $travel->init_time = date("Y-m-d H:i:s",time());
         $tid = $travel->save();
 
+        $i = 1;
+        $imgName = $uid.'_'.$tid.'_'.$i;
+        $photo->move(storage_path('app'),"$imgName.jpg");
+        Storage::disk('local')->put('test.txt', $photo);
+
+
+        $image = new TravelImage();
+        $image->tid = $tid;
+        $image->small = "$imgName.jpg";
+        $image->big = "$imgName.jpg";
+        $imgId = $image->save();
+
+
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
-        Storage::disk('local')->put($tid."_$uid.jpg", $photo);
+        //Storage::disk('local')->put($tid."_$uid.jpg", $photo);
         return response()->json($tid);
     }
 }
