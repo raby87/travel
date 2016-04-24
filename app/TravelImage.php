@@ -8,4 +8,5 @@ class TravelImage extends Model
 {
     //
     protected $primaryKey = 'img_id';
+    public $timestamps = false;
 }
