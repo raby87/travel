@@ -85,6 +85,11 @@ Route::get('/info', function () {
 });
 
 Route::get('/test', function () {
+       $travel =  new \App\Travel();
+    $travel->uid = 1;
+    $travel->content = "a";
+    $travel->save();
+    dd($travel);
 
     return view('admin/authLogin');
 });
