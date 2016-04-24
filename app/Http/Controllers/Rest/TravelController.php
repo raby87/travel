@@ -75,7 +75,8 @@ class TravelController extends Controller
         $travel->uid = $uid;
         $travel->content = $content;
         $travel->init_time = date("Y-m-d H:i:s",time());
-        $tid = $travel->save();
+        $rs = $travel->save();
+        $tid = $travel->tid;
 
         $i = 1;
         $imgName = $uid.'_'.$tid.'_'.$i;
@@ -87,11 +88,11 @@ class TravelController extends Controller
         $image->tid = $tid;
         $image->small = "$imgName.jpg";
         $image->big = "$imgName.jpg";
-        $imgId = $image->save();
+        $image->save();
 
 
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
         //Storage::disk('local')->put($tid."_$uid.jpg", $photo);
-        return response()->json($tid);
+        return response()->json($rs);
     }
 }
