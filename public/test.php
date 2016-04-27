@@ -2,6 +2,9 @@
 //
 // A very simple PHP example that sends a HTTP POST to a remote site
 //
+$cookie = 'v_remember_encrypt=1767742%7C44781817ea00ffcfca79d1ba06571bb0; PHPSESSID=a6a57291b636bd9599c0318923784584; webuid=1767742;';
+$headers   = array();
+$headers[] = 'Cookie: ' . $cookie;
 
 $ch = curl_init();
 
@@ -12,11 +15,14 @@ curl_setopt($ch, CURLOPT_POST, 1);
 
 // in real life you should use something like:
  curl_setopt($ch, CURLOPT_POSTFIELDS,
-          http_build_query(array(
-              'webuid' => '1767742',
+          http_build_query(['points'=>1000]));
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+array(
+'webuid' => '1767742',
               'PHPSESSID'=>'a6a57291b636bd9599c0318923784584',
               'v_remember_encrypt'=>'1767742%7C44781817ea00ffcfca79d1ba06571bb0',
-              )));
+              );
 
 // receive server response ...
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
