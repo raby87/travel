@@ -5,10 +5,12 @@
 $cookie = 'v_remember_encrypt=1767742%7C44781817ea00ffcfca79d1ba06571bb0; PHPSESSID=a6a57291b636bd9599c0318923784584; webuid=1767742;';
 $headers   = array();
 $headers[] = 'Cookie: ' . $cookie;
+//$url = "http://www.shouxiumv.net/member/edituserinfo";
+$url = "http://run.51094.com/rest/home";
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL,"http://www.shouxiumv.net/member/edituserinfo");
+curl_setopt($ch, CURLOPT_URL,$url);
 curl_setopt($ch, CURLOPT_POST, 1);
 //curl_setopt($ch, CURLOPT_POSTFIELDS,
 //    "postvar1=value1&postvar2=value2&postvar3=value3");
