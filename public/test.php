@@ -8,7 +8,7 @@ $headers[] = 'Cookie: ' . $cookie;
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL,"http://www.1room.cc/member/edituserinfo");
+curl_setopt($ch, CURLOPT_URL,"http://www.shouxiumv.net/member/edituserinfo");
 curl_setopt($ch, CURLOPT_POST, 1);
 //curl_setopt($ch, CURLOPT_POSTFIELDS,
 //    "postvar1=value1&postvar2=value2&postvar3=value3");
