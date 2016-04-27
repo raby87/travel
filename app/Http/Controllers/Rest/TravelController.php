@@ -21,6 +21,7 @@ class TravelController extends Controller
      */
     public function index()
     {
+        var_dump($_COOKIE);
         $travels = Travel::with('user')->with('image')->orderBy('init_time', 'desc')->take(10)->get();
 
         $result = [];
