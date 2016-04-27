@@ -1,3 +1,8 @@
+图片浏览产品介绍：
+放大，放大动画，样式可控，双击再放大，滑动，nav，自动播放，动画效果者佳
+
+
+
 # bootstrap-photo-gallery
 Responsive photo gallery using the grid system of Bootstrap and custom jQuery for the modal
 
