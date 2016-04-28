@@ -84,14 +84,24 @@ Route::get('/info', function () {
 
 });
 
-Route::get('/test', function () {
-       $travel =  new \App\Travel();
+Route::get('/authLogin', function () {
+    $travel =  new \App\Travel();
     $travel->uid = 1;
     $travel->content = "a";
     $travel->save();
     dd($travel);
 
     return view('admin/authLogin');
+});
+
+Route::get('/test', function () {
+    $travel =  new \App\Travel();
+    $travel->uid = 1;
+    $travel->content = "a";
+    $travel->save();
+    dd($travel);
+
+    return view('test');
 });
 
 Route::get('/upload', function () {
