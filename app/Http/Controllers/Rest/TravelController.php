@@ -65,10 +65,8 @@ class TravelController extends Controller
 
     public function publish()
     {
-
         $uid = Input::get('uid');
         $content = Input::get('content');
-        $photo = Input::file('images');
 
 //init_time
         $travel = new Travel();
@@ -78,18 +76,22 @@ class TravelController extends Controller
         $rs = $travel->save();
         $tid = $travel->tid;
 
-        $i = 1;
-        $imgName = $uid.'_'.$tid.'_'.$i;
-        $photo->move(storage_path('app'),"$imgName.jpg");
-        Storage::disk('local')->put('test.txt', $photo);
+        if(Input::hasFile('images')){
+            $photo = Input::file('images');
+
+            $i = 1;
+            $imgName = $uid.'_'.$tid.'_'.$i;
+            $photo->move(storage_path('app'),"$imgName.jpg");
+            Storage::disk('local')->put('test.txt', $photo);
 
 
-        $image = new TravelImage();
-        $image->tid = $tid;
-        $image->small = "$imgName.jpg";
-        $image->big = "$imgName.jpg";
-        $image->save();
+            $image = new TravelImage();
+            $image->tid = $tid;
+            $image->small = "$imgName.jpg";
+            $image->big = "$imgName.jpg";
+            $image->save();
 
+        }
 
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
         //Storage::disk('local')->put($tid."_$uid.jpg", $photo);
