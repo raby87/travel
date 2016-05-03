@@ -126,7 +126,7 @@ Route::group(array('prefix' => 'admin','namespace' => 'Admin'), function()
     {
         $travel = \App\Travel::paginate($id);
         $pageView = $travel->render();
-        //dd([$travel,$pageView]);
+        dd([$travel,$pageView]);
 
         return view('admin.login',['travel'=>$travel]);
     });
