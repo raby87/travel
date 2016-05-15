@@ -76,9 +76,11 @@ class TravelController extends Controller
         $rs = $travel->save();
         $tid = $travel->tid;
 
+        dd(Input::hasFile('images'));
         if(Input::hasFile('images')){
             $photo = Input::file('images');
 
+            dd("{photo:"+$photo+"}");
             $i = 1;
             $imgName = $uid.'_'.$tid.'_'.$i;
             $photo->move(storage_path('app'),"$imgName.jpg");
