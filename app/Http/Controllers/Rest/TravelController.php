@@ -78,13 +78,13 @@ class TravelController extends Controller
         $tid = $travel->tid;
 
         //dd(Input::hasFile('images'));
-        foreach($i=0; $i<$length; $i++){
+        for($i=0; $i<$length; $i++){
             $image = 'images.'.$i;
             if(Input::hasFile($image)){
                 $photo = Input::file($image);
 
                 //  dd("{photo:"+$photo+"}");
-                $i = 1;
+                $i = $i;
                 $imgName = $uid.'_'.$tid.'_'.$i;
                 $photo->move(storage_path('app'),"$imgName.jpg");
                 Storage::disk('local')->put('test.txt', $photo);
