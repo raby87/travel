@@ -67,6 +67,7 @@ class TravelController extends Controller
     {
         $uid = Input::get('uid');
         $content = Input::get('content');
+        $length = Input::get('length');
 
 //init_time
         $travel = new Travel();
@@ -77,22 +78,25 @@ class TravelController extends Controller
         $tid = $travel->tid;
 
         //dd(Input::hasFile('images'));
-        if(Input::hasFile('images')){
-            $photo = Input::file('images');
+        foreach($i=0; $i<$length; $i++){
+            $image = 'images.'.$i;
+            if(Input::hasFile($image)){
+                $photo = Input::file($image);
 
-          //  dd("{photo:"+$photo+"}");
-            $i = 1;
-            $imgName = $uid.'_'.$tid.'_'.$i;
-            $photo->move(storage_path('app'),"$imgName.jpg");
-            Storage::disk('local')->put('test.txt', $photo);
+                //  dd("{photo:"+$photo+"}");
+                $i = 1;
+                $imgName = $uid.'_'.$tid.'_'.$i;
+                $photo->move(storage_path('app'),"$imgName.jpg");
+                Storage::disk('local')->put('test.txt', $photo);
 
 
-            $image = new TravelImage();
-            $image->tid = $tid;
-            $image->small = "$imgName.jpg";
-            $image->big = "$imgName.jpg";
-            $image->save();
+                $image = new TravelImage();
+                $image->tid = $tid;
+                $image->small = "$imgName.jpg";
+                $image->big = "$imgName.jpg";
+                $image->save();
 
+            }
         }
 
         //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
