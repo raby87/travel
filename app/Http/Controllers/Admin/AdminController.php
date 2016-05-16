@@ -8,6 +8,13 @@ use Input;
 use Validator;
 use App\Http\Controllers\Controller;
 
+class Table{
+
+    public function make($source,$title){
+
+    }
+}
+
 class AdminController extends Controller
 {
     public function login()

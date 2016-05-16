@@ -67,9 +67,7 @@ class TravelController extends Controller
     {
         $uid = Input::get('uid');
         $content = Input::get('content');
-        $length = Input::get('length');
 
-//init_time
         $travel = new Travel();
         $travel->uid = $uid;
         $travel->content = $content;
@@ -77,34 +75,25 @@ class TravelController extends Controller
         $rs = $travel->save();
         $tid = $travel->tid;
 
-        //dd(Input::hasFile('images'));
-        //for($i=0; $i<$length; $i++){
-          //  $image = 'images.'.$i;
         $image = 'images';
-            if(Input::hasFile($image)){
-                $photos = Input::file($image);
-
-                //  dd("{photo:"+$photo+"}");
-                foreach($photos as $key=>$photo){
-
-                    $i = $key;
-                    $imgName = $uid.'_'.$tid.'_'.$i;
-                    $photo->move(storage_path('app'),"$imgName.jpg");
-                    Storage::disk('local')->put('test.txt', $photo);
+        if(Input::hasFile($image)){
+            $photos = Input::file($image);
+            foreach($photos as $key=>$photo){
+                $i = $key;
+                $imgName = $uid.'_'.$tid.'_'.$i;
+                $photo->move(storage_path('app'),"$imgName.jpg");
+                Storage::disk('local')->put('test.txt', $photo);
 
 
-                    $image = new TravelImage();
-                    $image->tid = $tid;
-                    $image->small = "$imgName.jpg";
-                    $image->big = "$imgName.jpg";
-                    $image->save();
-                }
-
+                $image = new TravelImage();
+                $image->tid = $tid;
+                $image->small = "$imgName.jpg";
+                $image->big = "$imgName.jpg";
+                $image->save();
             }
-       // }
 
-        //$file = "/var/www/public_html/7kanya/www/Home/Public/img/clinic/50118/2_1379831629.9642.jpg";
-        //Storage::disk('local')->put($tid."_$uid.jpg", $photo);
+        }
+
         return response()->json($rs);
     }
 }
