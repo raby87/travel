@@ -66,9 +66,8 @@ class Table{
         $html .="<tbody>";
         foreach($this->source as $k=>$item){
             $html .= "<tr>";
-            $keys = array_keys($item);
-            foreach($keys as  $vv){
-                $html .= "<td>".$item->$vv."</td>";
+            foreach($item as  $vv){
+                $html .= "<td>".$vv."</td>";
 
             }
             $html .= "</tr>";
