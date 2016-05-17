@@ -55,6 +55,7 @@ class Table{
      *
      */
     public function make(){
+        print_r($this->source);die;
 
         $html = "<thead><tr>";
         foreach($this->titles as $k=>$v){
