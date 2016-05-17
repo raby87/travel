@@ -49,7 +49,7 @@ class Table{
 
         $new_array = [];
         foreach($cols as $k=>$v){
-            $href = $label = "";
+            $href = $label = $data_id = "";
             if(isset($url['url'])){
                 $link = $url['url'];
                 $id = $link[0];
@@ -59,7 +59,10 @@ class Table{
             if(isset($url['label'])){
                 $label .= $url['label'];
             }
-            $item = '<a class="btn btn-xs btn-success btn-domain-del" data-id="30" '.$href.'>'.$label.'</a>';
+            if(isset($url['data-id'])){
+                $data_id .= "data-id='".$url['data-id']."'";
+            }
+            $item = '<a class="btn btn-xs btn-success btn-domain-del" '.$data_id.' '.$href.'>'.$label.'</a>';
             $this->source[$k][$col] = $item;
         }
         return $this;
@@ -81,7 +84,6 @@ class Table{
             $html .= "<tr>";
             foreach($item as  $vv){
                 $html .= "<td>".$vv."</td>";
-
             }
             $html .= "</tr>";
         }
@@ -103,13 +105,41 @@ class Table{
 
     }
 }
+class Panel{
+    private $heading = "";
+    private $body = "";
+    public function heading($heading=""){
+        $this->heading = $heading;
+        return $this;
+    }
+    public function body($body=""){
+        $this->body = $body;
+        return $this;
+    }
+    public function make(){
+        $html = '<div class="panel">
+        <div class="panel-heading">
+            '.$this->heading.'
+        </div>
+        <div class="panel-body">'.$this->body.'</div>
+        </div>';
+        return $html;
+    }
+}
 
 class AdminController extends Controller
 {
     public function login()
     {
-        $table = (new Table([['a'=>'a','b'=>'b'],['a'=>'aa','b'=>'bb'],['a'=>'aaa','b'=>'bbb']]))->addCol(['a'=>'title','b'=>'name'])
-            ->addDecorator('a',['url'=>["a","www.baidu.com/%s"],'data-id'=>"","label"=>"删除"])->make();
+        $header = '代理商管理<input class="btn btn-sm btn-success pull-right" type="button" value="添加代理商" id="omsAgencyAdd"  />';
+
+        $table = (new Table([['a'=>'a','b'=>'b'],['a'=>'aa','b'=>'bb'],['a'=>'aaa','b'=>'bbb']]))
+            ->addCol(['a'=>'title','b'=>'name'])
+            ->addDecorator('a',['url'=>["a","www.baidu.com/%s"],'data-id'=>"did","label"=>"删除"])
+            ->make();
+
+        $panel = (new Panel())->heading($header)->body($table)->make();
+        echo $panel;
         print_r($table);die;
         return view('admin.login');
     }
