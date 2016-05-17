@@ -45,11 +45,22 @@ class Table{
      */
     public function addDecorator($col="",$url=[]){
         $cols = array_column($this->source,$col);
+        $types = array_keys($url);
+
         $new_array = [];
         foreach($cols as $k=>$v){
-            $id = $url[0];
-            $tmp = str_replace("%s",$this->source[$k][$id],"http://www.baidu.com/index.php?do=testController&aid=%s");
-            $this->source[$k][$col] = $tmp;
+            $href = $label = "";
+            if(isset($url['url'])){
+                $link = $url['url'];
+                $id = $link[0];
+                $tmp = str_replace("%s",$this->source[$k][$id],$link[1]);
+                $href .= "href='".$tmp."'";
+            }
+            if(isset($url['name'])){
+                $label .= $url['label'];
+            }
+            $item = '<a class="btn btn-xs btn-success btn-domain-del" data-id="30" '.$href.'>'.$label.'</a>';
+            $this->source[$k][$col] = $item;
         }
         return $this;
     }
@@ -98,7 +109,7 @@ class AdminController extends Controller
     public function login()
     {
         $table = (new Table([['a'=>'a','b'=>'b'],['a'=>'aa','b'=>'bb'],['a'=>'aaa','b'=>'bbb']]))->addCol(['a'=>'title','b'=>'name'])
-            ->addDecorator('a',['b',"www.baidu.com/%s"])->make();
+            ->addDecorator('a',['url'=>["a","www.baidu.com/%s"],'data-id'=>"","label"=>"É¾³ı"])->make();
         print_r($table);die;
         return view('admin.login');
     }
