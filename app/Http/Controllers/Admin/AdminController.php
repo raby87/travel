@@ -98,7 +98,7 @@ class AdminController extends Controller
     public function login()
     {
         $table = (new Table([['a'=>'a','b'=>'b'],['a'=>'aa','b'=>'bb'],['a'=>'aaa','b'=>'bbb']]))->addCol(['a'=>'title','b'=>'name'])
-            ->addDecorator('a',['b'=>"www.baidu.com/%s"])->make();
+            ->addDecorator('a',['b',"www.baidu.com/%s"])->make();
         print_r($table);die;
         return view('admin.login');
     }
