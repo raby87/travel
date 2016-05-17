@@ -47,7 +47,8 @@ class Table{
         $cols = array_column($this->source,$col);
         $new_array = [];
         foreach($cols as $k=>$v){
-            $tmp = str_replace("%s",$this->source[$k][$url[0]],"http://www.baidu.com/index.php?do=testController&aid=%s");
+            $id = $url[0];
+            $tmp = str_replace("%s",$this->source[$k][$id],"http://www.baidu.com/index.php?do=testController&aid=%s");
             $this->source[$k][$col] = $tmp;
         }
         return $this;
@@ -96,7 +97,8 @@ class AdminController extends Controller
 {
     public function login()
     {
-        $table = (new Table([['a'=>'a','b'=>'b'],['a'=>'aa','b'=>'bb'],['a'=>'aaa','b'=>'bbb']]))->addCol(['a'=>'title','b'=>'name'])->make();
+        $table = (new Table([['a'=>'a','b'=>'b'],['a'=>'aa','b'=>'bb'],['a'=>'aaa','b'=>'bbb']]))->addCol(['a'=>'title','b'=>'name'])
+            ->addDecorator('a',['b'=>"www.baidu.com/%s"])->make();
         print_r($table);die;
         return view('admin.login');
     }
