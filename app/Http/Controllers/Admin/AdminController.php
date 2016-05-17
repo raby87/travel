@@ -38,30 +38,53 @@ class Table{
         return $this;
     }
     /**
-     * @param string $col
-     * @param string $url   http://www.baidu.com/index.php?do=testController&aid=%s
+     * @param string $col   "opt"
+     * @param string $url   'aid',http://www.baidu.com/index.php?do=testController&aid=%s
      */
     public function addDecorator($col="",$url=[]){
         $cols = array_column($this->source,$col);
-        
+        $new_array = [];
+        foreach($cols as $k=>$v){
+            $tmp = str_replace("%s",$this->source[$k][$url[0]],"http://www.baidu.com/index.php?do=testController&aid=%s");
+            $this->source[$k][$col] = $tmp;
+        }
+        return $this;
     }
 
     /**
-     * todo 一次性渲染
-     * @param $source
+     *
      */
     public function make(){
 
+        $html = "<thead><tr>";
+        foreach($this->titles as $k=>$v){
+            $html .= "<th>".$v."</th>";
+        }
+        $html .="</tr></thead>";
+
+        $html .="<tbody>";
+        foreach($this->source as $k=>$item){
+            $html .= "<tr>";
+            $keys = array_keys($item);
+            foreach($keys as  $vv){
+                $html .= "<td>".$item->$vv."</td>";
+
+            }
+            $html .= "</tr>";
+        }
+        $html .="</tbody>";
+
+        return '<table class="table table-bordered table-striped table-condensed">'.$html."</table>";
     }
 
     /**
-     * todo 用于js绑定方法
+     * todo
      */
     public function addClass(){
 
     }
     /**
-     * todo 用于js绑定方法
+     * todo 
      */
     public function addAttr(){
 
@@ -72,6 +95,8 @@ class AdminController extends Controller
 {
     public function login()
     {
+        $table = (new Table([['a'=>'a','b'=>'b'],['a'=>'aa','b'=>'bb'],['a'=>'aaa','b'=>'bbb']]))->addCol(['a','b'])->make();
+        print_r($table);die;
         return view('admin.login');
     }
     public function doLogin(){
