@@ -56,7 +56,7 @@ class Table{
                 $tmp = str_replace("%s",$this->source[$k][$id],$link[1]);
                 $href .= "href='".$tmp."'";
             }
-            if(isset($url['name'])){
+            if(isset($url['label'])){
                 $label .= $url['label'];
             }
             $item = '<a class="btn btn-xs btn-success btn-domain-del" data-id="30" '.$href.'>'.$label.'</a>';
