@@ -30,9 +30,11 @@ class Table{
     public function addCol($titles=[]){
         $keys = array_keys($titles);
         $values = array_values($titles);
-        foreach($keys as $k=>$v){
-           $row = array_column($this->org,$v);
-            array_push($this->source,$row);
+        foreach($keys as $v){
+            foreach($this->org as $k=>$col){
+                $tmp = $col[$v];
+                $this->source[$k][$v]=$tmp;
+            }
         }
         $this->titles = $values;
         return $this;
