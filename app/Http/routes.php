@@ -13,8 +13,8 @@
 
 Route::get('/', function () {
     $code = isset($_GET['code']) ? $_GET['code'] : "";
-    //if(!$code)
-    //    return view('welcome');
+    if(!$code)
+        return view('welcome');
 
     $url = "https://api.weibo.com/oauth2/access_token";
     $data = [
@@ -42,8 +42,8 @@ Route::get('/', function () {
     $server_output = curl_exec ($ch);
 
     curl_close ($ch);
-    //echo "".$server_output;
-    return $server_output;
+    echo "".$server_output;
+    //return $server_output;
     //return view('welcome');
 });
 
