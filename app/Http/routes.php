@@ -42,7 +42,10 @@ Route::get('/', function () {
     $server_output = curl_exec ($ch);
     $error = curl_error($ch);
     curl_close ($ch);
-    echo $server_output."----".$error;
+    if($error){
+       return $error;
+    }
+    echo $server_output;
     //return $server_output;
     //return view('welcome');
 });
