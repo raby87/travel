@@ -13,8 +13,8 @@
 
 Route::get('/', function () {
     $code = isset($_GET['code']) ? $_GET['code'] : "";
-    if(!$code)
-        return view('welcome');
+    //if(!$code)
+    //    return view('welcome');
 
     $url = "https://api.weibo.com/oauth2/access_token";
     $data = [
@@ -85,11 +85,6 @@ Route::get('/info', function () {
 });
 
 Route::get('/authLogin', function () {
-    $travel =  new \App\Travel();
-    $travel->uid = 1;
-    $travel->content = "a";
-    $travel->save();
-    dd($travel);
 
     return view('admin/authLogin');
 });
