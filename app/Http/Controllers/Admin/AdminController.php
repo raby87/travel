@@ -43,7 +43,7 @@ class Table{
      */
     public function addDecorator($col="",$url=[]){
         $cols = array_column($this->source,$col);
-        
+
     }
 
     /**
