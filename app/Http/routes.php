@@ -40,9 +40,9 @@ Route::get('/', function () {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
     $server_output = curl_exec ($ch);
-
+    $error = curl_error($ch);
     curl_close ($ch);
-    echo "".$server_output;
+    echo $server_output."----".$error;
     //return $server_output;
     //return view('welcome');
 });
