@@ -43,7 +43,8 @@ Route::get('/', function () {
     $error = curl_error($ch);
     curl_close ($ch);
     if($error){
-       return $error;
+        echo $error;
+       return ;
     }
     echo $server_output;
     //return $server_output;
