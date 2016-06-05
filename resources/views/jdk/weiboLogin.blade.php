@@ -11,7 +11,7 @@
     <script type="text/javascript">
         $( "#weiboLoginBtn" ).click(function() {
             var url = "https://api.weibo.com/oauth2/authorize?client_id=3453585210&" +
-                    "redirect_uri=http://www.kcdlife.com/response&response_type=code";
+                    "redirect_uri=http://www.kcdlife.com?&response_type=code";
 
             window.location.href=url;
         });
