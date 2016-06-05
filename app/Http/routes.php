@@ -10,12 +10,18 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::group(array('prefix' => 'jdk','namespace' => 'JDK'), function(){
+    Route::get('/', function () {
+        return view('jdk/weiboLogin');
+    });
+});
+
+
 
 Route::get('/', function () {
     $code = isset($_GET['code']) ? $_GET['code'] : "";
-    //if(!$code)
-    //    return view('welcome');
 
+    
     $url = "https://api.weibo.com/oauth2/access_token";
     $data = [
         'client_id' => '1817611297',
@@ -29,9 +35,6 @@ Route::get('/', function () {
 
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch, CURLOPT_POST, 1);
-//    curl_setopt($ch, CURLOPT_POSTFIELDS,
-//        "postvar1=value1&postvar2=value2&postvar3=value3");
-
 // in real life you should use something like:
     curl_setopt($ch, CURLOPT_POSTFIELDS,
         http_build_query($data));
@@ -47,7 +50,6 @@ Route::get('/', function () {
        return ;
     }
     echo $server_output;
-    //return $server_output;
     //return view('welcome');
 });
 
@@ -102,14 +104,7 @@ Route::get('/upload', function () {
 });
 
 Route::post('/doUpload', function () {
-    $name = \Illuminate\Support\Facades\Input::get("name");
 
-    $photo = \Illuminate\Support\Facades\Input::file("photo");
-    $size = $photo->getSize();
-    $path = $photo->getRealPath();
-    $photo->move(storage_path('app'),"11.jpg");
-
-    dd([storage_path('app'),$path,$photo,$size]);
 });
 
 
