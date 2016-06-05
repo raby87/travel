@@ -21,7 +21,7 @@ Route::group(array('prefix' => 'jdk','namespace' => 'JDK'), function(){
 Route::get('/', function () {
     $code = isset($_GET['code']) ? $_GET['code'] : "";
 
-    
+
     $url = "https://api.weibo.com/oauth2/access_token";
     $data = [
         'client_id' => '1817611297',

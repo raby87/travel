@@ -7,7 +7,7 @@
 @stop
 
 @section("content")
-    <span id="weiboLoginBtn">weibo登录</span>
+    <span id="weiboLoginBtn" class="btn-success">weibo登录</span>
     <script type="text/javascript">
         $( "#weiboLoginBtn" ).click(function() {
             $.ajax({
