@@ -24,18 +24,16 @@ Route::get('/', function () {
 
     $url = "https://api.weibo.com/oauth2/access_token";
     $data = [
-        'client_id' => '1817611297',
-        'client_secret'=>'65a40f3a74b7859a07baad262aaed2d1',
+        'client_id' => '3453585210',
+        'client_secret'=>'c6bd0d3e5e4cd8ab60192fce14fa03f4',
         'grant_type'=>'authorization_code',
         'code'=>$code,
-        'redirect_uri'=>'http://run.51094.com',
+        'redirect_uri'=>'http://www.kcdlife.com',
     ];
 
     $ch = curl_init();
-
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch, CURLOPT_POST, 1);
-// in real life you should use something like:
     curl_setopt($ch, CURLOPT_POSTFIELDS,
         http_build_query($data));
 
