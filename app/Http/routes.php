@@ -12,7 +12,7 @@
 */
 Route::group(array('prefix' => 'jdk','namespace' => 'JDK'), function(){
     Route::get('/', function () {
-        return view('jdk/qqLogin');
+        return view('jdk/login');
     });
 });
 
@@ -24,8 +24,6 @@ Route::get('/', function () {
 
     switch($type){
         case "qq":
-            https://graph.qq.com/oauth2.0/token?grant_type=authorization_code
-            //&client_id=[YOUR_APP_ID]&client_secret=[YOUR_APP_Key]&code=[The_AUTHORIZATION_CODE]&state=[The_CLIENT_STATE]&redirect_uri=[YOUR_REDIRECT_URI]
             $url = "https://graph.qq.com/oauth2.0/token";
             $data = [
                 'client_id' => '101309385',
