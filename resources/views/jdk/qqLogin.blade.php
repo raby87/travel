@@ -7,15 +7,13 @@
 @stop
 
 @section("content")
-    <script type="text/javascript"
-            src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js"
-            data-appid="101309385" data-redirecturi="http://www.kcdlife.com/" charset="utf-8">
-    </script>
-
-    <span id="qqLoginBtn"></span>
+    <span id="qqLoginBtn" class="btn-success">QQ登录</span>
     <script type="text/javascript">
-        QC.Login({
-            btnId:"qqLoginBtn"	//插入按钮的节点id
+        $( "#qqLoginBtn" ).click(function() {
+            var url = "https://graph.qq.com/oauth2.0/authorize?response_type=code&" +
+                    "client_id=101309385&redirect_uri=http://www.kcdlife.com/?type=qq&scope=do_like";
+
+            window.location.href=url;
         });
     </script>
 @stop
