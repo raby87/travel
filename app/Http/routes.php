@@ -12,7 +12,7 @@
 */
 Route::group(array('prefix' => 'jdk','namespace' => 'JDK'), function(){
     Route::get('/', function () {
-        return view('jdk/weiboLogin');
+        return view('jdk/qqLogin');
     });
 });
 
