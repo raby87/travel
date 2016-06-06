@@ -20,16 +20,32 @@ Route::group(array('prefix' => 'jdk','namespace' => 'JDK'), function(){
 
 Route::get('/', function () {
     $code = isset($_GET['code']) ? $_GET['code'] : "";
+    $type = \Illuminate\Support\Facades\Input::get('type');
 
-
-    $url = "https://api.weibo.com/oauth2/access_token";
-    $data = [
-        'client_id' => '3453585210',
-        'client_secret'=>'c6bd0d3e5e4cd8ab60192fce14fa03f4',
-        'grant_type'=>'authorization_code',
-        'code'=>$code,
-        'redirect_uri'=>'http://www.kcdlife.com',
-    ];
+    switch($type){
+        case "qq":
+            https://graph.qq.com/oauth2.0/token?grant_type=authorization_code
+            //&client_id=[YOUR_APP_ID]&client_secret=[YOUR_APP_Key]&code=[The_AUTHORIZATION_CODE]&state=[The_CLIENT_STATE]&redirect_uri=[YOUR_REDIRECT_URI]
+            $url = "https://graph.qq.com/oauth2.0/token";
+            $data = [
+                'client_id' => '101309385',
+                'client_secret'=>'9b77806974b0213b3998e976bb3195ee',
+                'grant_type'=>'authorization_code',
+                'code'=>$code,
+                'redirect_uri'=>'http://www.kcdlife.com'
+            ];
+            break;
+        case "weibo":
+            $url = "https://api.weibo.com/oauth2/access_token";
+            $data = [
+                'client_id' => '3453585210',
+                'client_secret'=>'c6bd0d3e5e4cd8ab60192fce14fa03f4',
+                'grant_type'=>'authorization_code',
+                'code'=>$code,
+                'redirect_uri'=>'http://www.kcdlife.com',
+            ];
+            break;
+    }
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
