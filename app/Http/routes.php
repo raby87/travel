@@ -12,6 +12,7 @@
 */
 Route::group(array('prefix' => 'jdk','namespace' => 'JDK'), function(){
     Route::get('/', function () {
+        echo parse_url("a=222&b=333");
         return view('jdk/login');
     });
 });
@@ -61,6 +62,39 @@ Route::get('/', function () {
         echo $error;
        return ;
     }
+
+    //如果不存在，或不同则更新token
+    //Step3：使用Access Token来获取用户的OpenID
+    /*
+    switch($type){
+        case "qq":
+            $params = array();
+            explode(',',$server_output);
+            $graph_url = "https://graph.qq.com/oauth2.0/me?access_token=".$params['access_token'];
+            $str  = file_get_contents($graph_url);
+            if (strpos($str, "callback") !== false)
+            {
+                $lpos = strpos($str, "(");
+                $rpos = strrpos($str, ")");
+                $str  = substr($str, $lpos + 1, $rpos - $lpos -1);
+            }
+            $user = json_decode($str);
+            if (isset($user->error))
+            {
+                echo "<h3>error:</h3>" . $user->error;
+                echo "<h3>msg  :</h3>" . $user->error_description;
+                exit;
+            }
+
+            $token = "";
+            $user = new \App\User();
+            $user->token = $token;
+            $user->save();
+
+            break;
+        case "weibo":
+            break;
+    }*/
     echo $server_output;
     //return view('welcome');
 });
