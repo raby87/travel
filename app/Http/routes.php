@@ -12,7 +12,8 @@
 */
 Route::group(array('prefix' => 'jdk','namespace' => 'JDK'), function(){
     Route::get('/', function () {
-        echo parse_url("a=222&b=333");
+        $params = parse_url("a=222&b=333");
+        var_dump($params);
         return view('jdk/login');
     });
 });
