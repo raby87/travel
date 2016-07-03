@@ -143,9 +143,9 @@ Route::get('/authLogin', function () {
     return view('admin/authLogin');
 });
 
-Route::get('/test', function () {
-    return view('test');
-});
+Route::get('/test',  [
+    'as' => 'test', 'uses' => 'TestController@index'
+]);
 
 Route::get('/upload', function () {
         return view('admin/upload');
