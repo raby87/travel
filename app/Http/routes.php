@@ -82,7 +82,7 @@ Route::get('/', function () {
                 $rpos = strrpos($str, ")");
                 $str  = substr($str, $lpos + 1, $rpos - $lpos -1);
             }
-            echo $str;die;
+            //echo $str;die;
             $user = json_decode($str);
             if (isset($user->error))
             {
@@ -91,6 +91,18 @@ Route::get('/', function () {
                 exit;
             }
 
+
+            $appid = '101309385';
+            $openid = $user->openid;
+            $graph_url = "https://graph.qq.com/user/get_user_info?access_token=$token&oauth_consumer_key=$appid&openid=$openid";
+            $str  = file_get_contents($graph_url);
+            if (strpos($str, "callback") !== false)
+            {
+                $lpos = strpos($str, "(");
+                $rpos = strrpos($str, ")");
+                $str  = substr($str, $lpos + 1, $rpos - $lpos -1);
+            }
+            echo $str;die;
 //            $token = "";
 //            $user = new \App\User();
 //            $user->token = $token;

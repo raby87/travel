@@ -88,6 +88,7 @@ class OAuthService implements OAuthContract
             echo "<h3>msg  :</h3>" . $user->error_description;
             exit;
         }
+
     }
     private function getUserWeibo(){
 
