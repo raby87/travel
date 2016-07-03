@@ -8,11 +8,11 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use App;
-use App\Contracts\TestContract;
+use App\Contracts\OAuthContract;
 class TestController extends Controller
 {
     //ÒÀÀµ×¢Èë
-    public function __construct(TestContract $test){
+    public function __construct(OAuthContract $test){
         $this->test = $test;
     }
 
@@ -25,8 +25,8 @@ class TestController extends Controller
     public function index()
     {
         // $test = App::make('test');
-        // $test->callMe('TestController');
-        $this->test->callMe('TestController');
+        // $test->authorize('TestController');
+        $this->test->authorize();
     }
 
 }

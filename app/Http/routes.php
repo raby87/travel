@@ -54,7 +54,7 @@ Route::get('/', function () {
     curl_setopt($ch, CURLOPT_POSTFIELDS,
         http_build_query($data));
 
-// receive server response ...
+// receive server response ...lo
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
     $server_output = curl_exec ($ch);
@@ -65,14 +65,16 @@ Route::get('/', function () {
        return ;
     }
 
-    //如果不存在，或不同则更新token
+    //如果不存在，或不同则更新toke
     //Step3：使用Access Token来获取用户的OpenID
-    /*
+
     switch($type){
         case "qq":
             $params = array();
-            explode(',',$server_output);
-            $graph_url = "https://graph.qq.com/oauth2.0/me?access_token=".$params['access_token'];
+           // explode(',',$server_output);
+            $token_params = explode('&',$server_output)[0];
+            $token = explode('=',$token_params)[1];
+            $graph_url = "https://graph.qq.com/oauth2.0/me?access_token=".$token;
             $str  = file_get_contents($graph_url);
             if (strpos($str, "callback") !== false)
             {
@@ -80,6 +82,7 @@ Route::get('/', function () {
                 $rpos = strrpos($str, ")");
                 $str  = substr($str, $lpos + 1, $rpos - $lpos -1);
             }
+            echo $str;die;
             $user = json_decode($str);
             if (isset($user->error))
             {
@@ -88,15 +91,15 @@ Route::get('/', function () {
                 exit;
             }
 
-            $token = "";
-            $user = new \App\User();
-            $user->token = $token;
-            $user->save();
+//            $token = "";
+//            $user = new \App\User();
+//            $user->token = $token;
+//            $user->save();
 
             break;
         case "weibo":
             break;
-    }*/
+    }
     echo $server_output;
     //return view('welcome');
 });
